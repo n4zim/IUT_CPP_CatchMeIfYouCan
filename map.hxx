@@ -14,6 +14,15 @@
 
 namespace ChaseGame {
 	/*!
+	 * \brief Generate a random shape in the map
+	 * \param Mat Game matrix
+	 * \param Tab Shape
+	 * \param y The y position
+	 * \param x The x position
+	 */
+	void MatForm (CMatrix & Mat, array <bool,9> Tab, unsigned y, unsigned x);
+
+	/*!
 	 * \brief Creates game matrix from the parameters and config file
 	 * \param Mat Game matrix
 	 * \param Params Map parametes
