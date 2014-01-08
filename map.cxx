@@ -142,56 +142,37 @@ namespace ChaseGame {
 	} // GenMap ()
 
 
-	void MoveToken (CMatrix & Mat, char Move, SPlayerPos & Pos)	{
+	char MoveToken (CMatrix & Mat, char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes)	{
 		bool ValidMove = true;
-		SPlayerPos& NewPos = Pos;
+		char replacedChar = KEmpty;
+		SPlayerPos NewPos = Pos;
 
-		switch (Move) {
-		  case KGoUp:
-		  	NewPos.Y -= 1; cout << "UP WE GO";
-		  	break;
-		  case KGoLeft:
-		  	NewPos.X -= 1;
-		  	break;
-		  case KGoRight:
-		  	NewPos.X += 1;
-		  	break;
-		  case KGoDown:
-		  	NewPos.Y += 1;
-		  	break;
-		  case KGoUpLeft:
-		  	NewPos.Y -= 1;
-		  	NewPos.X -= 1;
-		  	break;
-		  case KGoUpRight:
-		  	NewPos.Y -= 1;
-		  	NewPos.X += 1;
-		  	break;
-		  case KGoDnLeft:
-		  	NewPos.Y += 1;
-		  	NewPos.X -= 1;
-		  	break;
-		  case KGoDnRight:
-		  	NewPos.Y += 1;
-		  	NewPos.X += 1;
-		  	break;
-		  default:
-		  	ValidMove = false;
-		  	break;
+	 	if (Move == KeyCodes.Up && NewPos.Y > 0) {
+		  	NewPos.Y -= 1; 
+		} else if (Move == KeyCodes.Left && NewPos.X > 0) {
+		  	NewPos.X -= 1; 
+		} else if (Move == KeyCodes.Right && NewPos.X < Mat[Pos.Y].size() - 1) {
+		  	NewPos.X += 1; 
+		} else if (Move == KeyCodes.Down && NewPos.Y < Mat.size() - 1) {
+		  	NewPos.Y += 1; 
+		} else {
+			ValidMove = false;
 		}
 
-		cout << NewPos.X << " " << NewPos.Y << " - ";
-		cout << Pos.X << " " << Pos.Y << " - ";
-		cout << ValidMove << " ";
-		//       IF the movement is valid
-		// AND THEN Y position doesn't exceed the grid
-		// AND THEN X position doesn't exceed the grid
-		if (ValidMove && NewPos.Y < Mat.size () && NewPos.Y < Mat[NewPos.X].size ()) {
-			Mat[NewPos.Y][NewPos.X] = Mat[Pos.Y][Pos.X]; // the new pos gets the token
-			Mat[Pos.Y][Pos.X] = KEmpty; // the old pos is emptyed
-			Pos = NewPos; // we update pos
+		/*
+		cout << "old pos" << Pos.X << " " << Pos.Y << endl;
+		cout << "new pos" << NewPos.X << " " << NewPos.Y << endl;
+		cout << ValidMove << endl; //*/
+
+		if(ValidMove) {
+			replacedChar = Mat[NewPos.Y][NewPos.X];
+			Mat[NewPos.Y][NewPos.X] = Mat[Pos.Y][Pos.X];
+			Mat[Pos.Y][Pos.X] = KEmpty;
+
+			Pos = NewPos;
 		}
 
+		return replacedChar;
 	} // MoveToken ()
 
 
@@ -239,8 +220,6 @@ namespace ChaseGame {
 		cout << endl;
 
 		Color (CLR_RESET);
-
-		std::exit(EXIT_FAILURE); // TODEL : NAZIM
 
 	} // ShowMatrix ()
 }
