@@ -1,0 +1,93 @@
+\hypertarget{globals_8hxx}{\section{globals.\-hxx File Reference}
+\label{globals_8hxx}\index{globals.\-hxx@{globals.\-hxx}}
+}
+
+
+Defines global constants and variables for the \hyperlink{namespace_chase_game}{Chase\-Game} namespace.  
+
+
+{\ttfamily \#include \char`\"{}windows.\-hxx\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}unix.\-hxx\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for globals.\-hxx\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{globals_8hxx__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{globals_8hxx__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_chase_game_1_1_s_player_pos}{Chase\-Game\-::\-S\-Player\-Pos}
+\begin{DoxyCompactList}\small\item\em Defines a position. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_chase_game_1_1_s_map_gen_params}{Chase\-Game\-::\-S\-Map\-Gen\-Params}
+\begin{DoxyCompactList}\small\item\em Contains all the map generation parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_chase_game_1_1_s_player_keys}{Chase\-Game\-::\-S\-Player\-Keys}
+\begin{DoxyCompactList}\small\item\em Player specific keys. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_chase_game_1_1_s_player_state}{Chase\-Game\-::\-S\-Player\-State}
+\begin{DoxyCompactList}\small\item\em Player state. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_chase_game_1_1_s_game_status_display}{Chase\-Game\-::\-S\-Game\-Status\-Display}
+\item 
+struct \hyperlink{struct_chase_game_1_1_s_game_status}{Chase\-Game\-::\-S\-Game\-Status}
+\begin{DoxyCompactList}\small\item\em Contains game configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_chase_game}{Chase\-Game}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{typedef std\-::vector$<$ char $>$ {\bfseries Chase\-Game\-::\-C\-V\-Line}}\label{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}
+
+\item 
+\hypertarget{namespace_chase_game_a469449f9237e59efce3982127366c550}{typedef std\-::vector$<$ C\-V\-Line $>$ {\bfseries Chase\-Game\-::\-C\-Matrix}}\label{namespace_chase_game_a469449f9237e59efce3982127366c550}
+
+\item 
+\hypertarget{namespace_chase_game_a1b3968a11187d602af99b05239720bd3}{typedef std\-::pair$<$ unsigned, \\*
+unsigned $>$ {\bfseries Chase\-Game\-::\-C\-Position}}\label{namespace_chase_game_a1b3968a11187d602af99b05239720bd3}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_chase_game_a8452e2d6de618e4ca7a9f76b082b52a4}{const char \hyperlink{namespace_chase_game_a8452e2d6de618e4ca7a9f76b082b52a4}{Chase\-Game\-::\-K\-Token\-Player1} = 'X'}\label{namespace_chase_game_a8452e2d6de618e4ca7a9f76b082b52a4}
+
+\begin{DoxyCompactList}\small\item\em Character representing player one. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_a344097ba56ffd5b44cb5bdefb810aa36}{const int \hyperlink{namespace_chase_game_a344097ba56ffd5b44cb5bdefb810aa36}{Chase\-Game\-::\-K\-Col\-Token\-P1} = C\-L\-R\-\_\-\-R\-E\-D}\label{namespace_chase_game_a344097ba56ffd5b44cb5bdefb810aa36}
+
+\begin{DoxyCompactList}\small\item\em Color value representing player one. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_ae27343407c21a8d6e3cf26b736bd5527}{const char \hyperlink{namespace_chase_game_ae27343407c21a8d6e3cf26b736bd5527}{Chase\-Game\-::\-K\-Token\-Player2} = 'O'}\label{namespace_chase_game_ae27343407c21a8d6e3cf26b736bd5527}
+
+\begin{DoxyCompactList}\small\item\em Character representing player two. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}{const int \hyperlink{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}{Chase\-Game\-::\-K\-Col\-Token\-P2} = C\-L\-R\-\_\-\-B\-L\-U\-E}\label{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}
+
+\begin{DoxyCompactList}\small\item\em Color value representing player two. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{const char \hyperlink{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{Chase\-Game\-::\-K\-Empty} = '.'}\label{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}
+
+\begin{DoxyCompactList}\small\item\em Character representing voidness. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}{const char \hyperlink{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}{Chase\-Game\-::\-K\-Obstacle} = '\#'}\label{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}
+
+\begin{DoxyCompactList}\small\item\em Obstacles in the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines global constants and variables for the \hyperlink{namespace_chase_game}{Chase\-Game} namespace. \begin{DoxyAuthor}{Author}
+Josua Gonzalez 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07/01/14 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1
+\end{DoxyVersion}
+Contains constants and structs used in the game code 

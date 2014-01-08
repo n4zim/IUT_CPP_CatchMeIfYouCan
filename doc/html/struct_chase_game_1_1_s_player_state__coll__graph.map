@@ -1,0 +1,4 @@
+<map id="ChaseGame::SPlayerState" name="ChaseGame::SPlayerState">
+<area shape="rect" id="node2" href="$struct_chase_game_1_1_s_player_pos.html" title="Defines a position. " alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node3" href="$struct_chase_game_1_1_s_player_keys.html" title="Player specific keys. " alt="" coords="200,5,379,32"/>
+</map>
