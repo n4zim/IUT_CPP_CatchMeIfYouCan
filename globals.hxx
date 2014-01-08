@@ -42,6 +42,9 @@ namespace ChaseGame {
 	//! Character representing voidness
 	const char KEmpty = '.';
 
+	//! Obstacles in the game
+	const char KObstacle = '#';
+
 	//! Defines a position
 	struct SPlayerPos
 	{
