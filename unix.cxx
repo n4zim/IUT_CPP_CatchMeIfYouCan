@@ -11,6 +11,7 @@
  */
 
 #include "globals.hxx"
+#include "unix.hxx"
 
 #ifdef UNIX
  
@@ -20,21 +21,18 @@
 
 using namespace std;
 
-/*! \namespace SuperGame
- * Project namespace for the game
- */
 namespace ChaseGame {
 	void ClearScreen ()	{
 		cout << "\033[H\033[2J";
-	}
+	} // ClearScreen ()
 
-	void Color (const int & coul) {
-	    cout << "\033[" << coul <<"m";
-	}
+	void Color (const int & Color) {
+	    cout << "\033[" << Color <<"m";
+	} // Color ()
 
-	void BackgroundColor (const int & coul) {
-	    cout << "\033[" << coul + 10 <<"m";
-	}
+	void BackgroundColor (const int & Color) {
+	    cout << "\033[" << Color + 10 <<"m";
+	} // BackgroundColor ()
 
 
 	char GetInput () {
@@ -58,6 +56,6 @@ namespace ChaseGame {
 	    tcsetattr (STDIN_FILENO, TCSANOW, &oldt);
 
 		return input;
-	}
+	} // GetInput ()
 }
 #endif

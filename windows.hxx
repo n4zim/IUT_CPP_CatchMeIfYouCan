@@ -1,6 +1,6 @@
 /*!
  *
- * \file windows.hpp
+ * \file windows.hxx
  * \author Josua Gonzalez
  * \date 07/01/14
  * \brief Defines Windows specific functions
@@ -32,15 +32,15 @@ namespace ChaseGame {
 
 		/*!
 		 * \brief Changes text color
-		 * \param coul Wanted color
+		 * \param Color Wanted color
 		 */
-		void Color (const int&);
+		void Color (const int& Color);
 	
 		/*!
 		 * \brief Changes background color
-		 * \param coul Wanted color
+		 * \param Color Wanted color
 		 */
-		void BackgroundColor (const int&);
+		void BackgroundColor (const int& Color);
 		
 		/*!
 		 * \brief Captures a character from stdin

@@ -1,6 +1,6 @@
 /*!
  *
- * \file unix.hpp
+ * \file unix.hxx
  * \author 
  * \date 08/01/14
  * \brief Defines UNIX specific functions
@@ -19,21 +19,21 @@ namespace ChaseGame {
 		enum ConsoleColors { CLR_BLACK=30, CLR_RED=31, CLR_GREEN=32, CLR_YELLOW=33, CLR_BLUE=34, CLR_MAGENTA=35, CLR_CYAN=36, CLR_WHITE=37, CLR_GREY=30, CLR_RESET=0 };
 
 		/*!
-		 * \brief Clear screen
+		 * \brief Clears screen
 		 */
 		void ClearScreen ();
 
 		/*!
 		 * \brief Changes text color
-		 * \param coul Wanted color
+		 * \param Color Wanted color
 		 */
-		void Color (const int&);
+		void Color (const int& Color);
 
 		/*!
 		 * \brief Changes background color
-		 * \param coul Wanted color
+		 * \param Color Wanted color
 		 */
-		void BackgroundColor (const int&);
+		void BackgroundColor (const int& Color);
 
 		/*!
 		 * \brief Captures a character from stdin
