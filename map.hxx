@@ -7,6 +7,7 @@
  */
 
 #include <string>
+#include <array>
 #include "globals.hxx"
 
 #ifndef map_h 
