@@ -48,9 +48,9 @@ namespace ChaseGame {
 			int Value = 0;
 			file >> VarId >> Value;
 
-			if (VarId == "NbLine:")
+			if (VarId == "MapHeight:")
 				Params.MapHeight = Value;
-			else if (VarId == "NbCol:")
+			else if (VarId == "MapWidth:")
 				Params.MapWidth = Value;
 			else if (VarId == "PosP1.X:")
 				Params.PosPlayer1.X = Value;
@@ -60,6 +60,8 @@ namespace ChaseGame {
 				Params.PosPlayer2.X = Value;
 			else if (VarId == "PosP1.Y:")
 				Params.PosPlayer2.Y = Value;
+
+			cout << VarId << " " << Value << endl;
 		}  
 
 		// Returning the parameters
@@ -67,7 +69,7 @@ namespace ChaseGame {
 	}
 
 
-	bool SaveMapConfig (const string& FileName, SMapGenParams Params) {
+	bool SaveMapConfig (const string& FileName, SMapGenParams& Params) {
 		ofstream file (FileName);
 
 		if (!file)
@@ -85,9 +87,111 @@ namespace ChaseGame {
 
 
 	SGameStatus LoadGameConfig (const std::string & FileName) {
-		SGameStatus Params; 
+		SGameStatus Config; 
 		
-		return Params;
+		Config.P1.Keys.Up    = 'Z';
+		Config.P1.Keys.Down  = 'S';
+		Config.P1.Keys.Left  = 'Q';
+		Config.P1.Keys.Right = 'D';
+
+		Config.P2.Keys.Up    = 'O';
+		Config.P2.Keys.Down  = 'L';
+		Config.P2.Keys.Left  = 'K';
+		Config.P2.Keys.Right = 'M';
+
+		Config.KeyPause   = 27;
+		Config.KeyExit    = 27;
+
+		Config.ColorSet.ColorP1 = CLR_RED;
+		Config.ColorSet.ColorP2 = CLR_BLUE;
+		Config.ColorSet.ColorObstacle = CLR_CYAN;
+		Config.ColorSet.ColorWall = CLR_CYAN;
+		Config.ColorSet.ColorBonus = CLR_GREEN;
+		Config.ColorSet.ColorMalus = CLR_RED;
+
+		// open config file
+		ifstream file (FileName);
+
+		// If the config file doesn't exists, we create it and we save+return the default config
+		if (!file) {
+			SaveGameConfig (FileName, Config); // Saves the config file for later use
+			return Config; // Returns the default config
+		}
+		
+		// Config file reading (format : "string: int")
+		for (;file;) {
+			string VarId;
+			int Value = 0;
+			file >> VarId >> Value;
+
+			// P1 keys
+			if (VarId == "KeyP1Up")
+				Config.P1.Keys.Up = char(Value);
+			else if (VarId == "KeyP1Left")
+				Config.P1.Keys.Left = char(Value);
+			else if (VarId == "KeyP1Right")
+				Config.P1.Keys.Right = char(Value);
+			else if (VarId == "KeyP1Down")
+				Config.P1.Keys.Down = char(Value);
+
+			// P2 keys
+			else if (VarId == "KeyP2Up")
+				Config.P2.Keys.Up = char(Value);
+			else if (VarId == "KeyP2Left")
+				Config.P2.Keys.Left = char(Value);
+			else if (VarId == "KeyP2Right")
+				Config.P2.Keys.Right = char(Value);
+			else if (VarId == "KeyP2Down")
+				Config.P2.Keys.Down = char(Value);
+
+			// Color config
+			else if (VarId == "ColorP1")
+				Config.ColorSet.ColorP1 = Value;
+			else if (VarId == "ColorP2")
+				Config.ColorSet.ColorP2 = Value;
+			else if (VarId == "ColorObstacle")
+				Config.ColorSet.ColorObstacle = Value;
+			else if (VarId == "ColorWall")
+				Config.ColorSet.ColorWall = Value;
+			else if (VarId == "ColorBonus")
+				Config.ColorSet.ColorBonus = Value;
+			else if (VarId == "ColorMalus")
+				Config.ColorSet.ColorMalus = Value;
+
+			// Other config
+			else if (VarId == "Lang")
+				Config.Lang = Value;
+		}  
+
+		return Config;
 	}
 
+
+	bool SaveGameConfig (const string& FileName, SGameStatus& Config) {
+		ofstream file (FileName);
+
+		if (!file)
+			return false; // File can't be written
+
+		file << "KeyP1Up " << Config.P1.Keys.Up << endl;
+		file << "KeyP1Down " << Config.P1.Keys.Down << endl;
+		file << "KeyP1Left " << Config.P1.Keys.Left << endl;
+		file << "KeyP1Right " << Config.P1.Keys.Right << endl;
+
+		file << "KeyP2Up " << Config.P2.Keys.Up << endl;
+		file << "KeyP2Down " << Config.P2.Keys.Down << endl;
+		file << "KeyP2Left " << Config.P2.Keys.Left << endl;
+		file << "KeyP2Right " << Config.P2.Keys.Right << endl;
+
+		file << "ColorP1 " << Config.ColorSet.ColorP1 << endl;
+		file << "ColorP2 " << Config.ColorSet.ColorP2 << endl;
+		file << "ColorObstacle " << Config.ColorSet.ColorObstacle << endl;
+		file << "ColorWall " << Config.ColorSet.ColorWall << endl;
+		file << "ColorBonus " << Config.ColorSet.ColorBonus << endl;
+		file << "ColorMalus " << Config.ColorSet.ColorMalus << endl;
+
+		file << "Lang " << Config.Lang << endl;
+
+		return true;
+	}
 }
