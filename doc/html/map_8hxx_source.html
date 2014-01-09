@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Chase game: map.hxx Source File</title>
+<title>Chase game: C:/Development/IUT/git - Copie/projet/map.hxx Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,13 +65,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,6 +79,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_86a3e1acfb758bdb35e213b4802000b2.html">git - Copie</a></li><li class="navelem"><a class="el" href="dir_cca7c63dad2dcb01d24aa78fcba2ca23.html">projet</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">map.hxx</div>  </div>
@@ -87,32 +91,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="globals_8hxx.html">globals.hxx</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef map_h </span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define map_h</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>ChaseGame {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#aa29dad756d93bb9f091073fcd5eab908">MatForm</a> (CMatrix &amp; Mat, array &lt;bool,9&gt; Tab, <span class="keywordtype">unsigned</span> y, <span class="keywordtype">unsigned</span> x);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#adfaa7677a16626893e1fb0739e50e7c6">GenMap</a> (CMatrix &amp; Mat, SMapGenParams Params);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a22a6493962ff9e0343c1f68fb0fa7956">ShowMatrix</a> (<span class="keyword">const</span> CMatrix &amp; Mat);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="namespace_chase_game.html#a1b0d964656a1a14bacc9f316a78c0d46">MoveToken</a> (CMatrix &amp; Mat, <span class="keywordtype">char</span> Move, SPlayerPos &amp; Pos, <span class="keyword">const</span> SPlayerKeys&amp; KeyCodes);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespace_chase_game_html_adfaa7677a16626893e1fb0739e50e7c6"><div class="ttname"><a href="namespace_chase_game.html#adfaa7677a16626893e1fb0739e50e7c6">ChaseGame::GenMap</a></div><div class="ttdeci">void GenMap(CMatrix &amp;Mat, SMapGenParams Params)</div><div class="ttdoc">Creates game matrix from the parameters and config file. </div><div class="ttdef"><b>Definition:</b> map.cxx:49</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="globals_8hxx.html">globals.hxx</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef map_h </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define map_h</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>ChaseGame {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> MatForm (<a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp; Mat, std::array &lt;bool,9&gt; Tab, <span class="keywordtype">unsigned</span> y, <span class="keywordtype">unsigned</span> x);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a5b00d5d3acd009bc9e2e315180e25825">GenMap</a> (<a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp; Mat, SMapGenParams&amp; Params, <span class="keywordtype">int</span> Difficulty);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#acb17bc4accc14fb3d00a3aab9db3d822">ShowMatrix</a> (<span class="keyword">const</span> <a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp; Mat, SColorSet&amp; ColorSet);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="namespace_chase_game.html#a1b0d964656a1a14bacc9f316a78c0d46">MoveToken</a> (<a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp; Mat, <span class="keywordtype">char</span> Move, SPlayerPos &amp; Pos, <span class="keyword">const</span> SPlayerKeys&amp; KeyCodes);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespace_chase_game_html_a1b0d964656a1a14bacc9f316a78c0d46"><div class="ttname"><a href="namespace_chase_game.html#a1b0d964656a1a14bacc9f316a78c0d46">ChaseGame::MoveToken</a></div><div class="ttdeci">char MoveToken(CMatrix &amp;Mat, char Move, SPlayerPos &amp;Pos, const SPlayerKeys &amp;KeyCodes)</div><div class="ttdoc">Move a token in the game matrix. </div><div class="ttdef"><b>Definition:</b> map.cxx:145</div></div>
-<div class="ttc" id="namespace_chase_game_html_aa29dad756d93bb9f091073fcd5eab908"><div class="ttname"><a href="namespace_chase_game.html#aa29dad756d93bb9f091073fcd5eab908">ChaseGame::MatForm</a></div><div class="ttdeci">void MatForm(CMatrix &amp;Mat, array&lt; bool, 9 &gt; Tab, unsigned y, unsigned x)</div><div class="ttdoc">Generate a random shape in the map. </div><div class="ttdef"><b>Definition:</b> map.cxx:28</div></div>
-<div class="ttc" id="namespace_chase_game_html_a22a6493962ff9e0343c1f68fb0fa7956"><div class="ttname"><a href="namespace_chase_game.html#a22a6493962ff9e0343c1f68fb0fa7956">ChaseGame::ShowMatrix</a></div><div class="ttdeci">void ShowMatrix(const CMatrix &amp;Mat)</div><div class="ttdoc">Displays game matrix. </div><div class="ttdef"><b>Definition:</b> map.cxx:179</div></div>
+<div class="ttc" id="namespace_chase_game_html_a5b00d5d3acd009bc9e2e315180e25825"><div class="ttname"><a href="namespace_chase_game.html#a5b00d5d3acd009bc9e2e315180e25825">ChaseGame::GenMap</a></div><div class="ttdeci">void GenMap(CMatrix &amp;Mat, SMapGenParams &amp;Params, int Difficulty)</div><div class="ttdoc">Creates game matrix from the parameters and config file. </div><div class="ttdef"><b>Definition:</b> map.cxx:48</div></div>
 <div class="ttc" id="globals_8hxx_html"><div class="ttname"><a href="globals_8hxx.html">globals.hxx</a></div><div class="ttdoc">Defines global constants and variables for the ChaseGame namespace. </div></div>
+<div class="ttc" id="namespace_chase_game_html_acb17bc4accc14fb3d00a3aab9db3d822"><div class="ttname"><a href="namespace_chase_game.html#acb17bc4accc14fb3d00a3aab9db3d822">ChaseGame::ShowMatrix</a></div><div class="ttdeci">void ShowMatrix(const CMatrix &amp;Mat, SColorSet &amp;ColorSet)</div><div class="ttdoc">Displays game matrix. </div><div class="ttdef"><b>Definition:</b> map.cxx:174</div></div>
+<div class="ttc" id="namespace_chase_game_html_a469449f9237e59efce3982127366c550"><div class="ttname"><a href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">ChaseGame::CMatrix</a></div><div class="ttdeci">std::vector&lt; CVLine &gt; CMatrix</div><div class="ttdoc">Matrix type. </div><div class="ttdef"><b>Definition:</b> globals.hxx:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 8 2014 18:45:04 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 10 2014 00:09:44 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

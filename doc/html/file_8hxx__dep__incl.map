@@ -1,4 +1,6 @@
-<map id="file.hxx" name="file.hxx">
-<area shape="rect" id="node2" href="$file_8cxx.html" title="File related functions. " alt="" coords="5,80,67,107"/>
-<area shape="rect" id="node3" href="$main_8cxx.html" title="Fichier du tp qui fait un jeu de catch me if you can. " alt="" coords="92,80,167,107"/>
+<map id="C:/Development/IUT/git &#45; Copie/projet/file.hxx" name="C:/Development/IUT/git &#45; Copie/projet/file.hxx">
+<area shape="rect" id="node2" href="$file_8cxx.html" title="File related functions. " alt="" coords="5,109,141,165"/>
+<area shape="rect" id="node3" href="$game_8cxx.html" title="Fonctions du jeu. " alt="" coords="165,109,301,165"/>
+<area shape="rect" id="node4" href="$game_8hxx.html" title="Fonctions du jeu. " alt="" coords="325,109,461,165"/>
+<area shape="rect" id="node5" href="$main_8cxx.html" title="Main file. " alt="" coords="325,213,461,269"/>
 </map>

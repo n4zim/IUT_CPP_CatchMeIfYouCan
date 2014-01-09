@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['Y',['../struct_chase_game_1_1_s_player_pos.html#a0e20d9da2b1da89994a83e8acd72814c',1,'ChaseGame::SPlayerPos']]]
+  ['up',['Up',['../struct_chase_game_1_1_s_player_keys.html#a0153d90bee31d3959e7a79377c4dd927',1,'ChaseGame::SPlayerKeys']]]
 ];

@@ -12,62 +12,80 @@ struct \hyperlink{struct_chase_game_1_1_s_player_keys}{S\-Player\-Keys}
 \begin{DoxyCompactList}\small\item\em Player specific keys. \end{DoxyCompactList}\item 
 struct \hyperlink{struct_chase_game_1_1_s_player_state}{S\-Player\-State}
 \begin{DoxyCompactList}\small\item\em Player state. \end{DoxyCompactList}\item 
-struct \hyperlink{struct_chase_game_1_1_s_game_status_display}{S\-Game\-Status\-Display}
-\item 
+struct \hyperlink{struct_chase_game_1_1_s_color_set}{S\-Color\-Set}
+\begin{DoxyCompactList}\small\item\em Color set to use when displaying the map. \end{DoxyCompactList}\item 
 struct \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status}
 \begin{DoxyCompactList}\small\item\em Contains game configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{typedef std\-::vector$<$ char $>$ {\bfseries C\-V\-Line}}\label{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}
+\hypertarget{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{typedef std\-::vector$<$ char $>$ \hyperlink{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{C\-V\-Line}}\label{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}
 
+\begin{DoxyCompactList}\small\item\em Matrix line type. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_a469449f9237e59efce3982127366c550}{typedef std\-::vector$<$ \hyperlink{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{C\-V\-Line} $>$ \hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix}}\label{namespace_chase_game_a469449f9237e59efce3982127366c550}
+
+\begin{DoxyCompactList}\small\item\em Matrix type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{namespace_chase_game_a469449f9237e59efce3982127366c550}{typedef std\-::vector$<$ C\-V\-Line $>$ {\bfseries C\-Matrix}}\label{namespace_chase_game_a469449f9237e59efce3982127366c550}
-
-\item 
-\hypertarget{namespace_chase_game_a1b3968a11187d602af99b05239720bd3}{typedef std\-::pair$<$ unsigned, \\*
-unsigned $>$ {\bfseries C\-Position}}\label{namespace_chase_game_a1b3968a11187d602af99b05239720bd3}
-
-\end{DoxyCompactItemize}
+enum \hyperlink{namespace_chase_game_a2501a45afa3eb11b10e04d79a8349796}{Langs} \{ {\bfseries L\-A\-N\-G\-\_\-\-F\-R}, 
+{\bfseries L\-A\-N\-G\-\_\-\-E\-N}, 
+{\bfseries L\-A\-N\-G\-\_\-\-E\-S}
+ \}
+\begin{DoxyCompactList}\small\item\em Language codes. \end{DoxyCompactList}\item 
+enum \hyperlink{namespace_chase_game_a5d785ea23167a3b7e44e045097cd457e}{Difficulty\-Levels} \{ {\bfseries D\-I\-F\-F\-L\-V\-L\-\_\-\-E\-A\-S\-Y}, 
+{\bfseries D\-I\-F\-F\-L\-V\-L\-\_\-\-N\-O\-R\-M}, 
+{\bfseries D\-I\-F\-F\-L\-V\-L\-\_\-\-H\-A\-R\-D}, 
+{\bfseries D\-I\-F\-F\-L\-V\-L\-\_\-\-C\-R\-Z\-Y}
+ \}
+\begin{DoxyCompactList}\small\item\em Difficulty levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{namespace_chase_game_a4779af792d3de8e274049bf2019e0343}{\hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} {\bfseries Load\-Map\-Gen\-Config} (const string \&File\-Name)}\label{namespace_chase_game_a4779af792d3de8e274049bf2019e0343}
 
 \item 
-\hypertarget{namespace_chase_game_a82459ef7713cba867b28c4a032641167}{bool {\bfseries Save\-Map\-Config} (const string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} Params)}\label{namespace_chase_game_a82459ef7713cba867b28c4a032641167}
+\hypertarget{namespace_chase_game_a98e8d90127c802c1445266e39966c3fb}{bool {\bfseries Save\-Map\-Config} (const string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Params)}\label{namespace_chase_game_a98e8d90127c802c1445266e39966c3fb}
 
 \item 
 \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \hyperlink{namespace_chase_game_addd460052ec5a5fe3010665ca84b07ec}{Load\-Game\-Config} (const std\-::string \&File\-Name)
 \begin{DoxyCompactList}\small\item\em Loads game configuration. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_a39f8b039151b1a3eef82fdc1c6f52091}{bool {\bfseries Save\-Game\-Config} (const string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)}\label{namespace_chase_game_a39f8b039151b1a3eef82fdc1c6f52091}
+
+\item 
 \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \hyperlink{namespace_chase_game_a9c5b5d91cb4251cae461faa4ace8a0cf}{Load\-Map\-Gen\-Config} (const std\-::string \&File\-Name)
 \begin{DoxyCompactList}\small\item\em Loads parameters from a config file. \end{DoxyCompactList}\item 
-bool \hyperlink{namespace_chase_game_aae169748faa735e395c14f13d2e3d77f}{Save\-Map\-Config} (const std\-::string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} Params)
+bool \hyperlink{namespace_chase_game_a4c62f61c6aac5bf06292aa51294fd211}{Save\-Map\-Config} (const std\-::string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Params)
 \begin{DoxyCompactList}\small\item\em Saves parameters in a config file. \end{DoxyCompactList}\item 
-char \hyperlink{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}{Process\-Input} (C\-Matrix \&Mat, const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
+bool \hyperlink{namespace_chase_game_a561c85a018e34c8baa21f7f500a3c9c7}{Save\-Game\-Config} (const std\-::string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
+\begin{DoxyCompactList}\small\item\em Saves game configuration in a config file. \end{DoxyCompactList}\item 
+char \hyperlink{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}{Process\-Input} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
 \begin{DoxyCompactList}\small\item\em Processes user input. \end{DoxyCompactList}\item 
-bool \hyperlink{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484}{Game\-Loop} (C\-Matrix \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
+bool \hyperlink{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484}{Game\-Loop} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
 \begin{DoxyCompactList}\small\item\em This is the game loop. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_adab063b49bbe754d7cd4992b72da3746}{Init\-Config} (\hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
 \begin{DoxyCompactList}\small\item\em This function inits the config. \end{DoxyCompactList}\item 
 \hypertarget{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{void \hyperlink{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{Start\-Game} ()}\label{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}
 
 \begin{DoxyCompactList}\small\item\em This function starts the game. \end{DoxyCompactList}\item 
-void \hyperlink{namespace_chase_game_aa29dad756d93bb9f091073fcd5eab908}{Mat\-Form} (C\-Matrix \&Mat, array$<$ bool, 9 $>$ Tab, unsigned y, unsigned x)
-\begin{DoxyCompactList}\small\item\em Generate a random shape in the map. \end{DoxyCompactList}\item 
-void \hyperlink{namespace_chase_game_adfaa7677a16626893e1fb0739e50e7c6}{Gen\-Map} (C\-Matrix \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} Params)
+\hypertarget{namespace_chase_game_a9185adb7d1dfecc89b9b9217af3606cd}{void {\bfseries Mat\-Form} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, array$<$ bool, 9 $>$ Tab, unsigned Y, unsigned X)}\label{namespace_chase_game_a9185adb7d1dfecc89b9b9217af3606cd}
+
+\item 
+void \hyperlink{namespace_chase_game_a5b00d5d3acd009bc9e2e315180e25825}{Gen\-Map} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Params, int Difficulty)
 \begin{DoxyCompactList}\small\item\em Creates game matrix from the parameters and config file. \end{DoxyCompactList}\item 
-char \hyperlink{namespace_chase_game_a1b0d964656a1a14bacc9f316a78c0d46}{Move\-Token} (C\-Matrix \&Mat, char Move, \hyperlink{struct_chase_game_1_1_s_player_pos}{S\-Player\-Pos} \&Pos, const \hyperlink{struct_chase_game_1_1_s_player_keys}{S\-Player\-Keys} \&Key\-Codes)
+char \hyperlink{namespace_chase_game_a1b0d964656a1a14bacc9f316a78c0d46}{Move\-Token} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, char Move, \hyperlink{struct_chase_game_1_1_s_player_pos}{S\-Player\-Pos} \&Pos, const \hyperlink{struct_chase_game_1_1_s_player_keys}{S\-Player\-Keys} \&Key\-Codes)
 \begin{DoxyCompactList}\small\item\em Move a token in the game matrix. \end{DoxyCompactList}\item 
-void \hyperlink{namespace_chase_game_a22a6493962ff9e0343c1f68fb0fa7956}{Show\-Matrix} (const C\-Matrix \&Mat)
+void \hyperlink{namespace_chase_game_acb17bc4accc14fb3d00a3aab9db3d822}{Show\-Matrix} (const \hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_color_set}{S\-Color\-Set} \&Color\-Set)
 \begin{DoxyCompactList}\small\item\em Displays game matrix. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a898617fa128716a9f402b6b44bd41c5c}{Mat\-Form} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, std\-::array$<$ bool, 9 $>$ Tab, unsigned y, unsigned x)
+\begin{DoxyCompactList}\small\item\em Generate a random shape in the map. \end{DoxyCompactList}\item 
 \hypertarget{namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6}{void {\bfseries Clear\-Screen} ()}\label{namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6}
 
 \item 
-\hypertarget{namespace_chase_game_a81083415570296b1021ca83364e61759}{void {\bfseries Color} (const int \&coul)}\label{namespace_chase_game_a81083415570296b1021ca83364e61759}
+\hypertarget{namespace_chase_game_a3a120300b1e200a26fe8680a33300283}{void {\bfseries Color} (const int \&Color)}\label{namespace_chase_game_a3a120300b1e200a26fe8680a33300283}
 
 \item 
-\hypertarget{namespace_chase_game_a5e628c83ea3d70df1a49dd2906a43ecc}{void {\bfseries Background\-Color} (const int \&coul)}\label{namespace_chase_game_a5e628c83ea3d70df1a49dd2906a43ecc}
+\hypertarget{namespace_chase_game_ad2dbfd93f4fd5725ab396d5dfa78a0c4}{void {\bfseries Background\-Color} (const int \&Color)}\label{namespace_chase_game_ad2dbfd93f4fd5725ab396d5dfa78a0c4}
 
 \item 
 \hypertarget{namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a}{char {\bfseries Get\-Input} ()}\label{namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a}
@@ -88,12 +106,15 @@ void \hyperlink{namespace_chase_game_a22a6493962ff9e0343c1f68fb0fa7956}{Show\-Ma
 \hypertarget{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}{const int \hyperlink{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}{K\-Col\-Token\-P2} = C\-L\-R\-\_\-\-B\-L\-U\-E}\label{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}
 
 \begin{DoxyCompactList}\small\item\em Color value representing player two. \end{DoxyCompactList}\item 
-\hypertarget{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{const char \hyperlink{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{K\-Empty} = '.'}\label{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}
+\hypertarget{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{const char \hyperlink{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{K\-Empty} = ' '}\label{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}
 
 \begin{DoxyCompactList}\small\item\em Character representing voidness. \end{DoxyCompactList}\item 
 \hypertarget{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}{const char \hyperlink{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}{K\-Obstacle} = '\#'}\label{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}
 
-\begin{DoxyCompactList}\small\item\em Obstacles in the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Character representing obstacles and walls. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_a12d6411bb9a72150acba6060bb1587e1}{const char \hyperlink{namespace_chase_game_a12d6411bb9a72150acba6060bb1587e1}{K\-Cancelled} = '0'}\label{namespace_chase_game_a12d6411bb9a72150acba6060bb1587e1}
+
+\begin{DoxyCompactList}\small\item\em Character sent when a move is not allowed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -118,10 +139,6 @@ This is the game loop.
 {\em Mat} & Game Matrix \\
 \hline
 {\em Map\-Gen\-Params} & Map generator parameters \\
-\hline
-{\em Pos\-P1} & Player 1 position \\
-\hline
-{\em Pos\-P2} & Player 2 position \\
 \hline
 {\em Config} & Game configuration \\
 \hline
@@ -153,14 +170,15 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_adfaa7677a16626893e1fb0739e50e7c6}{\index{Chase\-Game@{Chase\-Game}!Gen\-Map@{Gen\-Map}}
+\hypertarget{namespace_chase_game_a5b00d5d3acd009bc9e2e315180e25825}{\index{Chase\-Game@{Chase\-Game}!Gen\-Map@{Gen\-Map}}
 \index{Gen\-Map@{Gen\-Map}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Gen\-Map}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Gen\-Map (
 \begin{DoxyParamCaption}
 \item[{C\-Matrix \&}]{Mat, }
-\item[{S\-Map\-Gen\-Params}]{Params}
+\item[{S\-Map\-Gen\-Params \&}]{Params, }
+\item[{int}]{Difficulty}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_adfaa7677a16626893e1fb0739e50e7c6}
+)}}\label{namespace_chase_game_a5b00d5d3acd009bc9e2e315180e25825}
 
 
 Creates game matrix from the parameters and config file. 
@@ -174,22 +192,11 @@ Creates game matrix from the parameters and config file.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=346pt]{namespace_chase_game_adfaa7677a16626893e1fb0739e50e7c6_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
 Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_adfaa7677a16626893e1fb0739e50e7c6_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a5b00d5d3acd009bc9e2e315180e25825_icgraph}
 \end{center}
 \end{figure}
 
@@ -210,17 +217,6 @@ This function inits the config.
 {\em Config} & Game config struct \\
 \hline
 \end{DoxyParams}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_adab063b49bbe754d7cd4992b72da3746_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{namespace_chase_game_addd460052ec5a5fe3010665ca84b07ec}{\index{Chase\-Game@{Chase\-Game}!Load\-Game\-Config@{Load\-Game\-Config}}
 \index{Load\-Game\-Config@{Load\-Game\-Config}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Load\-Game\-Config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-Game\-Status} Chase\-Game\-::\-Load\-Game\-Config (
@@ -233,8 +229,19 @@ Here is the caller graph for this function\-:\nopagebreak
 Loads game configuration. 
 
 \begin{DoxyReturn}{Returns}
-Game configuration structure 
+Game configuration structure loaded from file or default config 
 \end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_chase_game_addd460052ec5a5fe3010665ca84b07ec_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{namespace_chase_game_a9c5b5d91cb4251cae461faa4ace8a0cf}{\index{Chase\-Game@{Chase\-Game}!Load\-Map\-Gen\-Config@{Load\-Map\-Gen\-Config}}
 \index{Load\-Map\-Gen\-Config@{Load\-Map\-Gen\-Config}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Load\-Map\-Gen\-Config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-Map\-Gen\-Params} Chase\-Game\-::\-Load\-Map\-Gen\-Config (
@@ -251,16 +258,19 @@ Loads parameters from a config file.
 {\em File\-Name} & Config filename \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespace_chase_game_aa29dad756d93bb9f091073fcd5eab908}{\index{Chase\-Game@{Chase\-Game}!Mat\-Form@{Mat\-Form}}
+\begin{DoxyReturn}{Returns}
+Map generator parametors loaded from file or default config 
+\end{DoxyReturn}
+\hypertarget{namespace_chase_game_a898617fa128716a9f402b6b44bd41c5c}{\index{Chase\-Game@{Chase\-Game}!Mat\-Form@{Mat\-Form}}
 \index{Mat\-Form@{Mat\-Form}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Mat\-Form}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Mat\-Form (
 \begin{DoxyParamCaption}
 \item[{C\-Matrix \&}]{Mat, }
-\item[{array$<$ bool, 9 $>$}]{Tab, }
+\item[{std\-::array$<$ bool, 9 $>$}]{Tab, }
 \item[{unsigned}]{y, }
 \item[{unsigned}]{x}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_aa29dad756d93bb9f091073fcd5eab908}
+)}}\label{namespace_chase_game_a898617fa128716a9f402b6b44bd41c5c}
 
 
 Generate a random shape in the map. 
@@ -276,17 +286,6 @@ Generate a random shape in the map.
 {\em x} & The x position \\
 \hline
 \end{DoxyParams}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_aa29dad756d93bb9f091073fcd5eab908_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{namespace_chase_game_a1b0d964656a1a14bacc9f316a78c0d46}{\index{Chase\-Game@{Chase\-Game}!Move\-Token@{Move\-Token}}
 \index{Move\-Token@{Move\-Token}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Move\-Token}]{\setlength{\rightskip}{0pt plus 5cm}char Chase\-Game\-::\-Move\-Token (
@@ -308,6 +307,8 @@ Move a token in the game matrix.
 {\em Move} & Move code \\
 \hline
 {\em Pos} & Token position \\
+\hline
+{\em Key\-Codes} & Player specific key codes for movement \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -343,15 +344,13 @@ Processes user input.
 \hline
 {\em Input} & input given \\
 \hline
-{\em Pos\-P1} & Player 1 position \\
-\hline
-{\em Pos\-P2} & Player 2 position \\
-\hline
 {\em Config} & Game configuration \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Char 
+Chararcter representing the replaced charachter while moving 
+
+K\-Cancelled if the move was cancelled 
 \end{DoxyReturn}
 
 
@@ -375,14 +374,38 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_aae169748faa735e395c14f13d2e3d77f}{\index{Chase\-Game@{Chase\-Game}!Save\-Map\-Config@{Save\-Map\-Config}}
+\hypertarget{namespace_chase_game_a561c85a018e34c8baa21f7f500a3c9c7}{\index{Chase\-Game@{Chase\-Game}!Save\-Game\-Config@{Save\-Game\-Config}}
+\index{Save\-Game\-Config@{Save\-Game\-Config}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Save\-Game\-Config}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-Save\-Game\-Config (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{File\-Name, }
+\item[{S\-Game\-Status \&}]{Config}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_a561c85a018e34c8baa21f7f500a3c9c7}
+
+
+Saves game configuration in a config file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em File\-Name} & Config filename \\
+\hline
+{\em Config} & Config to write in the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if write was successfull 
+
+false if write error 
+\end{DoxyReturn}
+\hypertarget{namespace_chase_game_a4c62f61c6aac5bf06292aa51294fd211}{\index{Chase\-Game@{Chase\-Game}!Save\-Map\-Config@{Save\-Map\-Config}}
 \index{Save\-Map\-Config@{Save\-Map\-Config}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Save\-Map\-Config}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-Save\-Map\-Config (
 \begin{DoxyParamCaption}
 \item[{const std\-::string \&}]{File\-Name, }
-\item[{S\-Map\-Gen\-Params}]{Params}
+\item[{S\-Map\-Gen\-Params \&}]{Params}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_aae169748faa735e395c14f13d2e3d77f}
+)}}\label{namespace_chase_game_a4c62f61c6aac5bf06292aa51294fd211}
 
 
 Saves parameters in a config file. 
@@ -399,13 +422,14 @@ true if write was successfull,
 
 false if write error 
 \end{DoxyReturn}
-\hypertarget{namespace_chase_game_a22a6493962ff9e0343c1f68fb0fa7956}{\index{Chase\-Game@{Chase\-Game}!Show\-Matrix@{Show\-Matrix}}
+\hypertarget{namespace_chase_game_acb17bc4accc14fb3d00a3aab9db3d822}{\index{Chase\-Game@{Chase\-Game}!Show\-Matrix@{Show\-Matrix}}
 \index{Show\-Matrix@{Show\-Matrix}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Show\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Show\-Matrix (
 \begin{DoxyParamCaption}
-\item[{const C\-Matrix \&}]{Mat}
+\item[{const C\-Matrix \&}]{Mat, }
+\item[{S\-Color\-Set \&}]{Color\-Set}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_a22a6493962ff9e0343c1f68fb0fa7956}
+)}}\label{namespace_chase_game_acb17bc4accc14fb3d00a3aab9db3d822}
 
 
 Displays game matrix. 
@@ -414,6 +438,8 @@ Displays game matrix.
 \begin{DoxyParams}{Parameters}
 {\em Mat} & Game matrix \\
 \hline
+{\em Color\-Set} & Colors to use \\
+\hline
 \end{DoxyParams}
 
 
@@ -421,7 +447,7 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_a22a6493962ff9e0343c1f68fb0fa7956_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_acb17bc4accc14fb3d00a3aab9db3d822_icgraph}
 \end{center}
 \end{figure}
 

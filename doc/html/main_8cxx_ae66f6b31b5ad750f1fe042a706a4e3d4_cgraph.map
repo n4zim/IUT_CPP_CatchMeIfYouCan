@@ -1,10 +1,9 @@
 <map id="main" name="main">
 <area shape="rect" id="node2" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="104,81,269,108"/>
-<area shape="rect" id="node3" href="$namespace_chase_game.html#adab063b49bbe754d7cd4992b72da3746" title="This function inits the config. " alt="" coords="323,5,477,32"/>
-<area shape="rect" id="node4" href="$namespace_chase_game.html#adfaa7677a16626893e1fb0739e50e7c6" title="Creates game matrix from the parameters and config file. " alt="" coords="325,56,475,83"/>
-<area shape="rect" id="node6" href="$namespace_chase_game.html#a2bf846fb0618a485e9054b26555ed484" title="This is the game loop. " alt="" coords="317,157,483,184"/>
-<area shape="rect" id="node7" href="$namespace_chase_game.html#a22a6493962ff9e0343c1f68fb0fa7956" title="Displays game matrix. " alt="" coords="535,107,705,133"/>
-<area shape="rect" id="node5" href="$namespace_chase_game.html#aa29dad756d93bb9f091073fcd5eab908" title="Generate a random shape in the map. " alt="" coords="543,56,697,83"/>
-<area shape="rect" id="node8" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="531,157,709,184"/>
-<area shape="rect" id="node9" href="$namespace_chase_game.html#a1b0d964656a1a14bacc9f316a78c0d46" title="Move a token in the game matrix. " alt="" coords="758,157,925,184"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#addd460052ec5a5fe3010665ca84b07ec" title="Loads game configuration. " alt="" coords="318,5,519,32"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a5b00d5d3acd009bc9e2e315180e25825" title="Creates game matrix from the parameters and config file. " alt="" coords="343,56,494,83"/>
+<area shape="rect" id="node5" href="$namespace_chase_game.html#a2bf846fb0618a485e9054b26555ed484" title="This is the game loop. " alt="" coords="336,157,501,184"/>
+<area shape="rect" id="node6" href="$namespace_chase_game.html#acb17bc4accc14fb3d00a3aab9db3d822" title="Displays game matrix. " alt="" coords="572,107,743,133"/>
+<area shape="rect" id="node7" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="568,157,747,184"/>
+<area shape="rect" id="node8" href="$namespace_chase_game.html#a1b0d964656a1a14bacc9f316a78c0d46" title="Move a token in the game matrix. " alt="" coords="795,157,962,184"/>
 </map>

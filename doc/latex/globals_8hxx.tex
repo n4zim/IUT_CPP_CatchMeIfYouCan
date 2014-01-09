@@ -1,5 +1,5 @@
-\hypertarget{globals_8hxx}{\section{globals.\-hxx File Reference}
-\label{globals_8hxx}\index{globals.\-hxx@{globals.\-hxx}}
+\hypertarget{globals_8hxx}{\section{C\-:/\-Development/\-I\-U\-T/git -\/ Copie/projet/globals.hxx File Reference}
+\label{globals_8hxx}\index{C\-:/\-Development/\-I\-U\-T/git -\/ Copie/projet/globals.\-hxx@{C\-:/\-Development/\-I\-U\-T/git -\/ Copie/projet/globals.\-hxx}}
 }
 
 
@@ -35,8 +35,8 @@ struct \hyperlink{struct_chase_game_1_1_s_player_keys}{Chase\-Game\-::\-S\-Playe
 \begin{DoxyCompactList}\small\item\em Player specific keys. \end{DoxyCompactList}\item 
 struct \hyperlink{struct_chase_game_1_1_s_player_state}{Chase\-Game\-::\-S\-Player\-State}
 \begin{DoxyCompactList}\small\item\em Player state. \end{DoxyCompactList}\item 
-struct \hyperlink{struct_chase_game_1_1_s_game_status_display}{Chase\-Game\-::\-S\-Game\-Status\-Display}
-\item 
+struct \hyperlink{struct_chase_game_1_1_s_color_set}{Chase\-Game\-::\-S\-Color\-Set}
+\begin{DoxyCompactList}\small\item\em Color set to use when displaying the map. \end{DoxyCompactList}\item 
 struct \hyperlink{struct_chase_game_1_1_s_game_status}{Chase\-Game\-::\-S\-Game\-Status}
 \begin{DoxyCompactList}\small\item\em Contains game configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Namespaces}
@@ -47,16 +47,26 @@ struct \hyperlink{struct_chase_game_1_1_s_game_status}{Chase\-Game\-::\-S\-Game\
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{typedef std\-::vector$<$ char $>$ {\bfseries Chase\-Game\-::\-C\-V\-Line}}\label{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}
+\hypertarget{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{typedef std\-::vector$<$ char $>$ \hyperlink{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{Chase\-Game\-::\-C\-V\-Line}}\label{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}
 
+\begin{DoxyCompactList}\small\item\em Matrix line type. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_a469449f9237e59efce3982127366c550}{typedef std\-::vector$<$ C\-V\-Line $>$ \hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{Chase\-Game\-::\-C\-Matrix}}\label{namespace_chase_game_a469449f9237e59efce3982127366c550}
+
+\begin{DoxyCompactList}\small\item\em Matrix type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{namespace_chase_game_a469449f9237e59efce3982127366c550}{typedef std\-::vector$<$ C\-V\-Line $>$ {\bfseries Chase\-Game\-::\-C\-Matrix}}\label{namespace_chase_game_a469449f9237e59efce3982127366c550}
-
-\item 
-\hypertarget{namespace_chase_game_a1b3968a11187d602af99b05239720bd3}{typedef std\-::pair$<$ unsigned, \\*
-unsigned $>$ {\bfseries Chase\-Game\-::\-C\-Position}}\label{namespace_chase_game_a1b3968a11187d602af99b05239720bd3}
-
-\end{DoxyCompactItemize}
+enum \hyperlink{namespace_chase_game_a2501a45afa3eb11b10e04d79a8349796}{Chase\-Game\-::\-Langs} \{ {\bfseries L\-A\-N\-G\-\_\-\-F\-R}, 
+{\bfseries L\-A\-N\-G\-\_\-\-E\-N}, 
+{\bfseries L\-A\-N\-G\-\_\-\-E\-S}
+ \}
+\begin{DoxyCompactList}\small\item\em Language codes. \end{DoxyCompactList}\item 
+enum \hyperlink{namespace_chase_game_a5d785ea23167a3b7e44e045097cd457e}{Chase\-Game\-::\-Difficulty\-Levels} \{ {\bfseries D\-I\-F\-F\-L\-V\-L\-\_\-\-E\-A\-S\-Y}, 
+{\bfseries D\-I\-F\-F\-L\-V\-L\-\_\-\-N\-O\-R\-M}, 
+{\bfseries D\-I\-F\-F\-L\-V\-L\-\_\-\-H\-A\-R\-D}, 
+{\bfseries D\-I\-F\-F\-L\-V\-L\-\_\-\-C\-R\-Z\-Y}
+ \}
+\begin{DoxyCompactList}\small\item\em Difficulty levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -72,12 +82,15 @@ unsigned $>$ {\bfseries Chase\-Game\-::\-C\-Position}}\label{namespace_chase_gam
 \hypertarget{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}{const int \hyperlink{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}{Chase\-Game\-::\-K\-Col\-Token\-P2} = C\-L\-R\-\_\-\-B\-L\-U\-E}\label{namespace_chase_game_a72a7e46de0167b9219b10c0c388b3c98}
 
 \begin{DoxyCompactList}\small\item\em Color value representing player two. \end{DoxyCompactList}\item 
-\hypertarget{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{const char \hyperlink{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{Chase\-Game\-::\-K\-Empty} = '.'}\label{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}
+\hypertarget{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{const char \hyperlink{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{Chase\-Game\-::\-K\-Empty} = ' '}\label{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}
 
 \begin{DoxyCompactList}\small\item\em Character representing voidness. \end{DoxyCompactList}\item 
 \hypertarget{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}{const char \hyperlink{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}{Chase\-Game\-::\-K\-Obstacle} = '\#'}\label{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}
 
-\begin{DoxyCompactList}\small\item\em Obstacles in the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Character representing obstacles and walls. \end{DoxyCompactList}\item 
+\hypertarget{namespace_chase_game_a12d6411bb9a72150acba6060bb1587e1}{const char \hyperlink{namespace_chase_game_a12d6411bb9a72150acba6060bb1587e1}{Chase\-Game\-::\-K\-Cancelled} = '0'}\label{namespace_chase_game_a12d6411bb9a72150acba6060bb1587e1}
+
+\begin{DoxyCompactList}\small\item\em Character sent when a move is not allowed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}

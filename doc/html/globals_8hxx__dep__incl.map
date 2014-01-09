@@ -1,9 +1,11 @@
-<map id="globals.hxx" name="globals.hxx">
-<area shape="rect" id="node2" href="$file_8cxx.html" title="File related functions. " alt="" coords="5,155,67,181"/>
-<area shape="rect" id="node3" href="$file_8hxx.html" title="file.cxx prototypes " alt="" coords="51,80,113,107"/>
-<area shape="rect" id="node4" href="$main_8cxx.html" title="Fichier du tp qui fait un jeu de catch me if you can. " alt="" coords="115,155,189,181"/>
-<area shape="rect" id="node5" href="$map_8hxx_source.html" title="map.hxx" alt="" coords="189,80,261,107"/>
-<area shape="rect" id="node6" href="$map_8cxx.html" title="Map related function. " alt="" coords="285,80,357,107"/>
-<area shape="rect" id="node7" href="$unix_8cxx.html" title="Defines unix&#45;only functions. " alt="" coords="382,80,452,107"/>
-<area shape="rect" id="node8" href="$windows_8cxx.html" title="Windows specific functions. " alt="" coords="477,80,573,107"/>
+<map id="C:/Development/IUT/git &#45; Copie/projet/globals.hxx" name="C:/Development/IUT/git &#45; Copie/projet/globals.hxx">
+<area shape="rect" id="node2" href="$file_8cxx.html" title="File related functions. " alt="" coords="5,213,141,269"/>
+<area shape="rect" id="node3" href="$file_8hxx.html" title="file.cxx prototypes " alt="" coords="161,109,297,165"/>
+<area shape="rect" id="node4" href="$game_8cxx.html" title="Fonctions du jeu. " alt="" coords="165,213,301,269"/>
+<area shape="rect" id="node5" href="$game_8hxx.html" title="Fonctions du jeu. " alt="" coords="348,213,484,269"/>
+<area shape="rect" id="node6" href="$main_8cxx.html" title="Main file. " alt="" coords="412,317,548,373"/>
+<area shape="rect" id="node7" href="$map_8hxx_source.html" title="C:/Development/IUT\l/git &#45; Copie/projet\l/map.hxx" alt="" coords="321,109,457,165"/>
+<area shape="rect" id="node8" href="$map_8cxx.html" title="Map related function. " alt="" coords="583,109,719,165"/>
+<area shape="rect" id="node9" href="$unix_8cxx.html" title="Defines unix&#45;only functions. " alt="" coords="743,109,879,165"/>
+<area shape="rect" id="node10" href="$windows_8cxx.html" title="Windows specific functions. " alt="" coords="903,109,1039,165"/>
 </map>

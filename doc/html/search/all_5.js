@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['kcancelled',['KCancelled',['../namespace_chase_game.html#a12d6411bb9a72150acba6060bb1587e1',1,'ChaseGame']]],
   ['kcoltokenp1',['KColTokenP1',['../namespace_chase_game.html#a344097ba56ffd5b44cb5bdefb810aa36',1,'ChaseGame']]],
   ['kcoltokenp2',['KColTokenP2',['../namespace_chase_game.html#a72a7e46de0167b9219b10c0c388b3c98',1,'ChaseGame']]],
   ['kempty',['KEmpty',['../namespace_chase_game.html#aa036d4de40188ba2e1aa36ab6cfaf1da',1,'ChaseGame']]],

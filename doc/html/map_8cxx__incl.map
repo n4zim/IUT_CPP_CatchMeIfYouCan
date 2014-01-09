@@ -1,5 +1,5 @@
-<map id="map.cxx" name="map.cxx">
-<area shape="rect" id="node7" href="$globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="293,80,381,107"/>
-<area shape="rect" id="node8" href="$windows_8hxx_source.html" title="windows.hxx" alt="" coords="325,155,421,181"/>
-<area shape="rect" id="node9" href="$unix_8hxx_source.html" title="unix.hxx" alt="" coords="446,155,516,181"/>
+<map id="C:/Development/IUT/git &#45; Copie/projet/map.cxx" name="C:/Development/IUT/git &#45; Copie/projet/map.cxx">
+<area shape="rect" id="node7" href="$globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="293,109,381,136"/>
+<area shape="rect" id="node8" href="$windows_8hxx.html" title="Defines Windows specific functions. " alt="" coords="325,184,421,211"/>
+<area shape="rect" id="node9" href="$unix_8hxx.html" title="Defines UNIX specific functions. " alt="" coords="446,184,516,211"/>
 </map>
