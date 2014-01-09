@@ -21,20 +21,21 @@ namespace ChaseGame {
 	 * \param y The y position
 	 * \param x The x position
 	 */
-	void MatForm (CMatrix & Mat, array <bool,9> Tab, unsigned y, unsigned x);
+	void MatForm (CMatrix & Mat, std::array <bool,9> Tab, unsigned y, unsigned x);
 
 	/*!
 	 * \brief Creates game matrix from the parameters and config file
 	 * \param Mat Game matrix
 	 * \param Params Map parametes
 	 */
-	void GenMap (CMatrix & Mat, SMapGenParams Params);
+	void GenMap (CMatrix & Mat, SMapGenParams& Params, int Difficulty);
 	
 	/*!
 	 * \brief Displays game matrix
 	 * \param Mat Game matrix
+	 * \param ColorSet Colors to use
 	 */
-	void ShowMatrix (const CMatrix & Mat);
+	void ShowMatrix (const CMatrix & Mat, SColorSet& ColorSet);
 
 
 	/*!
@@ -42,6 +43,7 @@ namespace ChaseGame {
 	 * \param Mat Game matrix
 	 * \param Move Move code
 	 * \param Pos Token position
+	 * \param KeyCodes Player specific key codes for movement
 	 * \return Replaced char
 	 */
 	char MoveToken (CMatrix & Mat, char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes);
