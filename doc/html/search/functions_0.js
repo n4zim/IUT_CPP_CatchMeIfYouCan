@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gameloop',['GameLoop',['../namespace_chase_game.html#a2bf846fb0618a485e9054b26555ed484',1,'ChaseGame']]],
-  ['genmap',['GenMap',['../namespace_chase_game.html#a5b00d5d3acd009bc9e2e315180e25825',1,'ChaseGame']]]
+  ['backgroundcolor',['BackgroundColor',['../namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4',1,'ChaseGame']]]
 ];

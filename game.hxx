@@ -3,7 +3,7 @@
  * \file game.hxx
  * \author 
  * \date 09/01/14
- * \brief Fonctions du jeu
+ * \brief game.cxx function prototypes
  * \version 1 
  */
 

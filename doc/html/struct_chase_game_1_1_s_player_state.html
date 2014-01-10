@@ -24,6 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="doc_chasegame_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Chase game
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,36 +110,114 @@ Collaboration diagram for ChaseGame::SPlayerState:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acd7030969c414605901e551171078bb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd7030969c414605901e551171078bb1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#acd7030969c414605901e551171078bb1">CanPassThroughWalls</a></td></tr>
-<tr class="memdesc:acd7030969c414605901e551171078bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can a player bypass wall collision check ? <br/></td></tr>
+<tr class="memitem:acd7030969c414605901e551171078bb1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#acd7030969c414605901e551171078bb1">CanPassThroughWalls</a></td></tr>
+<tr class="memdesc:acd7030969c414605901e551171078bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can a player bypass wall collision check ?  <a href="#acd7030969c414605901e551171078bb1">More...</a><br/></td></tr>
 <tr class="separator:acd7030969c414605901e551171078bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a68b95a4255f2a543675f88b00847b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a68b95a4255f2a543675f88b00847b4"></a>
-<a class="el" href="struct_chase_game_1_1_s_player_pos.html">SPlayerPos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#a0a68b95a4255f2a543675f88b00847b4">Position</a></td></tr>
-<tr class="memdesc:a0a68b95a4255f2a543675f88b00847b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player position. <br/></td></tr>
+<tr class="memitem:a0a68b95a4255f2a543675f88b00847b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chase_game_1_1_s_player_pos.html">SPlayerPos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#a0a68b95a4255f2a543675f88b00847b4">Position</a></td></tr>
+<tr class="memdesc:a0a68b95a4255f2a543675f88b00847b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player position.  <a href="#a0a68b95a4255f2a543675f88b00847b4">More...</a><br/></td></tr>
 <tr class="separator:a0a68b95a4255f2a543675f88b00847b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fc9ce0322ed28ff9c401983d91c69f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fc9ce0322ed28ff9c401983d91c69f2"></a>
-<a class="el" href="struct_chase_game_1_1_s_player_keys.html">SPlayerKeys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#a3fc9ce0322ed28ff9c401983d91c69f2">Keys</a></td></tr>
-<tr class="memdesc:a3fc9ce0322ed28ff9c401983d91c69f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keys specific to player. <br/></td></tr>
+<tr class="memitem:a3fc9ce0322ed28ff9c401983d91c69f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chase_game_1_1_s_player_keys.html">SPlayerKeys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#a3fc9ce0322ed28ff9c401983d91c69f2">Keys</a></td></tr>
+<tr class="memdesc:a3fc9ce0322ed28ff9c401983d91c69f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keys specific to player.  <a href="#a3fc9ce0322ed28ff9c401983d91c69f2">More...</a><br/></td></tr>
 <tr class="separator:a3fc9ce0322ed28ff9c401983d91c69f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59e6b76a6e5303dbeef6a6b4fbca95d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac59e6b76a6e5303dbeef6a6b4fbca95d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#ac59e6b76a6e5303dbeef6a6b4fbca95d">Score</a></td></tr>
-<tr class="memdesc:ac59e6b76a6e5303dbeef6a6b4fbca95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player score. <br/></td></tr>
+<tr class="memitem:ac59e6b76a6e5303dbeef6a6b4fbca95d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#ac59e6b76a6e5303dbeef6a6b4fbca95d">Score</a></td></tr>
+<tr class="memdesc:ac59e6b76a6e5303dbeef6a6b4fbca95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player score.  <a href="#ac59e6b76a6e5303dbeef6a6b4fbca95d">More...</a><br/></td></tr>
 <tr class="separator:ac59e6b76a6e5303dbeef6a6b4fbca95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2574de666d4744daefd7824b1c3c809f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2574de666d4744daefd7824b1c3c809f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#a2574de666d4744daefd7824b1c3c809f">IsChasing</a></td></tr>
-<tr class="memdesc:a2574de666d4744daefd7824b1c3c809f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player role : chasing or being chased. <br/></td></tr>
+<tr class="memitem:a2574de666d4744daefd7824b1c3c809f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chase_game_1_1_s_player_state.html#a2574de666d4744daefd7824b1c3c809f">IsChasing</a></td></tr>
+<tr class="memdesc:a2574de666d4744daefd7824b1c3c809f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player role : chasing or being chased.  <a href="#a2574de666d4744daefd7824b1c3c809f">More...</a><br/></td></tr>
 <tr class="separator:a2574de666d4744daefd7824b1c3c809f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Player state. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+
+<p>Definition at line <a class="el" href="globals_8hxx_source.html#l00093">93</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="acd7030969c414605901e551171078bb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChaseGame::SPlayerState::CanPassThroughWalls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Can a player bypass wall collision check ? </p>
+
+<p>Definition at line <a class="el" href="globals_8hxx_source.html#l00095">95</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2574de666d4744daefd7824b1c3c809f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChaseGame::SPlayerState::IsChasing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Player role : chasing or being chased. </p>
+
+<p>Definition at line <a class="el" href="globals_8hxx_source.html#l00103">103</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fc9ce0322ed28ff9c401983d91c69f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chase_game_1_1_s_player_keys.html">SPlayerKeys</a> ChaseGame::SPlayerState::Keys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Keys specific to player. </p>
+
+<p>Definition at line <a class="el" href="globals_8hxx_source.html#l00099">99</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a68b95a4255f2a543675f88b00847b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chase_game_1_1_s_player_pos.html">SPlayerPos</a> ChaseGame::SPlayerState::Position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Player position. </p>
+
+<p>Definition at line <a class="el" href="globals_8hxx_source.html#l00097">97</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac59e6b76a6e5303dbeef6a6b4fbca95d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ChaseGame::SPlayerState::Score</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Player score. </p>
+
+<p>Definition at line <a class="el" href="globals_8hxx_source.html#l00101">101</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>C:/Development/IUT/git - Copie/projet/<a class="el" href="globals_8hxx_source.html">globals.hxx</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 10 2014 00:59:43 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 10 2014 01:29:34 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

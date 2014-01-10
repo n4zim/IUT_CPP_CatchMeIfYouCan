@@ -3,7 +3,7 @@
  * \file game.cxx
  * \author 
  * \date 09/01/14
- * \brief Fonctions du jeu
+ * \brief Gameplay related functions
  * \version 1 
  */
 

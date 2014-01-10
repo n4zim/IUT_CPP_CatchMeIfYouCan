@@ -1,8 +1,8 @@
 /*!
- * \file map.cxx
+ * \file map.hxx
  * \author 
  * \date 08/01/14
- * \brief Map related functions prototypes
+ * \brief map.cxx function prototypes
  * \version 1
  */
 
@@ -14,28 +14,30 @@
 #define map_h
 
 namespace ChaseGame {
+
 	/*!
 	 * \brief Generate a random shape in the map
 	 * \param Mat Game matrix
 	 * \param Tab Shape
-	 * \param y The y position
-	 * \param x The x position
+	 * \param Y The y position
+	 * \param X The x position
 	 */
-	void MatForm (CMatrix & Mat, std::array <bool,9> Tab, unsigned y, unsigned x);
+	void MatShape (CMatrix & Mat, const std::array <bool, 9> Tab, const unsigned Y, const unsigned X);
 
 	/*!
 	 * \brief Creates game matrix from the parameters and config file
 	 * \param Mat Game matrix
 	 * \param Params Map parametes
+	 * \param Difficulty Game difficulty (higher => more obstacles)
 	 */
-	void GenMap (CMatrix & Mat, SMapGenParams& Params, int Difficulty);
+	void GenMap (CMatrix & Mat, const SMapGenParams& Params, const int Difficulty);
 	
 	/*!
 	 * \brief Displays game matrix
 	 * \param Mat Game matrix
 	 * \param ColorSet Colors to use
 	 */
-	void ShowMatrix (const CMatrix & Mat, SColorSet& ColorSet);
+	void ShowMatrix (const CMatrix & Mat, const SColorSet& ColorSet);
 
 
 	/*!
@@ -46,7 +48,7 @@ namespace ChaseGame {
 	 * \param KeyCodes Player specific key codes for movement
 	 * \return Replaced char
 	 */
-	char MoveToken (CMatrix & Mat, char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes);
+	char MoveToken (CMatrix & Mat, const char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes);
 }
 
 #endif

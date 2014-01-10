@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['initconfig',['InitConfig',['../namespace_chase_game.html#adab063b49bbe754d7cd4992b72da3746',1,'ChaseGame']]]
+  ['clearscreen',['ClearScreen',['../namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6',1,'ChaseGame']]],
+  ['color',['Color',['../namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283',1,'ChaseGame']]]
 ];

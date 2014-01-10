@@ -3,7 +3,7 @@
  * \file unix.hxx
  * \author 
  * \date 08/01/14
- * \brief Defines UNIX specific functions
+ * \brief unix.cxx function prototypes
  * \version 1
  *
  * Defines UNIX specific functions

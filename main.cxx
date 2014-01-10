@@ -6,6 +6,7 @@
  * \brief Main file
  * \version 1
  *
+ * \mainpage
  * Modified catch me if you can game
  * Remastered by your group with new rules.
  * 
@@ -14,6 +15,7 @@
  * 
  * Keys are configurable in .mapconfig
  * Maps options are configurable in .gameconfig
+ *
  */
 
 #include <time.h> 

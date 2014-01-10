@@ -24,6 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="doc_chasegame_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Chase game
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,21 +103,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> KDefaultBackCol = 0;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> ClearScreen ();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6">ClearScreen</a> ();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> Color (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; Color);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283">Color</a> (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283">Color</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> BackgroundColor (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; Color);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4">BackgroundColor</a> (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283">Color</a>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">char</span> GetInput ();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">char</span> <a class="code" href="namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a">GetInput</a> ();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    #endif</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespace_chase_game_html_a3a120300b1e200a26fe8680a33300283"><div class="ttname"><a href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283">ChaseGame::Color</a></div><div class="ttdeci">void Color(const int &amp;Color)</div><div class="ttdef"><b>Definition:</b> <a href="unix_8cxx_source.html#l00029">unix.cxx:29</a></div></div>
+<div class="ttc" id="namespace_chase_game_html_afa8eec677de5433e0e886da19f7e9c4a"><div class="ttname"><a href="namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a">ChaseGame::GetInput</a></div><div class="ttdeci">char GetInput()</div><div class="ttdef"><b>Definition:</b> <a href="unix_8cxx_source.html#l00038">unix.cxx:38</a></div></div>
+<div class="ttc" id="namespace_chase_game_html_ad2dbfd93f4fd5725ab396d5dfa78a0c4"><div class="ttname"><a href="namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4">ChaseGame::BackgroundColor</a></div><div class="ttdeci">void BackgroundColor(const int &amp;Color)</div><div class="ttdef"><b>Definition:</b> <a href="unix_8cxx_source.html#l00033">unix.cxx:33</a></div></div>
+<div class="ttc" id="namespace_chase_game_html_a3a7382465f6f23fe77cde4e589fb80d6"><div class="ttname"><a href="namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6">ChaseGame::ClearScreen</a></div><div class="ttdeci">void ClearScreen()</div><div class="ttdef"><b>Definition:</b> <a href="unix_8cxx_source.html#l00025">unix.cxx:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 10 2014 00:59:43 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 10 2014 01:29:34 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

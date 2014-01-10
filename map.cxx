@@ -24,7 +24,7 @@
 using namespace std;
 
 namespace ChaseGame {
-	void MatForm (CMatrix & Mat, array <bool, 9> Tab, unsigned Y, unsigned X) {
+	void MatShape (CMatrix & Mat, const array <bool, 9> Tab, const unsigned Y, const unsigned X) {
 		// Shape figures coordinates
 		array <int, 9> CoordY = {0, 0, 0, 1, 1, 1, 2, 2, 2}; // c++ 11 {r,o,c,k,s} \o/
 		array <int, 9> CoordX = {0, 1, 2, 0, 1, 2, 0, 1, 2};
@@ -43,10 +43,10 @@ namespace ChaseGame {
 		for (unsigned i = 0; i < SpaceY.size(); i++) {
 			Mat[Y + SpaceY[i]][X + SpaceX[i]] = KEmpty;
 		}
-	} // MatForm ()
+	} // MatShape ()
 
 
-	void GenMap (CMatrix & Mat, SMapGenParams& Params, int Difficulty) {
+	void GenMap (CMatrix & Mat, const SMapGenParams& Params, const int Difficulty) {
 		// Generate an empty array
 		for (unsigned i = 0; i < Params.MapHeight; ++i) {
 			CVLine Line;
@@ -95,42 +95,42 @@ namespace ChaseGame {
 
 			// Place the shape (STEP 3)
 
-			// Generate a random shape number [1-7] and create it using MatForm
+			// Generate a random shape number [1-7] and create it using MatShape
            	switch (rand() % 7 + 1) {
            		// Shape : +
                 case 1:
-                    MatForm (Mat, { 0, 1, 0, 
+                    MatShape (Mat, { 0, 1, 0, 
                     		        1, 1, 1, 
                     		        0, 1, 0 }, Y, X);
                     break;
                 // Shape : |
                 case 2:
-                    MatForm (Mat, { 0, 1, 0, 
+                    MatShape (Mat, { 0, 1, 0, 
                     		        0, 1, 0, 
                     		        0, 1, 0 }, Y, X);
                     break;
                 // Shape : L
                 case 3:
-                    MatForm (Mat, { 1, 0, 0, 
+                    MatShape (Mat, { 1, 0, 0, 
                     		        1, 0, 0, 
                     		        1, 1, 1 }, Y, X);
                     break;
                 // Shape : Dot
                 case 4:
                 case 6:
-                    MatForm (Mat, { 0, 0, 0, 
+                    MatShape (Mat, { 0, 0, 0, 
                     		        0, 1, 0, 
                     		        0, 0, 0 }, Y, X);
                     break;
                 // Shape : |-
                 case 5:
-                    MatForm (Mat, { 1, 0, 0, 
+                    MatShape (Mat, { 1, 0, 0, 
                     		        1, 1, 1, 
                     		        1, 0, 0 }, Y, X);
                     break;
                 // Shape : +
                 case 7:
-                    MatForm (Mat, { 0, 1, 0, 
+                    MatShape (Mat, { 0, 1, 0, 
                     		        1, 1, 1, 
                     		        0, 1, 0 }, Y, X);
                     break;
@@ -143,7 +143,7 @@ namespace ChaseGame {
 	} // GenMap ()
 
 
-	char MoveToken (CMatrix & Mat, char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes) {
+	char MoveToken (CMatrix & Mat, const char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes) {
 		char replacedChar = KEmpty;
 		SPlayerPos NewPos = Pos;
 
@@ -172,11 +172,11 @@ namespace ChaseGame {
 	} // MoveToken ()
 
 
-	void ShowMatrix (const CMatrix & Mat, SColorSet& ColorSet) {
+	void ShowMatrix (const CMatrix & Mat, const SColorSet& ColorSet) {
 		// Reset screen colors and clear it
 		BackgroundColor (CLR_RESET);
 		Color (CLR_RESET);
-		//ClearScreen ();
+		ClearScreen ();
 
 		unsigned Width = 0;
 		if (Mat.size () > 0)

@@ -60,8 +60,6 @@ namespace ChaseGame {
 				Params.PosPlayer2.X = Value;
 			else if (VarId == "PosP1.Y:")
 				Params.PosPlayer2.Y = Value;
-
-			cout << VarId << " " << Value << endl;
 		}  
 
 		// Returning the parameters

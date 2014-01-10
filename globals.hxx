@@ -40,14 +40,8 @@ namespace ChaseGame {
 	//! Character representing player one
 	const char KTokenPlayer1 = 'X';
 	
-	//! Color value representing player one
-	const int KColTokenP1 = CLR_RED;
-	
 	//! Character representing player two
 	const char KTokenPlayer2 = 'O';
-	
-	//! Color value representing player two
-	const int KColTokenP2 = CLR_BLUE;
 	
 	//! Character representing voidness
 	const char KEmpty = ' ';

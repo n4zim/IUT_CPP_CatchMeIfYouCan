@@ -7,15 +7,17 @@
 
 var indexSectionsWithContent =
 {
-  0: "cdfgiklmoprstuwxy",
+  0: "bcdfgiklmoprstuwxy",
   1: "s",
   2: "c",
-  3: "fgmuw",
-  4: "gilmops",
+  3: "fgmruw",
+  4: "bcgilmops",
   5: "cdiklmprsuxy",
   6: "c",
   7: "dl",
-  8: "t"
+  8: "dl",
+  9: "gu",
+  10: "t"
 };
 
 var indexSectionNames =
@@ -28,7 +30,9 @@ var indexSectionNames =
   5: "variables",
   6: "typedefs",
   7: "enums",
-  8: "pages"
+  8: "enumvalues",
+  9: "defines",
+  10: "pages"
 };
 
 function convertToId(search)

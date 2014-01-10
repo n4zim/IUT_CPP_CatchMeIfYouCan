@@ -3,7 +3,7 @@
  * \file windows.hxx
  * \author Josua Gonzalez
  * \date 07/01/14
- * \brief Defines Windows specific functions
+ * \brief windows.hxx function prototypes
  * \version 1
  *
  * Defines Windows specific functions

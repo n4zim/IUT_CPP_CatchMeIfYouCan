@@ -2,7 +2,7 @@
  * \file file.hxx
  * \author 
  * \date 08/01/14
- * \brief file.cxx prototypes
+ * \brief file.cxx function prototypes
  * \version 1
  */
 

@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['main',['main',['../main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cxx']]],
-  ['main_2ecxx',['main.cxx',['../main_8cxx.html',1,'']]],
-  ['map_2ecxx',['map.cxx',['../map_8cxx.html',1,'']]],
-  ['mapheight',['MapHeight',['../struct_chase_game_1_1_s_map_gen_params.html#a772c51dab66176dfe733e4e20cbf85d4',1,'ChaseGame::SMapGenParams']]],
-  ['mapwidth',['MapWidth',['../struct_chase_game_1_1_s_map_gen_params.html#a0897aeaa1a1a3a66697a6b441ca8c2de',1,'ChaseGame::SMapGenParams']]],
-  ['matform',['MatForm',['../namespace_chase_game.html#a898617fa128716a9f402b6b44bd41c5c',1,'ChaseGame']]],
-  ['movetoken',['MoveToken',['../namespace_chase_game.html#a1b0d964656a1a14bacc9f316a78c0d46',1,'ChaseGame']]]
+  ['lang',['Lang',['../struct_chase_game_1_1_s_game_status.html#a93c5db2ceb07569075406e865949b4d9',1,'ChaseGame::SGameStatus']]],
+  ['lang_5fen',['LANG_EN',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a8d86c92b659a6ebac045d0a20e3fba0d',1,'ChaseGame']]],
+  ['lang_5fes',['LANG_ES',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a2458ded06b17611b5fb00d6a095a4dd2',1,'ChaseGame']]],
+  ['lang_5ffr',['LANG_FR',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a4259ad53ebc5f91f2615cf5a5f59bece',1,'ChaseGame']]],
+  ['langs',['Langs',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796',1,'ChaseGame']]],
+  ['left',['Left',['../struct_chase_game_1_1_s_player_keys.html#ab6c4f7e03fa43cd9443dcbd16a5e3250',1,'ChaseGame::SPlayerKeys']]],
+  ['loadgameconfig',['LoadGameConfig',['../namespace_chase_game.html#addd460052ec5a5fe3010665ca84b07ec',1,'ChaseGame']]],
+  ['loadmapgenconfig',['LoadMapGenConfig',['../namespace_chase_game.html#a4779af792d3de8e274049bf2019e0343',1,'ChaseGame::LoadMapGenConfig(const string &amp;FileName)'],['../namespace_chase_game.html#a9c5b5d91cb4251cae461faa4ace8a0cf',1,'ChaseGame::LoadMapGenConfig(const std::string &amp;FileName)']]]
 ];

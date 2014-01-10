@@ -1,5 +1,9 @@
 <map id="ChaseGame::GameLoop" name="ChaseGame::GameLoop">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#acb17bc4accc14fb3d00a3aab9db3d822" title="Displays game matrix. " alt="" coords="223,5,393,32"/>
-<area shape="rect" id="node3" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="219,56,397,83"/>
-<area shape="rect" id="node4" href="$namespace_chase_game.html#a1b0d964656a1a14bacc9f316a78c0d46" title="Move a token in the game matrix. " alt="" coords="446,56,613,83"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="223,56,393,83"/>
+<area shape="rect" id="node6" href="$namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="ChaseGame::GetInput" alt="" coords="233,107,383,133"/>
+<area shape="rect" id="node7" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="219,157,397,184"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="ChaseGame::BackgroundColor" alt="" coords="446,5,647,32"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="ChaseGame::Color" alt="" coords="481,56,613,83"/>
+<area shape="rect" id="node5" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="ChaseGame::ClearScreen" alt="" coords="460,107,633,133"/>
+<area shape="rect" id="node8" href="$namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="463,157,630,184"/>
 </map>
