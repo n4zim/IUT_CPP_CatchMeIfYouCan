@@ -13,6 +13,8 @@
 #include <limits>
 #include <time.h> 
 #include <stdlib.h>
+#include <map>
+#include <SFML/Audio.hpp>
 
 #include "globals.hxx"
 #include "unix.hxx" 
@@ -41,10 +43,11 @@ namespace ChaseGame {
 	 * \param Mat Game Matrix
 	 * \param MapGenParams Map generator parameters
 	 * \param Config Game configuration
+	 * \param Music music used in the game
 	 * \return true If game is running
 	 * \return false If game is ended
 	 */
-	bool GameLoop (CMatrix& Mat, SMapGenParams& MapGenParams, SGameStatus& Config);
+	bool GameLoop (CMatrix& Mat, SMapGenParams& MapGenParams, SGameStatus& Config, map <string, sf::Music&>& Music);
 
 	/*!
 	 * \brief This function starts the game
