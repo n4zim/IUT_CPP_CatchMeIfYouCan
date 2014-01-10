@@ -48,12 +48,6 @@ namespace ChaseGame {
 	bool GameLoop (CMatrix& Mat, SMapGenParams& MapGenParams, SGameStatus& Config);
 
 	/*!
-	 * \brief This function inits the config
-	 * \param  Config Game config struct
-	 */
-	void InitConfig (SGameStatus& Config);
-
-	/*!
 	 * \brief This function starts the game
 	 */
 	void StartGame ();
