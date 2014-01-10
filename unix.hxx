@@ -39,7 +39,7 @@ namespace ChaseGame {
 
 	/*!
 	 * \brief Calls usleep
-	 * \param Usec Microseconds to sleep
+	 * \param MSec Microseconds to sleep
 	 */
 	void Sleep (int MSec);
 }

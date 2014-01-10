@@ -18,7 +18,8 @@
 namespace ChaseGame {	
 	/*!
 	 * \brief Sets music volumes according to the game state
-	 * \param Values from the GameMusicState enum
+	 * \param Tracks Music map
+	 * \param GameState from the GameMusicState enum
 	 */
 	void SetGameState(std::map <std::string, sf::Music&>& Tracks, int GameState);
 }
