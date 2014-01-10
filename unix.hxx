@@ -42,6 +42,12 @@ namespace ChaseGame {
 	 * \param MSec Microseconds to sleep
 	 */
 	void Sleep (int MSec);
+
+	/*!
+	 * \brief This function pauses the program
+	 */
+	void Pause ();
+
 }
 
 #endif
