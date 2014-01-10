@@ -20,21 +20,22 @@
 #include <string> 
 
 /*! \namespace ChaseGame
+ * \brief Main namespace
  * Project namespace for the game
+ * Contains all the funcitons, structs, enums and constansts related to the game
  */
 namespace ChaseGame {
 	//! Matrix line type
 	typedef std::vector<char> CVLine;
+
 	//! Matrix type
 	typedef std::vector<CVLine> CMatrix;
-
-	// Color value are defined in windows.hxx or unix.hxx
 
 	//! Language codes
 	enum Langs { LANG_FR, LANG_EN, LANG_ES };
 
 	//! Difficulty levels
-	enum DifficultyLevels { DIFFLVL_EASY, DIFFLVL_NORM, DIFFLVL_HARD, DIFFLVL_CRZY};
+	enum DifficultyLevels { DIFFLVL_EASY, DIFFLVL_NORM, DIFFLVL_HARD, DIFFLVL_CRZY };
 
 	//! Unix color values
 	enum ConsoleColors { CLR_BLACK=30, CLR_RED=31, CLR_GREEN=32, CLR_YELLOW=33, CLR_BLUE=34, CLR_MAGENTA=35, CLR_CYAN=36, CLR_WHITE=37, CLR_GREY=30, CLR_RESET=0 };
