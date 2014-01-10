@@ -35,7 +35,7 @@ namespace ChaseGame {
 	enum Langs { LANG_FR, LANG_EN, LANG_ES };
 
 	//! Difficulty levels
-	enum DifficultyLevels { DIFFLVL_EASY, DIFFLVL_NORM, DIFFLVL_HARD, DIFFLVL_CRZY };
+	enum DifficultyLevels { DIFFLVL_EASY=0, DIFFLVL_NORM=1, DIFFLVL_HARD=2, DIFFLVL_CRZY=3 };
 
 	//! Unix color values
 	enum ConsoleColors { CLR_BLACK=30, CLR_RED=31, CLR_GREEN=32, CLR_YELLOW=33, CLR_BLUE=34, CLR_MAGENTA=35, CLR_CYAN=36, CLR_WHITE=37, CLR_GREY=30, CLR_RESET=0 };
@@ -57,6 +57,9 @@ namespace ChaseGame {
 
 	//! Character sent when a move is not allowed
 	const char KCancelled = '0';
+
+	//! Character sent when the user wants to exit the game (escape)
+	const char KExit = 'Q';
 
 	//! Defines a position
 	struct SPlayerPos
@@ -145,6 +148,8 @@ namespace ChaseGame {
 		unsigned MvLeft;
 		//! Game lang
 		int Lang;
+		//! Contains last pressed keys
+		std::vector <char> CharHistory;
 	};
 }
 

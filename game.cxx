@@ -27,56 +27,64 @@
 using namespace std;
 
 namespace ChaseGame {
+	void StoreCharHistory (const char Input, SGameStatus& GameStatus) {
+		if(GameStatus.CharHistory.size () > 1 && GameStatus.CharHistory[GameStatus.CharHistory.size() - 1] == Input)
+			return; // Do not save duplicates
 
-	char ProcessInput (CMatrix& Mat, const char Input, SGameStatus& GameStatus) {
-		char MovedChar = KCancelled;
-		if(Input == GameStatus.P1.Keys.Up || Input == GameStatus.P1.Keys.Down || Input == GameStatus.P1.Keys.Left || Input == GameStatus.P1.Keys.Right) {
-			MovedChar = MoveToken(Mat, Input, GameStatus.P1.Position, GameStatus.P1.Keys);
-			if(GameStatus.P1.IsChasing) 
-				--GameStatus.MvLeft;
-		} else if(Input == GameStatus.P2.Keys.Up || Input == GameStatus.P2.Keys.Down || Input == GameStatus.P2.Keys.Left || Input == GameStatus.P2.Keys.Right) {
-			MovedChar = MoveToken(Mat, Input, GameStatus.P2.Position, GameStatus.P2.Keys);
-			if(GameStatus.P2.IsChasing) 
-				--GameStatus.MvLeft;
+		if(GameStatus.CharHistory.size () < 6) {
+			GameStatus.CharHistory.push_back (Input);
+		} else {
+			GameStatus.CharHistory.erase (GameStatus.CharHistory.begin ());	
+			GameStatus.CharHistory.push_back (Input);
 		}
 
+		if(GameStatus.CharHistory[0] == 66 && GameStatus.CharHistory[1] == 65 && GameStatus.CharHistory[2] == 78 && GameStatus.CharHistory[3] == 65 && GameStatus.CharHistory[4] == 78 && GameStatus.CharHistory[5] == 65)
+			SuperBanana ();	
+	}
+
+	char ProcessInput (CMatrix& Mat, const char Input, SGameStatus& GameStatus) {
+		StoreCharHistory(Input, GameStatus);
+		char MovedChar = KCancelled;
+
+		if (Input == GameStatus.P1.Keys.Up || Input == GameStatus.P1.Keys.Down || Input == GameStatus.P1.Keys.Left || Input == GameStatus.P1.Keys.Right) {
+			MovedChar = MoveToken(Mat, Input, GameStatus.P1.Position, GameStatus.P1.Keys);
+			if(GameStatus.P1.IsChasing && MovedChar != KCancelled) 
+				--GameStatus.MvLeft;
+		} else if (Input == GameStatus.P2.Keys.Up || Input == GameStatus.P2.Keys.Down || Input == GameStatus.P2.Keys.Left || Input == GameStatus.P2.Keys.Right) {
+			MovedChar = MoveToken(Mat, Input, GameStatus.P2.Position, GameStatus.P2.Keys);
+			if(GameStatus.P2.IsChasing && MovedChar != KCancelled) 
+				--GameStatus.MvLeft;
+		} else if (Input == GameStatus.KeyExit) {
+			return KExit;
+		}
 		return MovedChar;
 	} // ProcessInput ()
 
 	bool GameRoundLoop (CMatrix& Mat, SMapGenParams& MapGenParams, SGameStatus& GameStatus) {
 		ShowMatrix (Mat, GameStatus.ColorSet);
-		// cout << "input: " << endl;
 
 		char Input = toupper (GetInput ());
 
-		/*
-		// Be able to quit the game
-		if(Input == GameStatus.KeyExit)
-			return false; // */
-
 		char c = ProcessInput(Mat, Input, GameStatus);
+
+		for(char C: GameStatus.CharHistory) {
+			cout << "-" << int(C) << endl;
+		}
 
 		if(c == KTokenPlayer1 || c == KTokenPlayer2) {
 			return false;
+		} else if (c == KExit) {
+			ClearScreen ();
+			exit (0);
 		}
 
 		return true;
 	} // GameRoundLoop ()
 
-	void Pause () {
-		Color(CLR_RESET);
-
-		cout << "\n\n\nPress enter to continue";
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        if(!cin) {
-            cin.clear();
-        }
-	} // Pause ()
-
 	bool GameLoop (SMapGenParams& MapGenParams, SGameStatus& GameStatus, map <string, sf::Music&>& Music) {
 		CMatrix Mat;
 
-		GenMap (Mat, MapGenParams, DIFFLVL_NORM);
+		GenMap (Mat, MapGenParams, rand () % 4);
 		GameStatus.P1.Position = MapGenParams.PosPlayer1;
 		GameStatus.P2.Position = MapGenParams.PosPlayer2; 
 
@@ -96,7 +104,7 @@ namespace ChaseGame {
 		}
 
 		ClearScreen ();
-		SetGameState(Music, GMS_STARTING);
+		SetGameState(Music, GMS_STARTING, true);
 
 		Color (CLR_RESET);
 		cout << "\n               [ROUND " << GameStatus.Round + 1 << "]";
@@ -111,15 +119,15 @@ namespace ChaseGame {
 		cout << "}" << endl;
 
 		Pause ();
-		SetGameState(Music, GMS_INGAME);
+		SetGameState (Music, GMS_INGAME, true);
 
-		GameStatus.MvLeft = (rand() % 7 + 5) * 10;
+		GameStatus.MvLeft = (rand () % 40 + 10) * 10;
 
 		// The round starts here
 		while (true) {
 			ClearScreen ();
-			Color(ColorH);
-			cout << Hunter << " moves left : " << GameStatus.MvLeft << endl;
+			Color (ColorH);
+			cout << Hunter << " hunts " << Prey << " ! [" << GameStatus.MvLeft << " moves]" << endl;
 
 			if (GameStatus.MvLeft == 0) // if there is no more movements, we stop the game.
 				break;
@@ -131,7 +139,7 @@ namespace ChaseGame {
 		// Round end
 
 		ClearScreen ();
-		SetGameState(Music, GMS_STARTING);
+		SetGameState (Music, GMS_STARTING, true);
 
 		bool HunterWon = false;
 		
@@ -164,7 +172,7 @@ namespace ChaseGame {
 		ShowMatrix (Mat, GameStatus.ColorSet);
 
 		Pause ();
-		SetGameState(Music, GMS_TITLE);
+		SetGameState(Music, GMS_TITLE, true);
 
 		++GameStatus.Round;
 
@@ -193,32 +201,18 @@ namespace ChaseGame {
 		GameStatus.MaxRounds = 5;
 
 		// SOUND INITIALISATION
-		//map <string, sf::Sound> Music = LoadMusic ();
-		//;
 
 		// MUSIC LOADING
 		sf::Music Track1A, Track1B, Track1C, Track2;
-		Track1A.OpenFromFile("sound/bgm_trackA-1.ogg");
-		Track1B.OpenFromFile("sound/bgm_trackA-2.ogg");
-		Track1C.OpenFromFile("sound/bgm_trackA-2.ogg");
-		Track2.OpenFromFile("sound/bgm_trackB.ogg");
-		Track1A.SetLoop(true);
-		Track1B.SetLoop(true);
-		Track1C.SetLoop(true);
-		Track2.SetLoop(true);
-		Track1A.Play();
-		Track1B.Play();
-		Track1C.Play();
-		Track2.Play();
-
+		InitSongs (Track1A, Track1B, Track1C, Track2);
 		map <string, sf::Music&> Tracks = {{ "A1", Track1A }, { "B1", Track1B }, { "C1", Track1C }, { "2", Track2 }};
 
-		SetGameState(Tracks, GMS_TITLE);
+		SetGameState (Tracks, GMS_TITLE, false);
 
 		// Title screen
 		ClearScreen ();
 		cout << "Écran titre avec menu" << endl;
-		GetInput ();
+		Pause ();
 
 		// MAIN LIFE LOOP
 		while(GameLoop (MapGenParams, GameStatus, Tracks)) {
