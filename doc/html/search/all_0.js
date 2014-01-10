@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['backgroundcolor',['BackgroundColor',['../namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4',1,'ChaseGame']]]
+  ['audio_2ecxx',['audio.cxx',['../audio_8cxx.html',1,'']]],
+  ['audio_2ehxx',['audio.hxx',['../audio_8hxx.html',1,'']]]
 ];

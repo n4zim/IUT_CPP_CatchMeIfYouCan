@@ -36,10 +36,34 @@ enum \hyperlink{namespace_chase_game_a5d785ea23167a3b7e44e045097cd457e}{Difficul
 \hyperlink{namespace_chase_game_a5d785ea23167a3b7e44e045097cd457ea67fccff53bbaeaa47737530842f5c4f5}{D\-I\-F\-F\-L\-V\-L\-\_\-\-H\-A\-R\-D}, 
 \hyperlink{namespace_chase_game_a5d785ea23167a3b7e44e045097cd457ea6c71b45deb89801d0e11e674d21e3e51}{D\-I\-F\-F\-L\-V\-L\-\_\-\-C\-R\-Z\-Y}
  \}
-\begin{DoxyCompactList}\small\item\em Difficulty levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Difficulty levels. \end{DoxyCompactList}\item 
+enum \hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7b}{Console\-Colors} \{ \\*
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba7c17af5d1ff079f2a505dd61f9e1ddae}{C\-L\-R\-\_\-\-B\-L\-A\-C\-K} =30, 
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baea24ff932a53ca9fd904e2b607407c0a}{C\-L\-R\-\_\-\-R\-E\-D} =31, 
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba9f550f868a825b9a3be5a7d0dbcc4852}{C\-L\-R\-\_\-\-G\-R\-E\-E\-N} =32, 
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba9ac15128d0c53aad431c8d1da78cf17a}{C\-L\-R\-\_\-\-Y\-E\-L\-L\-O\-W} =33, 
+\\*
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba206cb9e67be830b771bbf44488c40d66}{C\-L\-R\-\_\-\-B\-L\-U\-E} =34, 
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba6ce8de58df1a149d734ebcdbf711fed9}{C\-L\-R\-\_\-\-M\-A\-G\-E\-N\-T\-A} =35, 
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baa190fadb3645da6bca096b377cda2542}{C\-L\-R\-\_\-\-C\-Y\-A\-N} =36, 
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baefa8ce8fa562fcb596842176d5b1222d}{C\-L\-R\-\_\-\-W\-H\-I\-T\-E} =37, 
+\\*
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba1d11a3c17a5e12280a482d5d39c12f09}{C\-L\-R\-\_\-\-G\-R\-E\-Y} =30, 
+\hyperlink{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7bab062e50df9f6e90f6c4cce85d5d420df}{C\-L\-R\-\_\-\-R\-E\-S\-E\-T} =0
+ \}
+\begin{DoxyCompactList}\small\item\em Unix color values. \end{DoxyCompactList}\item 
+enum \hyperlink{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42}{Game\-Music\-State} \{ \hyperlink{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42ae2cef0894718493a1e334a948734fe65}{G\-M\-S\-\_\-\-T\-I\-T\-L\-E}, 
+\hyperlink{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42a9c9cc6c997ce9d50efd2f3d815323b11}{G\-M\-S\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G}, 
+\hyperlink{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42a575913ea08f1bd0667c644624b56102f}{G\-M\-S\-\_\-\-I\-N\-G\-A\-M\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em Music state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \hyperlink{namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477}{Set\-Game\-State} (map$<$ string, sf\-::\-Music \& $>$ \&Tracks, int Game\-State)
+\item 
+void \hyperlink{namespace_chase_game_a5aeec1309079c5c64aec0fd24a4b17c1}{Set\-Game\-State} (std\-::map$<$ std\-::string, sf\-::\-Music \& $>$ \&Tracks, int Game\-State)
+\begin{DoxyCompactList}\small\item\em Sets music volumes according to the game state. \end{DoxyCompactList}\item 
 \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \hyperlink{namespace_chase_game_a4779af792d3de8e274049bf2019e0343}{Load\-Map\-Gen\-Config} (const string \&File\-Name)
 \item 
 bool \hyperlink{namespace_chase_game_a98e8d90127c802c1445266e39966c3fb}{Save\-Map\-Config} (const string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Params)
@@ -60,11 +84,11 @@ bool \hyperlink{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}{Game\-Ro
 \item 
 void \hyperlink{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c}{Pause} ()
 \item 
-bool \hyperlink{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1}{Game\-Loop} (\hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status)
+bool \hyperlink{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}{Game\-Loop} (\hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status, map$<$ string, sf\-::\-Music \& $>$ \&Music)
 \item 
 void \hyperlink{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{Start\-Game} ()
 \begin{DoxyCompactList}\small\item\em This function starts the game. \end{DoxyCompactList}\item 
-bool \hyperlink{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484}{Game\-Loop} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
+bool \hyperlink{namespace_chase_game_a978204f0ec269a6fa5f43bb523d84e57}{Game\-Loop} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config, map$<$ string, sf\-::\-Music \& $>$ \&Music)
 \begin{DoxyCompactList}\small\item\em This is the game loop. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_ac12626138d0e2c49669eba73ffb4e4b7}{Mat\-Shape} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const array$<$ bool, 9 $>$ Tab, const unsigned Y, const unsigned X)
 \item 
@@ -77,15 +101,15 @@ void \hyperlink{namespace_chase_game_a871395f1f12e55eaa3d341b8ef2cbb78}{Show\-Ma
 void \hyperlink{namespace_chase_game_a049d8d8beb22431889ca7ba34cc90871}{Mat\-Shape} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const std\-::array$<$ bool, 9 $>$ Tab, const unsigned Y, const unsigned X)
 \begin{DoxyCompactList}\small\item\em Generate a random shape in the map. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6}{Clear\-Screen} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Clears screen. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a3a120300b1e200a26fe8680a33300283}{Color} (const int \&Color)
-\item 
+\begin{DoxyCompactList}\small\item\em Changes text color. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_ad2dbfd93f4fd5725ab396d5dfa78a0c4}{Background\-Color} (const int \&\hyperlink{namespace_chase_game_a3a120300b1e200a26fe8680a33300283}{Color})
-\item 
+\begin{DoxyCompactList}\small\item\em Changes background color. \end{DoxyCompactList}\item 
 char \hyperlink{namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a}{Get\-Input} ()
-\item 
-void \hyperlink{namespace_chase_game_a5acce7cac4be65807ae1ac55cc56a7ff}{Sleep} (int U\-Sec)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Captures a character from stdin. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a8ca147721cdfaf96ee1f9c5007c27142}{Sleep} (int M\-Sec)
+\begin{DoxyCompactList}\small\item\em Calls usleep. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -114,7 +138,7 @@ Matrix type.
 
 
 
-Definition at line 30 of file globals.\-hxx.
+Definition at line 29 of file globals.\-hxx.
 
 \hypertarget{namespace_chase_game_aa09cf1806d3b1f59d36cfabadeaca6a2}{\index{Chase\-Game@{Chase\-Game}!C\-V\-Line@{C\-V\-Line}}
 \index{C\-V\-Line@{C\-V\-Line}!ChaseGame@{Chase\-Game}}
@@ -125,11 +149,47 @@ Matrix line type.
 
 
 
-Definition at line 28 of file globals.\-hxx.
+Definition at line 27 of file globals.\-hxx.
 
 
 
 \subsection{Enumeration Type Documentation}
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7b}{\index{Chase\-Game@{Chase\-Game}!Console\-Colors@{Console\-Colors}}
+\index{Console\-Colors@{Console\-Colors}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Console\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Chase\-Game\-::\-Console\-Colors}}}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7b}
+
+
+Unix color values. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-L\-R\-\_\-\-B\-L\-A\-C\-K@{C\-L\-R\-\_\-\-B\-L\-A\-C\-K}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-B\-L\-A\-C\-K@{C\-L\-R\-\_\-\-B\-L\-A\-C\-K}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba7c17af5d1ff079f2a505dd61f9e1ddae}{C\-L\-R\-\_\-\-B\-L\-A\-C\-K}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba7c17af5d1ff079f2a505dd61f9e1ddae}
+}]\index{C\-L\-R\-\_\-\-R\-E\-D@{C\-L\-R\-\_\-\-R\-E\-D}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-R\-E\-D@{C\-L\-R\-\_\-\-R\-E\-D}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baea24ff932a53ca9fd904e2b607407c0a}{C\-L\-R\-\_\-\-R\-E\-D}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baea24ff932a53ca9fd904e2b607407c0a}
+}]\index{C\-L\-R\-\_\-\-G\-R\-E\-E\-N@{C\-L\-R\-\_\-\-G\-R\-E\-E\-N}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-G\-R\-E\-E\-N@{C\-L\-R\-\_\-\-G\-R\-E\-E\-N}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba9f550f868a825b9a3be5a7d0dbcc4852}{C\-L\-R\-\_\-\-G\-R\-E\-E\-N}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba9f550f868a825b9a3be5a7d0dbcc4852}
+}]\index{C\-L\-R\-\_\-\-Y\-E\-L\-L\-O\-W@{C\-L\-R\-\_\-\-Y\-E\-L\-L\-O\-W}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-Y\-E\-L\-L\-O\-W@{C\-L\-R\-\_\-\-Y\-E\-L\-L\-O\-W}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba9ac15128d0c53aad431c8d1da78cf17a}{C\-L\-R\-\_\-\-Y\-E\-L\-L\-O\-W}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba9ac15128d0c53aad431c8d1da78cf17a}
+}]\index{C\-L\-R\-\_\-\-B\-L\-U\-E@{C\-L\-R\-\_\-\-B\-L\-U\-E}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-B\-L\-U\-E@{C\-L\-R\-\_\-\-B\-L\-U\-E}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba206cb9e67be830b771bbf44488c40d66}{C\-L\-R\-\_\-\-B\-L\-U\-E}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba206cb9e67be830b771bbf44488c40d66}
+}]\index{C\-L\-R\-\_\-\-M\-A\-G\-E\-N\-T\-A@{C\-L\-R\-\_\-\-M\-A\-G\-E\-N\-T\-A}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-M\-A\-G\-E\-N\-T\-A@{C\-L\-R\-\_\-\-M\-A\-G\-E\-N\-T\-A}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba6ce8de58df1a149d734ebcdbf711fed9}{C\-L\-R\-\_\-\-M\-A\-G\-E\-N\-T\-A}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba6ce8de58df1a149d734ebcdbf711fed9}
+}]\index{C\-L\-R\-\_\-\-C\-Y\-A\-N@{C\-L\-R\-\_\-\-C\-Y\-A\-N}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-C\-Y\-A\-N@{C\-L\-R\-\_\-\-C\-Y\-A\-N}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baa190fadb3645da6bca096b377cda2542}{C\-L\-R\-\_\-\-C\-Y\-A\-N}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baa190fadb3645da6bca096b377cda2542}
+}]\index{C\-L\-R\-\_\-\-W\-H\-I\-T\-E@{C\-L\-R\-\_\-\-W\-H\-I\-T\-E}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-W\-H\-I\-T\-E@{C\-L\-R\-\_\-\-W\-H\-I\-T\-E}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baefa8ce8fa562fcb596842176d5b1222d}{C\-L\-R\-\_\-\-W\-H\-I\-T\-E}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7baefa8ce8fa562fcb596842176d5b1222d}
+}]\index{C\-L\-R\-\_\-\-G\-R\-E\-Y@{C\-L\-R\-\_\-\-G\-R\-E\-Y}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-G\-R\-E\-Y@{C\-L\-R\-\_\-\-G\-R\-E\-Y}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba1d11a3c17a5e12280a482d5d39c12f09}{C\-L\-R\-\_\-\-G\-R\-E\-Y}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7ba1d11a3c17a5e12280a482d5d39c12f09}
+}]\index{C\-L\-R\-\_\-\-R\-E\-S\-E\-T@{C\-L\-R\-\_\-\-R\-E\-S\-E\-T}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!C\-L\-R\-\_\-\-R\-E\-S\-E\-T@{C\-L\-R\-\_\-\-R\-E\-S\-E\-T}}\item[{\em 
+\hypertarget{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7bab062e50df9f6e90f6c4cce85d5d420df}{C\-L\-R\-\_\-\-R\-E\-S\-E\-T}\label{namespace_chase_game_a5acdf639e912d1e78814b7fae21afc7bab062e50df9f6e90f6c4cce85d5d420df}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 40 of file globals.\-hxx.
+
 \hypertarget{namespace_chase_game_a5d785ea23167a3b7e44e045097cd457e}{\index{Chase\-Game@{Chase\-Game}!Difficulty\-Levels@{Difficulty\-Levels}}
 \index{Difficulty\-Levels@{Difficulty\-Levels}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Difficulty\-Levels}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Chase\-Game\-::\-Difficulty\-Levels}}}\label{namespace_chase_game_a5d785ea23167a3b7e44e045097cd457e}
@@ -152,7 +212,29 @@ Difficulty levels.
 \end{Desc}
 
 
-Definition at line 38 of file globals.\-hxx.
+Definition at line 37 of file globals.\-hxx.
+
+\hypertarget{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42}{\index{Chase\-Game@{Chase\-Game}!Game\-Music\-State@{Game\-Music\-State}}
+\index{Game\-Music\-State@{Game\-Music\-State}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Game\-Music\-State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Chase\-Game\-::\-Game\-Music\-State}}}\label{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42}
+
+
+Music state. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{G\-M\-S\-\_\-\-T\-I\-T\-L\-E@{G\-M\-S\-\_\-\-T\-I\-T\-L\-E}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!G\-M\-S\-\_\-\-T\-I\-T\-L\-E@{G\-M\-S\-\_\-\-T\-I\-T\-L\-E}}\item[{\em 
+\hypertarget{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42ae2cef0894718493a1e334a948734fe65}{G\-M\-S\-\_\-\-T\-I\-T\-L\-E}\label{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42ae2cef0894718493a1e334a948734fe65}
+}]\index{G\-M\-S\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G@{G\-M\-S\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!G\-M\-S\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G@{G\-M\-S\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G}}\item[{\em 
+\hypertarget{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42a9c9cc6c997ce9d50efd2f3d815323b11}{G\-M\-S\-\_\-\-S\-T\-A\-R\-T\-I\-N\-G}\label{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42a9c9cc6c997ce9d50efd2f3d815323b11}
+}]\index{G\-M\-S\-\_\-\-I\-N\-G\-A\-M\-E@{G\-M\-S\-\_\-\-I\-N\-G\-A\-M\-E}!Chase\-Game@{Chase\-Game}}\index{Chase\-Game@{Chase\-Game}!G\-M\-S\-\_\-\-I\-N\-G\-A\-M\-E@{G\-M\-S\-\_\-\-I\-N\-G\-A\-M\-E}}\item[{\em 
+\hypertarget{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42a575913ea08f1bd0667c644624b56102f}{G\-M\-S\-\_\-\-I\-N\-G\-A\-M\-E}\label{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42a575913ea08f1bd0667c644624b56102f}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 43 of file globals.\-hxx.
 
 \hypertarget{namespace_chase_game_a2501a45afa3eb11b10e04d79a8349796}{\index{Chase\-Game@{Chase\-Game}!Langs@{Langs}}
 \index{Langs@{Langs}!ChaseGame@{Chase\-Game}}
@@ -174,7 +256,7 @@ Language codes.
 \end{Desc}
 
 
-Definition at line 35 of file globals.\-hxx.
+Definition at line 34 of file globals.\-hxx.
 
 
 
@@ -188,7 +270,16 @@ Definition at line 35 of file globals.\-hxx.
 )}}\label{namespace_chase_game_ad2dbfd93f4fd5725ab396d5dfa78a0c4}
 
 
-Definition at line 34 of file unix.\-cxx.
+Changes background color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Color} & Wanted color \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file unix.\-cxx.
 
 
 
@@ -211,7 +302,11 @@ Here is the caller graph for this function\-:
 )}}\label{namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6}
 
 
-Definition at line 26 of file unix.\-cxx.
+Clears screen. 
+
+
+
+Definition at line 24 of file unix.\-cxx.
 
 
 
@@ -234,7 +329,16 @@ Here is the caller graph for this function\-:
 )}}\label{namespace_chase_game_a3a120300b1e200a26fe8680a33300283}
 
 
-Definition at line 30 of file unix.\-cxx.
+Changes text color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Color} & Wanted color \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file unix.\-cxx.
 
 
 
@@ -248,15 +352,16 @@ Here is the caller graph for this function\-:
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484}{\index{Chase\-Game@{Chase\-Game}!Game\-Loop@{Game\-Loop}}
+\hypertarget{namespace_chase_game_a978204f0ec269a6fa5f43bb523d84e57}{\index{Chase\-Game@{Chase\-Game}!Game\-Loop@{Game\-Loop}}
 \index{Game\-Loop@{Game\-Loop}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Game\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-Game\-Loop (
 \begin{DoxyParamCaption}
 \item[{C\-Matrix \&}]{Mat, }
 \item[{S\-Map\-Gen\-Params \&}]{Map\-Gen\-Params, }
-\item[{S\-Game\-Status \&}]{Config}
+\item[{S\-Game\-Status \&}]{Config, }
+\item[{map$<$ string, sf\-::\-Music \& $>$ \&}]{Music}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484}
+)}}\label{namespace_chase_game_a978204f0ec269a6fa5f43bb523d84e57}
 
 
 This is the game loop. 
@@ -269,23 +374,26 @@ This is the game loop.
 \hline
 {\em Config} & Game configuration \\
 \hline
+{\em Music} & music used in the game \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 true If game is running 
 
 false If game is ended 
 \end{DoxyReturn}
-\hypertarget{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1}{\index{Chase\-Game@{Chase\-Game}!Game\-Loop@{Game\-Loop}}
+\hypertarget{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}{\index{Chase\-Game@{Chase\-Game}!Game\-Loop@{Game\-Loop}}
 \index{Game\-Loop@{Game\-Loop}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Game\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-Game\-Loop (
 \begin{DoxyParamCaption}
 \item[{S\-Map\-Gen\-Params \&}]{Map\-Gen\-Params, }
-\item[{S\-Game\-Status \&}]{Game\-Status}
+\item[{S\-Game\-Status \&}]{Game\-Status, }
+\item[{map$<$ string, sf\-::\-Music \& $>$ \&}]{Music}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1}
+)}}\label{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}
 
 
-Definition at line 73 of file game.\-cxx.
+Definition at line 76 of file game.\-cxx.
 
 
 
@@ -294,7 +402,7 @@ Here is the call graph for this function\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1_cgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0_cgraph}
 \end{center}
 \end{figure}
 
@@ -306,7 +414,7 @@ Here is the caller graph for this function\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0_icgraph}
 \end{center}
 \end{figure}
 
@@ -322,7 +430,7 @@ Here is the caller graph for this function\-:
 )}}\label{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}
 
 
-Definition at line 43 of file game.\-cxx.
+Definition at line 46 of file game.\-cxx.
 
 
 
@@ -372,7 +480,7 @@ Creates game matrix from the parameters and config file.
 \end{DoxyParams}
 
 
-Definition at line 49 of file map.\-cxx.
+Definition at line 48 of file map.\-cxx.
 
 
 
@@ -406,7 +514,14 @@ Here is the caller graph for this function\-:
 )}}\label{namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a}
 
 
-Definition at line 39 of file unix.\-cxx.
+Captures a character from stdin. 
+
+\begin{DoxyReturn}{Returns}
+captured character 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file unix.\-cxx.
 
 
 
@@ -549,7 +664,7 @@ Generate a random shape in the map.
 )}}\label{namespace_chase_game_ac12626138d0e2c49669eba73ffb4e4b7}
 
 
-Definition at line 27 of file map.\-cxx.
+Definition at line 26 of file map.\-cxx.
 
 
 
@@ -593,7 +708,7 @@ Replaced char
 \end{DoxyReturn}
 
 
-Definition at line 146 of file map.\-cxx.
+Definition at line 145 of file map.\-cxx.
 
 
 
@@ -616,7 +731,7 @@ Here is the caller graph for this function\-:
 )}}\label{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c}
 
 
-Definition at line 63 of file game.\-cxx.
+Definition at line 66 of file game.\-cxx.
 
 
 
@@ -671,7 +786,7 @@ K\-Cancelled if the move was cancelled
 \end{DoxyReturn}
 
 
-Definition at line 28 of file game.\-cxx.
+Definition at line 31 of file game.\-cxx.
 
 
 
@@ -790,6 +905,47 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
+\hypertarget{namespace_chase_game_a5aeec1309079c5c64aec0fd24a4b17c1}{\index{Chase\-Game@{Chase\-Game}!Set\-Game\-State@{Set\-Game\-State}}
+\index{Set\-Game\-State@{Set\-Game\-State}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Set\-Game\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Set\-Game\-State (
+\begin{DoxyParamCaption}
+\item[{std\-::map$<$ std\-::string, sf\-::\-Music \& $>$ \&}]{Tracks, }
+\item[{int}]{Game\-State}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_a5aeec1309079c5c64aec0fd24a4b17c1}
+
+
+Sets music volumes according to the game state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Values} & from the Game\-Music\-State enum \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477}{\index{Chase\-Game@{Chase\-Game}!Set\-Game\-State@{Set\-Game\-State}}
+\index{Set\-Game\-State@{Set\-Game\-State}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Set\-Game\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Set\-Game\-State (
+\begin{DoxyParamCaption}
+\item[{map$<$ string, sf\-::\-Music \& $>$ \&}]{Tracks, }
+\item[{int}]{Game\-State}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477}
+
+
+Definition at line 29 of file audio.\-cxx.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{namespace_chase_game_a871395f1f12e55eaa3d341b8ef2cbb78}{\index{Chase\-Game@{Chase\-Game}!Show\-Matrix@{Show\-Matrix}}
 \index{Show\-Matrix@{Show\-Matrix}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Show\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Show\-Matrix (
@@ -811,7 +967,7 @@ Displays game matrix.
 \end{DoxyParams}
 
 
-Definition at line 175 of file map.\-cxx.
+Definition at line 174 of file map.\-cxx.
 
 
 
@@ -837,16 +993,25 @@ Here is the caller graph for this function\-:
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_a5acce7cac4be65807ae1ac55cc56a7ff}{\index{Chase\-Game@{Chase\-Game}!Sleep@{Sleep}}
+\hypertarget{namespace_chase_game_a8ca147721cdfaf96ee1f9c5007c27142}{\index{Chase\-Game@{Chase\-Game}!Sleep@{Sleep}}
 \index{Sleep@{Sleep}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Sleep (
 \begin{DoxyParamCaption}
-\item[{int}]{U\-Sec}
+\item[{int}]{M\-Sec}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_a5acce7cac4be65807ae1ac55cc56a7ff}
+)}}\label{namespace_chase_game_a8ca147721cdfaf96ee1f9c5007c27142}
 
 
-Definition at line 72 of file unix.\-cxx.
+Calls usleep. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Usec} & Microseconds to sleep \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file unix.\-cxx.
 
 \hypertarget{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{\index{Chase\-Game@{Chase\-Game}!Start\-Game@{Start\-Game}}
 \index{Start\-Game@{Start\-Game}!ChaseGame@{Chase\-Game}}
@@ -861,7 +1026,7 @@ This function starts the game.
 
 
 
-Definition at line 173 of file game.\-cxx.
+Definition at line 183 of file game.\-cxx.
 
 
 
@@ -898,7 +1063,7 @@ Character sent when a move is not allowed.
 
 
 
-Definition at line 53 of file globals.\-hxx.
+Definition at line 58 of file globals.\-hxx.
 
 \hypertarget{namespace_chase_game_aa036d4de40188ba2e1aa36ab6cfaf1da}{\index{Chase\-Game@{Chase\-Game}!K\-Empty@{K\-Empty}}
 \index{K\-Empty@{K\-Empty}!ChaseGame@{Chase\-Game}}
@@ -909,7 +1074,7 @@ Character representing voidness.
 
 
 
-Definition at line 47 of file globals.\-hxx.
+Definition at line 52 of file globals.\-hxx.
 
 \hypertarget{namespace_chase_game_ad86181b2050b912dab9d69d2f0bea76e}{\index{Chase\-Game@{Chase\-Game}!K\-Obstacle@{K\-Obstacle}}
 \index{K\-Obstacle@{K\-Obstacle}!ChaseGame@{Chase\-Game}}
@@ -920,7 +1085,7 @@ Character representing obstacles and walls.
 
 
 
-Definition at line 50 of file globals.\-hxx.
+Definition at line 55 of file globals.\-hxx.
 
 \hypertarget{namespace_chase_game_a8452e2d6de618e4ca7a9f76b082b52a4}{\index{Chase\-Game@{Chase\-Game}!K\-Token\-Player1@{K\-Token\-Player1}}
 \index{K\-Token\-Player1@{K\-Token\-Player1}!ChaseGame@{Chase\-Game}}
@@ -931,7 +1096,7 @@ Character representing player one.
 
 
 
-Definition at line 41 of file globals.\-hxx.
+Definition at line 46 of file globals.\-hxx.
 
 \hypertarget{namespace_chase_game_ae27343407c21a8d6e3cf26b736bd5527}{\index{Chase\-Game@{Chase\-Game}!K\-Token\-Player2@{K\-Token\-Player2}}
 \index{K\-Token\-Player2@{K\-Token\-Player2}!ChaseGame@{Chase\-Game}}
@@ -942,5 +1107,5 @@ Character representing player two.
 
 
 
-Definition at line 44 of file globals.\-hxx.
+Definition at line 49 of file globals.\-hxx.
 

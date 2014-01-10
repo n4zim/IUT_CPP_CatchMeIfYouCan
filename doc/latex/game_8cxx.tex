@@ -3,21 +3,25 @@
 }
 
 
-Gameplay related functions.  
+Audio related functions.  
 
 
 {\ttfamily \#include $<$iostream$>$}\\*
 {\ttfamily \#include $<$string$>$}\\*
 {\ttfamily \#include $<$vector$>$}\\*
 {\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
 {\ttfamily \#include $<$time.\-h$>$}\\*
 {\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$S\-F\-M\-L/\-System.\-hpp$>$}\\*
+{\ttfamily \#include $<$S\-F\-M\-L/\-Audio.\-hpp$>$}\\*
 {\ttfamily \#include \char`\"{}globals.\-hxx\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}windows.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}unix.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}file.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}map.\-hxx\char`\"{}}\\*
-Include dependency graph for game.\-cxx\-:\nopagebreak
+{\ttfamily \#include \char`\"{}audio.\-hxx\char`\"{}}\\*
+Include dependency graph for game.\-cxx\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -38,14 +42,16 @@ bool \hyperlink{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}{Chase\-G
 \item 
 void \hyperlink{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c}{Chase\-Game\-::\-Pause} ()
 \item 
-bool \hyperlink{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1}{Chase\-Game\-::\-Game\-Loop} (S\-Map\-Gen\-Params \&Map\-Gen\-Params, S\-Game\-Status \&Game\-Status)
+bool \hyperlink{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}{Chase\-Game\-::\-Game\-Loop} (S\-Map\-Gen\-Params \&Map\-Gen\-Params, S\-Game\-Status \&Game\-Status, map$<$ string, sf\-::\-Music \& $>$ \&Music)
 \item 
 void \hyperlink{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{Chase\-Game\-::\-Start\-Game} ()
 \begin{DoxyCompactList}\small\item\em This function starts the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Gameplay related functions. \begin{DoxyAuthor}{Author}
+Audio related functions. Gameplay related functions.
+
+\begin{DoxyAuthor}{Author}
 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}

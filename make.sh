@@ -1,7 +1,11 @@
 #!/bin/bash
-rm projet
+rm projet *.o
 clear
+
 echo Starting compilation
-g++ --std=c++11 -o projet unix.cxx file.cxx map.cxx game.cxx main.cxx -Wall
-echo Program compiled, starting
+g++ --std=c++11 -c unix.cxx audio.cxx file.cxx map.cxx game.cxx main.cxx -Wall
+
+echo Linking SFML 1.6 library
+g++ --std=c++11 -o projet unix.o audio.o file.o map.o game.o main.o -lsfml-system -lsfml-audio
+
 ./projet

@@ -12,13 +12,17 @@
 #include <string>
 #include <vector>
 #include <limits>
+#include <map>
 #include <time.h> 
 #include <stdlib.h>
+#include <SFML/System.hpp>
+#include <SFML/Audio.hpp>
 
 #include "globals.hxx"
 #include "unix.hxx" 
 #include "file.hxx" 
 #include "map.hxx" 
+#include "audio.hxx" 
 
 using namespace std;
 
@@ -69,7 +73,7 @@ namespace ChaseGame {
         }
 	} // Pause ()
 
-	bool GameLoop (SMapGenParams& MapGenParams, SGameStatus& GameStatus) {
+	bool GameLoop (SMapGenParams& MapGenParams, SGameStatus& GameStatus, map <string, sf::Music&>& Music) {
 		CMatrix Mat;
 
 		GenMap (Mat, MapGenParams, DIFFLVL_NORM);
@@ -92,6 +96,8 @@ namespace ChaseGame {
 		}
 
 		ClearScreen ();
+		SetGameState(Music, GMS_STARTING);
+
 		Color (CLR_RESET);
 		cout << "\n               [ROUND " << GameStatus.Round + 1 << "]";
 		cout << "\n\n           {";
@@ -105,6 +111,7 @@ namespace ChaseGame {
 		cout << "}" << endl;
 
 		Pause ();
+		SetGameState(Music, GMS_INGAME);
 
 		GameStatus.MvLeft = (rand() % 7 + 5) * 10;
 
@@ -121,7 +128,10 @@ namespace ChaseGame {
 				break;
 		}
 
+		// Round end
+
 		ClearScreen ();
+		SetGameState(Music, GMS_STARTING);
 
 		bool HunterWon = false;
 		
@@ -154,6 +164,7 @@ namespace ChaseGame {
 		ShowMatrix (Mat, GameStatus.ColorSet);
 
 		Pause ();
+		SetGameState(Music, GMS_TITLE);
 
 		++GameStatus.Round;
 
@@ -181,13 +192,36 @@ namespace ChaseGame {
 		GameStatus.Round = 0;
 		GameStatus.MaxRounds = 5;
 
+		// SOUND INITIALISATION
+		//map <string, sf::Sound> Music = LoadMusic ();
+		//;
+
+		// MUSIC LOADING
+		sf::Music Track1A, Track1B, Track1C, Track2;
+		Track1A.OpenFromFile("sound/bgm_trackA-1.ogg");
+		Track1B.OpenFromFile("sound/bgm_trackA-2.ogg");
+		Track1C.OpenFromFile("sound/bgm_trackA-2.ogg");
+		Track2.OpenFromFile("sound/bgm_trackB.ogg");
+		Track1A.SetLoop(true);
+		Track1B.SetLoop(true);
+		Track1C.SetLoop(true);
+		Track2.SetLoop(true);
+		Track1A.Play();
+		Track1B.Play();
+		Track1C.Play();
+		Track2.Play();
+
+		map <string, sf::Music&> Tracks = {{ "A1", Track1A }, { "B1", Track1B }, { "C1", Track1C }, { "2", Track2 }};
+
+		SetGameState(Tracks, GMS_TITLE);
+
 		// Title screen
 		ClearScreen ();
 		cout << "Écran titre avec menu" << endl;
 		GetInput ();
 
 		// MAIN LIFE LOOP
-		while(GameLoop (MapGenParams, GameStatus)) {
+		while(GameLoop (MapGenParams, GameStatus, Tracks)) {
 			if(GameStatus.P1.IsChasing) {
 				GameStatus.P1.IsChasing = false;
 				GameStatus.P2.IsChasing = true;

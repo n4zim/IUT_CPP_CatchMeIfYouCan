@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['lang_5fen',['LANG_EN',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a8d86c92b659a6ebac045d0a20e3fba0d',1,'ChaseGame']]],
-  ['lang_5fes',['LANG_ES',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a2458ded06b17611b5fb00d6a095a4dd2',1,'ChaseGame']]],
-  ['lang_5ffr',['LANG_FR',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a4259ad53ebc5f91f2615cf5a5f59bece',1,'ChaseGame']]]
+  ['difflvl_5fcrzy',['DIFFLVL_CRZY',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea6c71b45deb89801d0e11e674d21e3e51',1,'ChaseGame']]],
+  ['difflvl_5feasy',['DIFFLVL_EASY',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea8511737cb33e0a6022084ed1b5c05092',1,'ChaseGame']]],
+  ['difflvl_5fhard',['DIFFLVL_HARD',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea67fccff53bbaeaa47737530842f5c4f5',1,'ChaseGame']]],
+  ['difflvl_5fnorm',['DIFFLVL_NORM',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea124bdf49731fecdaa92d39fbd9d98f26',1,'ChaseGame']]]
 ];

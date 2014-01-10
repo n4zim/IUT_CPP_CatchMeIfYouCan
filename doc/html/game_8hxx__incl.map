@@ -1,7 +1,6 @@
 <map id="C:/Development/IUT/git &#45; Copie/projet/game.hxx" name="C:/Development/IUT/git &#45; Copie/projet/game.hxx">
-<area shape="rect" id="node8" href="$globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="500,184,588,211"/>
-<area shape="rect" id="node9" href="$windows_8hxx.html" title="windows.hxx function prototypes " alt="" coords="332,259,428,285"/>
-<area shape="rect" id="node10" href="$unix_8hxx.html" title="unix.cxx function prototypes " alt="" coords="495,259,565,285"/>
-<area shape="rect" id="node11" href="$file_8hxx.html" title="file.cxx function prototypes " alt="" coords="553,109,615,136"/>
-<area shape="rect" id="node12" href="$map_8hxx.html" title="map.cxx function prototypes " alt="" coords="640,109,712,136"/>
+<area shape="rect" id="node10" href="$globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="203,184,291,211"/>
+<area shape="rect" id="node11" href="$unix_8hxx.html" title="unix.cxx function prototypes " alt="" coords="426,259,496,285"/>
+<area shape="rect" id="node12" href="$file_8hxx.html" title="file.cxx function prototypes " alt="" coords="206,109,268,136"/>
+<area shape="rect" id="node13" href="$map_8hxx.html" title="map.cxx function prototypes " alt="" coords="344,109,416,136"/>
 </map>
