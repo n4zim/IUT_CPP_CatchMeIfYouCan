@@ -56,12 +56,16 @@ bool \hyperlink{namespace_chase_game_a561c85a018e34c8baa21f7f500a3c9c7}{Save\-Ga
 \begin{DoxyCompactList}\small\item\em Saves game configuration in a config file. \end{DoxyCompactList}\item 
 char \hyperlink{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}{Process\-Input} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
 \begin{DoxyCompactList}\small\item\em Processes user input. \end{DoxyCompactList}\item 
-bool \hyperlink{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484}{Game\-Loop} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
-\begin{DoxyCompactList}\small\item\em This is the game loop. \end{DoxyCompactList}\item 
-void \hyperlink{namespace_chase_game_adab063b49bbe754d7cd4992b72da3746}{Init\-Config} (\hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
-\begin{DoxyCompactList}\small\item\em This function inits the config. \end{DoxyCompactList}\item 
+bool \hyperlink{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}{Game\-Round\-Loop} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status)
+\item 
+void \hyperlink{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c}{Pause} ()
+\item 
+bool \hyperlink{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1}{Game\-Loop} (\hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status)
+\item 
 void \hyperlink{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{Start\-Game} ()
 \begin{DoxyCompactList}\small\item\em This function starts the game. \end{DoxyCompactList}\item 
+bool \hyperlink{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484}{Game\-Loop} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
+\begin{DoxyCompactList}\small\item\em This is the game loop. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_ac12626138d0e2c49669eba73ffb4e4b7}{Mat\-Shape} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const array$<$ bool, 9 $>$ Tab, const unsigned Y, const unsigned X)
 \item 
 void \hyperlink{namespace_chase_game_a15617c8a111cd66bf5d24fd1e82a119d}{Gen\-Map} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Params, const int Difficulty)
@@ -79,6 +83,8 @@ void \hyperlink{namespace_chase_game_a3a120300b1e200a26fe8680a33300283}{Color} (
 void \hyperlink{namespace_chase_game_ad2dbfd93f4fd5725ab396d5dfa78a0c4}{Background\-Color} (const int \&\hyperlink{namespace_chase_game_a3a120300b1e200a26fe8680a33300283}{Color})
 \item 
 char \hyperlink{namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a}{Get\-Input} ()
+\item 
+void \hyperlink{namespace_chase_game_a5acce7cac4be65807ae1ac55cc56a7ff}{Sleep} (int U\-Sec)
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -182,11 +188,12 @@ Definition at line 35 of file globals.\-hxx.
 )}}\label{namespace_chase_game_ad2dbfd93f4fd5725ab396d5dfa78a0c4}
 
 
-Definition at line 33 of file unix.\-cxx.
+Definition at line 34 of file unix.\-cxx.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -204,11 +211,12 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6}
 
 
-Definition at line 25 of file unix.\-cxx.
+Definition at line 26 of file unix.\-cxx.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -226,11 +234,12 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{namespace_chase_game_a3a120300b1e200a26fe8680a33300283}
 
 
-Definition at line 29 of file unix.\-cxx.
+Definition at line 30 of file unix.\-cxx.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -266,28 +275,75 @@ true If game is running
 
 false If game is ended 
 \end{DoxyReturn}
+\hypertarget{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1}{\index{Chase\-Game@{Chase\-Game}!Game\-Loop@{Game\-Loop}}
+\index{Game\-Loop@{Game\-Loop}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Game\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-Game\-Loop (
+\begin{DoxyParamCaption}
+\item[{S\-Map\-Gen\-Params \&}]{Map\-Gen\-Params, }
+\item[{S\-Game\-Status \&}]{Game\-Status}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1}
 
 
-Definition at line 41 of file game.\-cxx.
+Definition at line 73 of file game.\-cxx.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484_cgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1_cgraph}
 \end{center}
 \end{figure}
 
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_a2bf846fb0618a485e9054b26555ed484_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a6fd4a28a15bc562893235ed73b5508f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}{\index{Chase\-Game@{Chase\-Game}!Game\-Round\-Loop@{Game\-Round\-Loop}}
+\index{Game\-Round\-Loop@{Game\-Round\-Loop}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Game\-Round\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-Game\-Round\-Loop (
+\begin{DoxyParamCaption}
+\item[{C\-Matrix \&}]{Mat, }
+\item[{S\-Map\-Gen\-Params \&}]{Map\-Gen\-Params, }
+\item[{S\-Game\-Status \&}]{Game\-Status}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}
+
+
+Definition at line 43 of file game.\-cxx.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_icgraph}
 \end{center}
 \end{figure}
 
@@ -320,8 +376,7 @@ Definition at line 49 of file map.\-cxx.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -351,11 +406,12 @@ Here is the caller graph for this function\-:
 )}}\label{namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a}
 
 
-Definition at line 38 of file unix.\-cxx.
+Definition at line 39 of file unix.\-cxx.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -363,26 +419,6 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{center}
 \end{figure}
 
-
-\hypertarget{namespace_chase_game_adab063b49bbe754d7cd4992b72da3746}{\index{Chase\-Game@{Chase\-Game}!Init\-Config@{Init\-Config}}
-\index{Init\-Config@{Init\-Config}!ChaseGame@{Chase\-Game}}
-\subsubsection[{Init\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Init\-Config (
-\begin{DoxyParamCaption}
-\item[{S\-Game\-Status \&}]{Config}
-\end{DoxyParamCaption}
-)}}\label{namespace_chase_game_adab063b49bbe754d7cd4992b72da3746}
-
-
-This function inits the config. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em Config} & Game config struct \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 59 of file game.\-cxx.
 
 \hypertarget{namespace_chase_game_addd460052ec5a5fe3010665ca84b07ec}{\index{Chase\-Game@{Chase\-Game}!Load\-Game\-Config@{Load\-Game\-Config}}
 \index{Load\-Game\-Config@{Load\-Game\-Config}!ChaseGame@{Chase\-Game}}
@@ -561,11 +597,47 @@ Definition at line 146 of file map.\-cxx.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{namespace_chase_game_a1dfe4bdbd50ee18cf85760219ea90b03_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c}{\index{Chase\-Game@{Chase\-Game}!Pause@{Pause}}
+\index{Pause@{Pause}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Pause}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c}
+
+
+Definition at line 63 of file game.\-cxx.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c_icgraph}
 \end{center}
 \end{figure}
 
@@ -614,7 +686,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -742,7 +815,8 @@ Definition at line 175 of file map.\-cxx.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -753,7 +827,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -761,6 +836,17 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{center}
 \end{figure}
 
+
+\hypertarget{namespace_chase_game_a5acce7cac4be65807ae1ac55cc56a7ff}{\index{Chase\-Game@{Chase\-Game}!Sleep@{Sleep}}
+\index{Sleep@{Sleep}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Sleep (
+\begin{DoxyParamCaption}
+\item[{int}]{U\-Sec}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_a5acce7cac4be65807ae1ac55cc56a7ff}
+
+
+Definition at line 72 of file unix.\-cxx.
 
 \hypertarget{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{\index{Chase\-Game@{Chase\-Game}!Start\-Game@{Start\-Game}}
 \index{Start\-Game@{Start\-Game}!ChaseGame@{Chase\-Game}}
@@ -775,7 +861,7 @@ This function starts the game.
 
 
 
-Definition at line 74 of file game.\-cxx.
+Definition at line 173 of file game.\-cxx.
 
 
 

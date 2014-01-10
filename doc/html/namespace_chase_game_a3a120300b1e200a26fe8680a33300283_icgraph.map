@@ -1,6 +1,8 @@
 <map id="ChaseGame::Color" name="ChaseGame::Color">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="187,31,357,57"/>
-<area shape="rect" id="node3" href="$namespace_chase_game.html#a2bf846fb0618a485e9054b26555ed484" title="This is the game loop. " alt="" coords="405,5,571,32"/>
-<area shape="rect" id="node4" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="619,31,784,57"/>
-<area shape="rect" id="node5" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="832,31,883,57"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c" title="ChaseGame::Pause" alt="" coords="437,5,576,32"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a6fd4a28a15bc562893235ed73b5508f1" title="ChaseGame::GameLoop" alt="" coords="656,81,821,108"/>
+<area shape="rect" id="node6" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="187,107,357,133"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="869,81,1035,108"/>
+<area shape="rect" id="node5" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1083,81,1133,108"/>
+<area shape="rect" id="node7" href="$namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="405,157,608,184"/>
 </map>

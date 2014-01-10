@@ -1,5 +1,4 @@
 <map id="ChaseGame::ShowMatrix" name="ChaseGame::ShowMatrix">
 <area shape="rect" id="node2" href="$namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="ChaseGame::BackgroundColor" alt="" coords="225,5,426,32"/>
 <area shape="rect" id="node3" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="ChaseGame::Color" alt="" coords="259,56,391,83"/>
-<area shape="rect" id="node4" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="ChaseGame::ClearScreen" alt="" coords="239,107,412,133"/>
 </map>
