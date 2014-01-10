@@ -173,6 +173,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5aeec1309079c5c64aec0fd24a4b17c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a5aeec1309079c5c64aec0fd24a4b17c1">SetGameState</a> (std::map&lt; std::string, sf::Music &amp; &gt; &amp;Tracks, int GameState)</td></tr>
 <tr class="memdesc:a5aeec1309079c5c64aec0fd24a4b17c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets music volumes according to the game state.  <a href="#a5aeec1309079c5c64aec0fd24a4b17c1">More...</a><br/></td></tr>
 <tr class="separator:a5aeec1309079c5c64aec0fd24a4b17c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2df7cbf4974e167612a7415943f3b0"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#aee2df7cbf4974e167612a7415943f3b0">RRand</a> (unsigned Min, unsigned Max)</td></tr>
+<tr class="separator:aee2df7cbf4974e167612a7415943f3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831cfcb5623ab30034f57cbfff28c720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a831cfcb5623ab30034f57cbfff28c720">GenBonus_Malus</a> (<a class="el" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp;Mat)</td></tr>
+<tr class="separator:a831cfcb5623ab30034f57cbfff28c720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3e15bf28c7e96d0ba0bd14094ba71f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a0e3e15bf28c7e96d0ba0bd14094ba71f">Effect</a> (<a class="el" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp;Mat, <a class="el" href="struct_chase_game_1_1_s_player_pos.html">SPlayerPos</a> Player)</td></tr>
+<tr class="separator:a0e3e15bf28c7e96d0ba0bd14094ba71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4779af792d3de8e274049bf2019e0343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chase_game_1_1_s_map_gen_params.html">SMapGenParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a4779af792d3de8e274049bf2019e0343">LoadMapGenConfig</a> (const string &amp;FileName)</td></tr>
 <tr class="separator:a4779af792d3de8e274049bf2019e0343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e8d90127c802c1445266e39966c3fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a98e8d90127c802c1445266e39966c3fb">SaveMapConfig</a> (const string &amp;FileName, <a class="el" href="struct_chase_game_1_1_s_map_gen_params.html">SMapGenParams</a> &amp;Params)</td></tr>
@@ -501,6 +507,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a0e3e15bf28c7e96d0ba0bd14094ba71f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChaseGame::Effect </td>
+          <td>(</td>
+          <td class="paramtype">CMatrix &amp;&#160;</td>
+          <td class="paramname"><em>Mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SPlayerPos&#160;</td>
+          <td class="paramname"><em>Player</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bonus_8cxx_source.html#l00056">56</a> of file <a class="el" href="bonus_8cxx_source.html">bonus.cxx</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a978204f0ec269a6fa5f43bb523d84e57"></a>
 <div class="memitem">
 <div class="memproto">
@@ -652,6 +686,33 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_icgraph.png" border="0" usemap="#namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_icgraph" alt=""/></div>
 <map name="namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_icgraph" id="namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_icgraph">
 <area shape="rect" id="node2" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="256,5,421,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="469,5,635,32"/><area shape="rect" id="node4" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="683,5,733,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a831cfcb5623ab30034f57cbfff28c720"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChaseGame::GenBonus_Malus </td>
+          <td>(</td>
+          <td class="paramtype">CMatrix &amp;&#160;</td>
+          <td class="paramname"><em>Mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bonus_8cxx_source.html#l00030">30</a> of file <a class="el" href="bonus_8cxx_source.html">bonus.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a831cfcb5623ab30034f57cbfff28c720_cgraph.png" border="0" usemap="#namespace_chase_game_a831cfcb5623ab30034f57cbfff28c720_cgraph" alt=""/></div>
+<map name="namespace_chase_game_a831cfcb5623ab30034f57cbfff28c720_cgraph" id="namespace_chase_game_a831cfcb5623ab30034f57cbfff28c720_cgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#aee2df7cbf4974e167612a7415943f3b0" title="ChaseGame::RRand" alt="" coords="216,12,357,39"/></map>
 </div>
 </p>
 
@@ -1107,6 +1168,43 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="aee2df7cbf4974e167612a7415943f3b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned ChaseGame::RRand </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bonus_8cxx_source.html#l00025">25</a> of file <a class="el" href="bonus_8cxx_source.html">bonus.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0_icgraph.png" border="0" usemap="#namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0_icgraph" alt=""/></div>
+<map name="namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0_icgraph" id="namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0_icgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#a831cfcb5623ab30034f57cbfff28c720" title="ChaseGame::GenBonus\l_Malus" alt="" coords="195,5,357,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a561c85a018e34c8baa21f7f500a3c9c7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1531,7 +1629,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 10 2014 18:24:13 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 10 2014 18:31:31 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

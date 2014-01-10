@@ -69,6 +69,12 @@ void \hyperlink{namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477}{Set\-Gam
 \item 
 void \hyperlink{namespace_chase_game_a5aeec1309079c5c64aec0fd24a4b17c1}{Set\-Game\-State} (std\-::map$<$ std\-::string, sf\-::\-Music \& $>$ \&Tracks, int Game\-State)
 \begin{DoxyCompactList}\small\item\em Sets music volumes according to the game state. \end{DoxyCompactList}\item 
+unsigned \hyperlink{namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0}{R\-Rand} (unsigned Min, unsigned Max)
+\item 
+void \hyperlink{namespace_chase_game_a831cfcb5623ab30034f57cbfff28c720}{Gen\-Bonus\-\_\-\-Malus} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat)
+\item 
+void \hyperlink{namespace_chase_game_a0e3e15bf28c7e96d0ba0bd14094ba71f}{Effect} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_player_pos}{S\-Player\-Pos} Player)
+\item 
 \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \hyperlink{namespace_chase_game_a4779af792d3de8e274049bf2019e0343}{Load\-Map\-Gen\-Config} (const string \&File\-Name)
 \item 
 bool \hyperlink{namespace_chase_game_a98e8d90127c802c1445266e39966c3fb}{Save\-Map\-Config} (const string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Params)
@@ -354,6 +360,18 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
+\hypertarget{namespace_chase_game_a0e3e15bf28c7e96d0ba0bd14094ba71f}{\index{Chase\-Game@{Chase\-Game}!Effect@{Effect}}
+\index{Effect@{Effect}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Effect (
+\begin{DoxyParamCaption}
+\item[{C\-Matrix \&}]{Mat, }
+\item[{S\-Player\-Pos}]{Player}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_a0e3e15bf28c7e96d0ba0bd14094ba71f}
+
+
+Definition at line 56 of file bonus.\-cxx.
+
 \hypertarget{namespace_chase_game_a978204f0ec269a6fa5f43bb523d84e57}{\index{Chase\-Game@{Chase\-Game}!Game\-Loop@{Game\-Loop}}
 \index{Game\-Loop@{Game\-Loop}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Game\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-Game\-Loop (
@@ -450,6 +468,29 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_chase_game_a831cfcb5623ab30034f57cbfff28c720}{\index{Chase\-Game@{Chase\-Game}!Gen\-Bonus\-\_\-\-Malus@{Gen\-Bonus\-\_\-\-Malus}}
+\index{Gen\-Bonus\-\_\-\-Malus@{Gen\-Bonus\-\_\-\-Malus}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Gen\-Bonus\-\_\-\-Malus}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Gen\-Bonus\-\_\-\-Malus (
+\begin{DoxyParamCaption}
+\item[{C\-Matrix \&}]{Mat}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_a831cfcb5623ab30034f57cbfff28c720}
+
+
+Definition at line 30 of file bonus.\-cxx.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespace_chase_game_a831cfcb5623ab30034f57cbfff28c720_cgraph}
 \end{center}
 \end{figure}
 
@@ -798,6 +839,30 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0}{\index{Chase\-Game@{Chase\-Game}!R\-Rand@{R\-Rand}}
+\index{R\-Rand@{R\-Rand}!ChaseGame@{Chase\-Game}}
+\subsubsection[{R\-Rand}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Chase\-Game\-::\-R\-Rand (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{Min, }
+\item[{unsigned}]{Max}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0}
+
+
+Definition at line 25 of file bonus.\-cxx.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0_icgraph}
 \end{center}
 \end{figure}
 
