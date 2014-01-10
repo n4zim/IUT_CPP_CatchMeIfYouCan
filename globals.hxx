@@ -42,7 +42,7 @@ namespace ChaseGame {
 	
 	//! Character representing player two
 	const char KTokenPlayer2 = 'O';
-	
+
 	//! Character representing voidness
 	const char KEmpty = ' ';
 
@@ -98,7 +98,7 @@ namespace ChaseGame {
 		//! Keys specific to player
 		SPlayerKeys Keys;
 		//! Player score
-		int Score;
+		unsigned Score;
 		//! Player role : chasing or being chased
 		bool IsChasing;
 	};
@@ -132,7 +132,11 @@ namespace ChaseGame {
 		//! Colors to use
 		SColorSet ColorSet;
 		//! Round
-		int Round;
+		unsigned Round;
+		//! Maximum number of rounds
+		unsigned MaxRounds;
+		//! Mouvements left
+		unsigned MvLeft;
 		//! Game lang
 		int Lang;
 	};
