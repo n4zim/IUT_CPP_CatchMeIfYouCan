@@ -16,6 +16,7 @@
 #ifdef UNIX
  
 #include <iostream>
+#include <limits>
 #include <termios.h>
 #include <unistd.h>
 
@@ -36,6 +37,12 @@ namespace ChaseGame {
 
 
 	char GetInput () {
+		/*// We only want one NEW char so we clear the cin
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        if(!cin) {
+            cin.clear();
+        }*/
+
 		// Adapted from http://stackoverflow.com/questions/1798511/how-to-avoid-press-enter-with-any-getchar/1798833#1798833
 		char input;   
 	    static struct termios oldt, newt;
@@ -51,11 +58,19 @@ namespace ChaseGame {
 	    tcsetattr (STDIN_FILENO, TCSANOW, &newt);
 
 	    input = getchar ();
-	    
+
+	    if(!cin) {
+            cin.clear();
+        }
+
 	    // restore old terminal settings
 	    tcsetattr (STDIN_FILENO, TCSANOW, &oldt);
 
 		return input;
 	} // GetInput ()
+
+	void Sleep (int USec) {
+		usleep(USec);
+	} // Sleep ()
 }
 #endif

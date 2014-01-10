@@ -40,6 +40,12 @@ namespace ChaseGame {
 		 * \return captured character
 		 */
 		char GetInput ();
+
+		/*!
+		 * \brief Calls usleep
+		 * \param Usec Microseconds to sleep
+		 */
+		void Sleep (int MSec);
 	#endif
 }
 
