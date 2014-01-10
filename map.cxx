@@ -176,7 +176,6 @@ namespace ChaseGame {
 		// Reset screen colors and clear it
 		BackgroundColor (CLR_RESET);
 		Color (CLR_RESET);
-		ClearScreen ();
 
 		unsigned Width = 0;
 		if (Mat.size () > 0)
