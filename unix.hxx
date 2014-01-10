@@ -14,39 +14,34 @@
 #define unix_h
 
 namespace ChaseGame {
-	#ifdef UNIX
-		//! Unix color values
-		enum ConsoleColors { CLR_BLACK=30, CLR_RED=31, CLR_GREEN=32, CLR_YELLOW=33, CLR_BLUE=34, CLR_MAGENTA=35, CLR_CYAN=36, CLR_WHITE=37, CLR_GREY=30, CLR_RESET=0 };
+	/*!
+	 * \brief Clears screen
+	 */
+	void ClearScreen ();
 
-		/*!
-		 * \brief Clears screen
-		 */
-		void ClearScreen ();
+	/*!
+	 * \brief Changes text color
+	 * \param Color Wanted color
+	 */
+	void Color (const int& Color);
 
-		/*!
-		 * \brief Changes text color
-		 * \param Color Wanted color
-		 */
-		void Color (const int& Color);
+	/*!
+	 * \brief Changes background color
+	 * \param Color Wanted color
+	 */
+	void BackgroundColor (const int& Color);
 
-		/*!
-		 * \brief Changes background color
-		 * \param Color Wanted color
-		 */
-		void BackgroundColor (const int& Color);
+	/*!
+	 * \brief Captures a character from stdin
+	 * \return captured character
+	 */
+	char GetInput ();
 
-		/*!
-		 * \brief Captures a character from stdin
-		 * \return captured character
-		 */
-		char GetInput ();
-
-		/*!
-		 * \brief Calls usleep
-		 * \param Usec Microseconds to sleep
-		 */
-		void Sleep (int MSec);
-	#endif
+	/*!
+	 * \brief Calls usleep
+	 * \param Usec Microseconds to sleep
+	 */
+	void Sleep (int MSec);
 }
 
 #endif

@@ -17,7 +17,6 @@
 #include <array>
 
 #include "globals.hxx"
-#include "windows.hxx" 
 #include "unix.hxx"
 #include "map.hxx"
 

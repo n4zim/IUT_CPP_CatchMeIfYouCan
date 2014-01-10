@@ -14,8 +14,7 @@
 #ifndef globals_h 
 #define globals_h
 
-#define UNIX
-#include "windows.hxx" 
+//#define UNIX
 #include "unix.hxx"
 #include <vector> 
 #include <string> 
@@ -36,6 +35,9 @@ namespace ChaseGame {
 
 	//! Difficulty levels
 	enum DifficultyLevels { DIFFLVL_EASY, DIFFLVL_NORM, DIFFLVL_HARD, DIFFLVL_CRZY};
+
+	//! Unix color values
+	enum ConsoleColors { CLR_BLACK=30, CLR_RED=31, CLR_GREEN=32, CLR_YELLOW=33, CLR_BLUE=34, CLR_MAGENTA=35, CLR_CYAN=36, CLR_WHITE=37, CLR_GREY=30, CLR_RESET=0 };
 
 	//! Character representing player one
 	const char KTokenPlayer1 = 'X';

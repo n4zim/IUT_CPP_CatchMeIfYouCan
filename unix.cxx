@@ -12,8 +12,6 @@
 
 #include "globals.hxx"
 #include "unix.hxx"
-
-#ifdef UNIX
  
 #include <iostream>
 #include <limits>
@@ -73,4 +71,3 @@ namespace ChaseGame {
 		usleep(USec);
 	} // Sleep ()
 }
-#endif

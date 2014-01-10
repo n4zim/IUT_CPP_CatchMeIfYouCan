@@ -15,7 +15,6 @@
 #include <stdlib.h>
 
 #include "globals.hxx"
-#include "windows.hxx" 
 #include "unix.hxx" 
 #include "file.hxx" 
 #include "map.hxx" 
