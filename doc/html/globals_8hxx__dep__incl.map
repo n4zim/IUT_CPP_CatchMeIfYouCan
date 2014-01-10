@@ -1,11 +1,11 @@
 <map id="C:/Development/IUT/git &#45; Copie/projet/globals.hxx" name="C:/Development/IUT/git &#45; Copie/projet/globals.hxx">
 <area shape="rect" id="node2" href="$file_8cxx.html" title="File related functions. " alt="" coords="5,213,141,269"/>
-<area shape="rect" id="node3" href="$file_8hxx.html" title="file.cxx prototypes " alt="" coords="161,109,297,165"/>
+<area shape="rect" id="node3" href="$file_8hxx.html" title="file.cxx prototypes " alt="" coords="220,109,356,165"/>
 <area shape="rect" id="node4" href="$game_8cxx.html" title="Fonctions du jeu. " alt="" coords="165,213,301,269"/>
-<area shape="rect" id="node5" href="$game_8hxx.html" title="Fonctions du jeu. " alt="" coords="348,213,484,269"/>
-<area shape="rect" id="node6" href="$main_8cxx.html" title="Main file. " alt="" coords="412,317,548,373"/>
-<area shape="rect" id="node7" href="$map_8hxx_source.html" title="C:/Development/IUT\l/git &#45; Copie/projet\l/map.hxx" alt="" coords="321,109,457,165"/>
-<area shape="rect" id="node8" href="$map_8cxx.html" title="Map related function. " alt="" coords="583,109,719,165"/>
-<area shape="rect" id="node9" href="$unix_8cxx.html" title="Defines unix&#45;only functions. " alt="" coords="743,109,879,165"/>
-<area shape="rect" id="node10" href="$windows_8cxx.html" title="Windows specific functions. " alt="" coords="903,109,1039,165"/>
+<area shape="rect" id="node5" href="$game_8hxx.html" title="Fonctions du jeu. " alt="" coords="325,213,461,269"/>
+<area shape="rect" id="node6" href="$main_8cxx.html" title="Main file. " alt="" coords="457,317,593,373"/>
+<area shape="rect" id="node7" href="$map_8hxx_source.html" title="C:/Development/IUT\l/git &#45; Copie/projet\l/map.hxx" alt="" coords="431,109,567,165"/>
+<area shape="rect" id="node8" href="$map_8cxx.html" title="Map related function. " alt="" coords="485,213,621,269"/>
+<area shape="rect" id="node9" href="$unix_8cxx.html" title="Defines unix&#45;only functions. " alt="" coords="696,109,832,165"/>
+<area shape="rect" id="node10" href="$windows_8cxx.html" title="Windows specific functions. " alt="" coords="856,109,992,165"/>
 </map>
