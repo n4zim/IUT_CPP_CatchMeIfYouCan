@@ -1,4 +1,4 @@
 <map id="ChaseGame::ShowMatrix" name="ChaseGame::ShowMatrix">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="ChaseGame::BackgroundColor" alt="" coords="225,5,426,32"/>
-<area shape="rect" id="node3" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="ChaseGame::Color" alt="" coords="259,56,391,83"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="225,5,426,32"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="259,56,391,83"/>
 </map>

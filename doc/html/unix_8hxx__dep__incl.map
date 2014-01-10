@@ -1,12 +1,13 @@
 <map id="C:/Development/IUT/git &#45; Copie/projet/unix.hxx" name="C:/Development/IUT/git &#45; Copie/projet/unix.hxx">
-<area shape="rect" id="node2" href="$globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="481,109,617,165"/>
-<area shape="rect" id="node5" href="$game_8cxx.html" title="Gameplay related functions. " alt="" coords="165,317,301,373"/>
-<area shape="rect" id="node6" href="$game_8hxx.html" title="game.cxx function prototypes " alt="" coords="325,317,461,373"/>
-<area shape="rect" id="node9" href="$map_8cxx.html" title="Map related function. " alt="" coords="5,317,141,373"/>
-<area shape="rect" id="node10" href="$unix_8cxx.html" title="Defines unix&#45;only functions. " alt="" coords="848,213,984,269"/>
-<area shape="rect" id="node3" href="$file_8cxx.html" title="File related functions. " alt="" coords="485,317,621,373"/>
-<area shape="rect" id="node4" href="$file_8hxx.html" title="file.cxx function prototypes " alt="" coords="376,213,512,269"/>
-<area shape="rect" id="node7" href="$main_8cxx.html" title="Main file. " alt="" coords="457,421,593,477"/>
-<area shape="rect" id="node8" href="$map_8hxx.html" title="map.cxx function prototypes " alt="" coords="165,213,301,269"/>
-<area shape="rect" id="node11" href="$windows_8cxx.html" title="Windows specific functions. " alt="" coords="688,213,824,269"/>
+<area shape="rect" id="node2" href="$globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="463,109,599,165"/>
+<area shape="rect" id="node5" href="$game_8cxx.html" title="Audio related functions. " alt="" coords="42,317,178,373"/>
+<area shape="rect" id="node8" href="$game_8hxx.html" title="game.cxx function prototypes " alt="" coords="463,317,599,373"/>
+<area shape="rect" id="node11" href="$map_8cxx.html" title="Map related function. " alt="" coords="779,317,915,373"/>
+<area shape="rect" id="node12" href="$unix_8cxx.html" title="Defines unix&#45;only functions. " alt="" coords="885,213,1021,269"/>
+<area shape="rect" id="node3" href="$audio_8cxx.html" title="C:/Development/IUT\l/git &#45; Copie/projet\l/audio.cxx" alt="" coords="674,213,810,269"/>
+<area shape="rect" id="node4" href="$audio_8hxx.html" title="audio.cxx function prototypes " alt="" coords="42,213,178,269"/>
+<area shape="rect" id="node6" href="$file_8cxx.html" title="File related functions. " alt="" coords="227,317,363,373"/>
+<area shape="rect" id="node7" href="$file_8hxx.html" title="file.cxx function prototypes " alt="" coords="253,213,389,269"/>
+<area shape="rect" id="node9" href="$main_8cxx.html" title="Main file. " alt="" coords="410,421,546,477"/>
+<area shape="rect" id="node10" href="$map_8hxx.html" title="map.cxx function prototypes " alt="" coords="463,213,599,269"/>
 </map>

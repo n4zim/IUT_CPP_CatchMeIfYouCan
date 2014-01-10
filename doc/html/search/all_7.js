@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['lang',['Lang',['../struct_chase_game_1_1_s_game_status.html#a93c5db2ceb07569075406e865949b4d9',1,'ChaseGame::SGameStatus']]],
-  ['lang_5fen',['LANG_EN',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a8d86c92b659a6ebac045d0a20e3fba0d',1,'ChaseGame']]],
-  ['lang_5fes',['LANG_ES',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a2458ded06b17611b5fb00d6a095a4dd2',1,'ChaseGame']]],
-  ['lang_5ffr',['LANG_FR',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796a4259ad53ebc5f91f2615cf5a5f59bece',1,'ChaseGame']]],
-  ['langs',['Langs',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796',1,'ChaseGame']]],
-  ['left',['Left',['../struct_chase_game_1_1_s_player_keys.html#ab6c4f7e03fa43cd9443dcbd16a5e3250',1,'ChaseGame::SPlayerKeys']]],
-  ['loadgameconfig',['LoadGameConfig',['../namespace_chase_game.html#addd460052ec5a5fe3010665ca84b07ec',1,'ChaseGame']]],
-  ['loadmapgenconfig',['LoadMapGenConfig',['../namespace_chase_game.html#a4779af792d3de8e274049bf2019e0343',1,'ChaseGame::LoadMapGenConfig(const string &amp;FileName)'],['../namespace_chase_game.html#a9c5b5d91cb4251cae461faa4ace8a0cf',1,'ChaseGame::LoadMapGenConfig(const std::string &amp;FileName)']]]
+  ['kcancelled',['KCancelled',['../namespace_chase_game.html#a12d6411bb9a72150acba6060bb1587e1',1,'ChaseGame']]],
+  ['kempty',['KEmpty',['../namespace_chase_game.html#aa036d4de40188ba2e1aa36ab6cfaf1da',1,'ChaseGame']]],
+  ['keyexit',['KeyExit',['../struct_chase_game_1_1_s_game_status.html#a6a88e0903d13f10f4fcf8050157b2bdb',1,'ChaseGame::SGameStatus']]],
+  ['keypause',['KeyPause',['../struct_chase_game_1_1_s_game_status.html#aaa0cca00432a2ac7fae4be521164f5c2',1,'ChaseGame::SGameStatus']]],
+  ['keys',['Keys',['../struct_chase_game_1_1_s_player_state.html#a3fc9ce0322ed28ff9c401983d91c69f2',1,'ChaseGame::SPlayerState']]],
+  ['kobstacle',['KObstacle',['../namespace_chase_game.html#ad86181b2050b912dab9d69d2f0bea76e',1,'ChaseGame']]],
+  ['ktokenplayer1',['KTokenPlayer1',['../namespace_chase_game.html#a8452e2d6de618e4ca7a9f76b082b52a4',1,'ChaseGame']]],
+  ['ktokenplayer2',['KTokenPlayer2',['../namespace_chase_game.html#ae27343407c21a8d6e3cf26b736bd5527',1,'ChaseGame']]]
 ];

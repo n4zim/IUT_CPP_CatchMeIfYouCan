@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['langs',['Langs',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796',1,'ChaseGame']]]
+  ['difficultylevels',['DifficultyLevels',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457e',1,'ChaseGame']]]
 ];

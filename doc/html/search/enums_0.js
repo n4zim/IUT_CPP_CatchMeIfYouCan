@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['difficultylevels',['DifficultyLevels',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457e',1,'ChaseGame']]]
+  ['consolecolors',['ConsoleColors',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7b',1,'ChaseGame']]]
 ];

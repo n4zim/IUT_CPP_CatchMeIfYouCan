@@ -1,9 +1,27 @@
 var searchData=
 [
-  ['difficultylevels',['DifficultyLevels',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457e',1,'ChaseGame']]],
-  ['difflvl_5fcrzy',['DIFFLVL_CRZY',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea6c71b45deb89801d0e11e674d21e3e51',1,'ChaseGame']]],
-  ['difflvl_5feasy',['DIFFLVL_EASY',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea8511737cb33e0a6022084ed1b5c05092',1,'ChaseGame']]],
-  ['difflvl_5fhard',['DIFFLVL_HARD',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea67fccff53bbaeaa47737530842f5c4f5',1,'ChaseGame']]],
-  ['difflvl_5fnorm',['DIFFLVL_NORM',['../namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea124bdf49731fecdaa92d39fbd9d98f26',1,'ChaseGame']]],
-  ['down',['Down',['../struct_chase_game_1_1_s_player_keys.html#abe56af951c133c98b24401542f28ec9b',1,'ChaseGame::SPlayerKeys']]]
+  ['canpassthroughwalls',['CanPassThroughWalls',['../struct_chase_game_1_1_s_player_state.html#acd7030969c414605901e551171078bb1',1,'ChaseGame::SPlayerState']]],
+  ['chasegame',['ChaseGame',['../namespace_chase_game.html',1,'']]],
+  ['clearscreen',['ClearScreen',['../namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6',1,'ChaseGame']]],
+  ['clr_5fblack',['CLR_BLACK',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba7c17af5d1ff079f2a505dd61f9e1ddae',1,'ChaseGame']]],
+  ['clr_5fblue',['CLR_BLUE',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba206cb9e67be830b771bbf44488c40d66',1,'ChaseGame']]],
+  ['clr_5fcyan',['CLR_CYAN',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7baa190fadb3645da6bca096b377cda2542',1,'ChaseGame']]],
+  ['clr_5fgreen',['CLR_GREEN',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba9f550f868a825b9a3be5a7d0dbcc4852',1,'ChaseGame']]],
+  ['clr_5fgrey',['CLR_GREY',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba1d11a3c17a5e12280a482d5d39c12f09',1,'ChaseGame']]],
+  ['clr_5fmagenta',['CLR_MAGENTA',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba6ce8de58df1a149d734ebcdbf711fed9',1,'ChaseGame']]],
+  ['clr_5fred',['CLR_RED',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7baea24ff932a53ca9fd904e2b607407c0a',1,'ChaseGame']]],
+  ['clr_5freset',['CLR_RESET',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7bab062e50df9f6e90f6c4cce85d5d420df',1,'ChaseGame']]],
+  ['clr_5fwhite',['CLR_WHITE',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7baefa8ce8fa562fcb596842176d5b1222d',1,'ChaseGame']]],
+  ['clr_5fyellow',['CLR_YELLOW',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba9ac15128d0c53aad431c8d1da78cf17a',1,'ChaseGame']]],
+  ['cmatrix',['CMatrix',['../namespace_chase_game.html#a469449f9237e59efce3982127366c550',1,'ChaseGame']]],
+  ['color',['Color',['../namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283',1,'ChaseGame']]],
+  ['colorbonus',['ColorBonus',['../struct_chase_game_1_1_s_color_set.html#aacd34496b36640358ecae127f6bb6cc4',1,'ChaseGame::SColorSet']]],
+  ['colormalus',['ColorMalus',['../struct_chase_game_1_1_s_color_set.html#aa2eb52b7d1fb4059da9935a230715498',1,'ChaseGame::SColorSet']]],
+  ['colorobstacle',['ColorObstacle',['../struct_chase_game_1_1_s_color_set.html#acb1e4df5c042ae8ca8a66d7de26a9148',1,'ChaseGame::SColorSet']]],
+  ['colorp1',['ColorP1',['../struct_chase_game_1_1_s_color_set.html#a51e5a557359624fe92be93cb80621922',1,'ChaseGame::SColorSet']]],
+  ['colorp2',['ColorP2',['../struct_chase_game_1_1_s_color_set.html#a777bce7519236b269ba44d921f54e4e8',1,'ChaseGame::SColorSet']]],
+  ['colorset',['ColorSet',['../struct_chase_game_1_1_s_game_status.html#adc7431634611868499b650c2dc6a67b6',1,'ChaseGame::SGameStatus']]],
+  ['colorwall',['ColorWall',['../struct_chase_game_1_1_s_color_set.html#a7a7a8dae118390ce5b4432aa4d99a474',1,'ChaseGame::SColorSet']]],
+  ['consolecolors',['ConsoleColors',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7b',1,'ChaseGame']]],
+  ['cvline',['CVLine',['../namespace_chase_game.html#aa09cf1806d3b1f59d36cfabadeaca6a2',1,'ChaseGame']]]
 ];
