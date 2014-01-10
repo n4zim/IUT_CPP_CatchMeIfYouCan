@@ -48,17 +48,17 @@ namespace ChaseGame {
 			int Value = 0;
 			file >> VarId >> Value;
 
-			if (VarId == "MapHeight:")
+			if (VarId == "MapHeight")
 				Params.MapHeight = Value;
-			else if (VarId == "MapWidth:")
+			else if (VarId == "MapWidth")
 				Params.MapWidth = Value;
-			else if (VarId == "PosP1.X:")
+			else if (VarId == "PosP1.X")
 				Params.PosPlayer1.X = Value;
-			else if (VarId == "PosP1.Y:")
+			else if (VarId == "PosP1.Y")
 				Params.PosPlayer1.Y = Value;
-			else if (VarId == "PosP2.X:")
+			else if (VarId == "PosP2.X")
 				Params.PosPlayer2.X = Value;
-			else if (VarId == "PosP1.Y:")
+			else if (VarId == "PosP1.Y")
 				Params.PosPlayer2.Y = Value;
 		}  
 
@@ -73,12 +73,12 @@ namespace ChaseGame {
 		if (!file)
 			return false; // File can't be written
 
-		file << "MapHeight: " << Params.MapHeight << endl;
-		file << "MapWidth: " << Params.MapWidth << endl;
-		file << "PosP1.X: " << Params.PosPlayer1.X << endl;
-		file << "PosP1.Y: " << Params.PosPlayer1.Y << endl;
-		file << "PosP2.X: " << Params.PosPlayer2.X << endl;
-		file << "PosP2.Y: " << Params.PosPlayer2.Y << endl;
+		file << "MapHeight " << Params.MapHeight << endl;
+		file << "MapWidth " << Params.MapWidth << endl;
+		file << "PosP1.X " << Params.PosPlayer1.X << endl;
+		file << "PosP1.Y " << Params.PosPlayer1.Y << endl;
+		file << "PosP2.X " << Params.PosPlayer2.X << endl;
+		file << "PosP2.Y " << Params.PosPlayer2.Y << endl;
 
 		return true;
 	}
