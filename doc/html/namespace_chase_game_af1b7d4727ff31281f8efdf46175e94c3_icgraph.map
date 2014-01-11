@@ -1,4 +1,4 @@
 <map id="ChaseGame::InitSongs" name="ChaseGame::InitSongs">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="211,5,376,32"/>
-<area shape="rect" id="node3" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="424,5,475,32"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="211,29,376,56"/>
+<area shape="rect" id="node3" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="424,29,475,56"/>
 </map>

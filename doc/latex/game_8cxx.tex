@@ -1,5 +1,5 @@
-\hypertarget{game_8cxx}{\section{C\-:/\-Development/\-I\-U\-T/git -\/ Copie/projet/game.cxx File Reference}
-\label{game_8cxx}\index{C\-:/\-Development/\-I\-U\-T/git -\/ Copie/projet/game.\-cxx@{C\-:/\-Development/\-I\-U\-T/git -\/ Copie/projet/game.\-cxx}}
+\hypertarget{game_8cxx}{\section{game.\-cxx File Reference}
+\label{game_8cxx}\index{game.\-cxx@{game.\-cxx}}
 }
 
 
@@ -7,6 +7,7 @@ Audio related functions.
 
 
 {\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
 {\ttfamily \#include $<$string$>$}\\*
 {\ttfamily \#include $<$vector$>$}\\*
 {\ttfamily \#include $<$limits$>$}\\*
@@ -21,6 +22,7 @@ Audio related functions.
 {\ttfamily \#include \char`\"{}map.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}audio.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}banana.\-hxx\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}game.\-hxx\char`\"{}}\\*
 Include dependency graph for game.\-cxx\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -40,11 +42,14 @@ char \hyperlink{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}{Chase\-G
 \begin{DoxyCompactList}\small\item\em Processes user input. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3}{Chase\-Game\-::\-Store\-Char\-History} (const char Input, S\-Game\-Status \&Game\-Status)
 \begin{DoxyCompactList}\small\item\em Stores last 6 inputs. \end{DoxyCompactList}\item 
-bool \hyperlink{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}{Chase\-Game\-::\-Game\-Round\-Loop} (C\-Matrix \&Mat, S\-Map\-Gen\-Params \&Map\-Gen\-Params, S\-Game\-Status \&Game\-Status)
+\hypertarget{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}{bool {\bfseries Chase\-Game\-::\-Game\-Round\-Loop} (C\-Matrix \&Mat, S\-Map\-Gen\-Params \&Map\-Gen\-Params, S\-Game\-Status \&Game\-Status)}\label{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}
+
 \item 
-bool \hyperlink{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}{Chase\-Game\-::\-Game\-Loop} (S\-Map\-Gen\-Params \&Map\-Gen\-Params, S\-Game\-Status \&Game\-Status, map$<$ string, sf\-::\-Music \& $>$ \&Music)
+\hypertarget{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}{bool {\bfseries Chase\-Game\-::\-Game\-Loop} (S\-Map\-Gen\-Params \&Map\-Gen\-Params, S\-Game\-Status \&Game\-Status, map$<$ string, sf\-::\-Music \& $>$ \&Music)}\label{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}
+
 \item 
-void \hyperlink{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{Chase\-Game\-::\-Start\-Game} ()
+\hypertarget{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{void \hyperlink{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}{Chase\-Game\-::\-Start\-Game} ()}\label{namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74}
+
 \begin{DoxyCompactList}\small\item\em This function starts the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -60,7 +65,3 @@ Audio related functions. Gameplay related functions.
 \begin{DoxyVersion}{Version}
 1 
 \end{DoxyVersion}
-
-
-Definition in file \hyperlink{game_8cxx_source}{game.\-cxx}.
-

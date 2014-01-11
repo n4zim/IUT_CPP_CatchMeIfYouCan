@@ -1,9 +1,6 @@
 <map id="ChaseGame::Color" name="ChaseGame::Color">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="ChaseGame::SuperBanana" alt="" coords="187,5,367,32"/>
-<area shape="rect" id="node3" href="$namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="667,120,832,147"/>
-<area shape="rect" id="node6" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="192,107,363,133"/>
-<area shape="rect" id="node8" href="$namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c" title="This function pauses the program. " alt="" coords="448,208,587,235"/>
-<area shape="rect" id="node4" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="880,152,1045,179"/>
-<area shape="rect" id="node5" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1093,152,1144,179"/>
-<area shape="rect" id="node7" href="$namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="416,157,619,184"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="187,5,357,32"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a944f872ea6d98761b645f2b7d7cad8fa" title="This function pauses the program. " alt="" coords="203,56,341,83"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="405,56,571,83"/>
+<area shape="rect" id="node5" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="619,56,669,83"/>
 </map>

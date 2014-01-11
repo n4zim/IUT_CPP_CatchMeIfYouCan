@@ -1,9 +1,4 @@
 <map id="ChaseGame::Sleep" name="ChaseGame::Sleep">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="189,5,405,46"/>
-<area shape="rect" id="node7" href="$namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="194,70,401,111"/>
-<area shape="rect" id="node8" href="$namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="ChaseGame::SuperBanana" alt="" coords="458,132,638,159"/>
-<area shape="rect" id="node3" href="$namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d" title="ChaseGame::SetGameState" alt="" coords="454,77,642,104"/>
-<area shape="rect" id="node4" href="$namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="691,128,856,155"/>
-<area shape="rect" id="node5" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="904,103,1069,129"/>
-<area shape="rect" id="node6" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1117,103,1168,129"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="189,29,405,70"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="194,118,401,159"/>
 </map>

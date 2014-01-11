@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Chase game: C:/Development/IUT/git - Copie/projet/audio.hxx Source File</title>
+<title>Chase game: audio.hxx Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="doc_chasegame_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Chase game
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1</span>
    </div>
   </td>
  </tr>
@@ -67,12 +67,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,11 +82,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_86a3e1acfb758bdb35e213b4802000b2.html">git - Copie</a></li><li class="navelem"><a class="el" href="dir_cca7c63dad2dcb01d24aa78fcba2ca23.html">projet</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">audio.hxx</div>  </div>
@@ -102,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define audio_h</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>ChaseGame {   </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d">SetGameState</a>(std::map &lt;std::string, sf::Music&amp;&gt;&amp; Tracks, <span class="keywordtype">int</span> GameState, <span class="keywordtype">bool</span> DoFade);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> SetGameState(std::map &lt;std::string, sf::Music&amp;&gt;&amp; Tracks, <span class="keywordtype">int</span> GameState, <span class="keywordtype">bool</span> DoFade);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#af1b7d4727ff31281f8efdf46175e94c3">InitSongs</a> (sf::Music&amp; Track1A, sf::Music&amp; Track1B, sf::Music&amp; Track1C, sf::Music&amp; Track2);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
@@ -113,15 +109,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="namespace_chase_game_html_af423e47c7318b7eeb67ff1f1a6b1547d"><div class="ttname"><a href="namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d">ChaseGame::SetGameState</a></div><div class="ttdeci">void SetGameState(map&lt; string, sf::Music &amp; &gt; &amp;Tracks, int GameState, bool DoFade)</div><div class="ttdef"><b>Definition:</b> <a href="audio_8cxx_source.html#l00030">audio.cxx:30</a></div></div>
-<div class="ttc" id="namespace_chase_game_html_a3b9e1d486d981f5332d23142eb4777b7"><div class="ttname"><a href="namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7">ChaseGame::TripleSongVolumeFading</a></div><div class="ttdeci">void TripleSongVolumeFading(sf::Music &amp;A, sf::Music &amp;B, sf::Music &amp;C, float VolumeA, float VolumeB, float VolumeC, float FadeDuration)</div><div class="ttdoc">Do a crossface between three song. </div><div class="ttdef"><b>Definition:</b> <a href="audio_8cxx_source.html#l00129">audio.cxx:129</a></div></div>
+<div class="ttc" id="namespace_chase_game_html_a3b9e1d486d981f5332d23142eb4777b7"><div class="ttname"><a href="namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7">ChaseGame::TripleSongVolumeFading</a></div><div class="ttdeci">void TripleSongVolumeFading(sf::Music &amp;A, sf::Music &amp;B, sf::Music &amp;C, float VolumeA, float VolumeB, float VolumeC, float FadeDuration)</div><div class="ttdoc">Do a crossface between three song. </div><div class="ttdef"><b>Definition:</b> audio.cxx:133</div></div>
 <div class="ttc" id="globals_8hxx_html"><div class="ttname"><a href="globals_8hxx.html">globals.hxx</a></div><div class="ttdoc">Defines global constants and variables for the ChaseGame namespace. </div></div>
-<div class="ttc" id="namespace_chase_game_html_af1b7d4727ff31281f8efdf46175e94c3"><div class="ttname"><a href="namespace_chase_game.html#af1b7d4727ff31281f8efdf46175e94c3">ChaseGame::InitSongs</a></div><div class="ttdeci">void InitSongs(sf::Music &amp;Track1A, sf::Music &amp;Track1B, sf::Music &amp;Track1C, sf::Music &amp;Track2)</div><div class="ttdoc">Loads the songs and inits them. </div><div class="ttdef"><b>Definition:</b> <a href="audio_8cxx_source.html#l00090">audio.cxx:90</a></div></div>
-<div class="ttc" id="namespace_chase_game_html_a1fafa6862bb2df06c93d286361fefaa4"><div class="ttname"><a href="namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4">ChaseGame::DoubleSongVolumeFading</a></div><div class="ttdeci">void DoubleSongVolumeFading(sf::Music &amp;A, sf::Music &amp;B, float VolumeA, float VolumeB, float FadeDuration)</div><div class="ttdoc">Do a crossface between two songs. </div><div class="ttdef"><b>Definition:</b> <a href="audio_8cxx_source.html#l00105">audio.cxx:105</a></div></div>
+<div class="ttc" id="namespace_chase_game_html_af1b7d4727ff31281f8efdf46175e94c3"><div class="ttname"><a href="namespace_chase_game.html#af1b7d4727ff31281f8efdf46175e94c3">ChaseGame::InitSongs</a></div><div class="ttdeci">void InitSongs(sf::Music &amp;Track1A, sf::Music &amp;Track1B, sf::Music &amp;Track1C, sf::Music &amp;Track2)</div><div class="ttdoc">Loads the songs and inits them. </div><div class="ttdef"><b>Definition:</b> audio.cxx:90</div></div>
+<div class="ttc" id="namespace_chase_game_html_a1fafa6862bb2df06c93d286361fefaa4"><div class="ttname"><a href="namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4">ChaseGame::DoubleSongVolumeFading</a></div><div class="ttdeci">void DoubleSongVolumeFading(sf::Music &amp;A, sf::Music &amp;B, float VolumeA, float VolumeB, float FadeDuration)</div><div class="ttdoc">Do a crossface between two songs. </div><div class="ttdef"><b>Definition:</b> audio.cxx:109</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 11 2014 12:25:22 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 11 2014 16:43:38 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
