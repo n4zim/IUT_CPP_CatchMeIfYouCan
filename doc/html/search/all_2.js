@@ -1,6 +1,7 @@
 var searchData=
 [
   ['canpassthroughwalls',['CanPassThroughWalls',['../struct_chase_game_1_1_s_player_state.html#acd7030969c414605901e551171078bb1',1,'ChaseGame::SPlayerState']]],
+  ['charhistory',['CharHistory',['../struct_chase_game_1_1_s_game_status.html#a9aa8227d792a823032742d456e43b9a8',1,'ChaseGame::SGameStatus']]],
   ['chasegame',['ChaseGame',['../namespace_chase_game.html',1,'']]],
   ['clearscreen',['ClearScreen',['../namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6',1,'ChaseGame']]],
   ['clr_5fblack',['CLR_BLACK',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba7c17af5d1ff079f2a505dd61f9e1ddae',1,'ChaseGame']]],

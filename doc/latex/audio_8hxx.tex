@@ -22,7 +22,7 @@ This graph shows which files directly or indirectly include this file\-:\nopageb
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=182pt]{audio_8hxx__dep__incl}
+\includegraphics[width=302pt]{audio_8hxx__dep__incl}
 \end{center}
 \end{figure}
 \subsection*{Namespaces}
@@ -33,8 +33,14 @@ This graph shows which files directly or indirectly include this file\-:\nopageb
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{namespace_chase_game_a5aeec1309079c5c64aec0fd24a4b17c1}{Chase\-Game\-::\-Set\-Game\-State} (std\-::map$<$ std\-::string, sf\-::\-Music \& $>$ \&Tracks, int Game\-State)
-\begin{DoxyCompactList}\small\item\em Sets music volumes according to the game state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{namespace_chase_game_ac628bcb1f9de7ece2d9705ea5c6e9e91}{Chase\-Game\-::\-Set\-Game\-State} (std\-::map$<$ std\-::string, sf\-::\-Music \& $>$ \&Tracks, int Game\-State, bool Do\-Fade)
+\begin{DoxyCompactList}\small\item\em Sets music volumes according to the game state. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_af1b7d4727ff31281f8efdf46175e94c3}{Chase\-Game\-::\-Init\-Songs} (sf\-::\-Music \&Track1\-A, sf\-::\-Music \&Track1\-B, sf\-::\-Music \&Track1\-C, sf\-::\-Music \&Track2)
+\begin{DoxyCompactList}\small\item\em Loads the songs and inits them. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4}{Chase\-Game\-::\-Double\-Song\-Volume\-Fading} (sf\-::\-Music \&A, sf\-::\-Music \&B, float Volume\-A, float Volume\-B, float Fade\-Duration)
+\begin{DoxyCompactList}\small\item\em Do a crossface between two songs. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7}{Chase\-Game\-::\-Triple\-Song\-Volume\-Fading} (sf\-::\-Music \&A, sf\-::\-Music \&B, sf\-::\-Music \&C, float Volume\-A, float Volume\-B, float Volume\-C, float Fade\-Duration)
+\begin{DoxyCompactList}\small\item\em Do a crossface between three song. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}

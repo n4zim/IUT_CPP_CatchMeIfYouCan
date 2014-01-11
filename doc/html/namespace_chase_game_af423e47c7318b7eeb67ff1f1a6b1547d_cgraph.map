@@ -1,0 +1,5 @@
+<map id="ChaseGame::SetGameState" name="ChaseGame::SetGameState">
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="243,5,459,46"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="247,70,454,111"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="507,45,642,72"/>
+</map>

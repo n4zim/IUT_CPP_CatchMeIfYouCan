@@ -135,10 +135,10 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a2501a45afa3eb11b10e04d79a8349796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Language codes.  <a href="namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796">More...</a><br/></td></tr>
 <tr class="separator:a2501a45afa3eb11b10e04d79a8349796"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d785ea23167a3b7e44e045097cd457e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457e">DifficultyLevels</a> { <a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea8511737cb33e0a6022084ed1b5c05092">DIFFLVL_EASY</a>, 
-<a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea124bdf49731fecdaa92d39fbd9d98f26">DIFFLVL_NORM</a>, 
-<a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea67fccff53bbaeaa47737530842f5c4f5">DIFFLVL_HARD</a>, 
-<a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea6c71b45deb89801d0e11e674d21e3e51">DIFFLVL_CRZY</a>
+<tr class="memitem:a5d785ea23167a3b7e44e045097cd457e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457e">DifficultyLevels</a> { <a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea8511737cb33e0a6022084ed1b5c05092">DIFFLVL_EASY</a> =0, 
+<a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea124bdf49731fecdaa92d39fbd9d98f26">DIFFLVL_NORM</a> =1, 
+<a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea67fccff53bbaeaa47737530842f5c4f5">DIFFLVL_HARD</a> =2, 
+<a class="el" href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457ea6c71b45deb89801d0e11e674d21e3e51">DIFFLVL_CRZY</a> =3
  }</td></tr>
 <tr class="memdesc:a5d785ea23167a3b7e44e045097cd457e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Difficulty levels.  <a href="namespace_chase_game.html#a5d785ea23167a3b7e44e045097cd457e">More...</a><br/></td></tr>
 <tr class="separator:a5d785ea23167a3b7e44e045097cd457e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,18 +161,30 @@ Enumerations</h2></td></tr>
 <tr class="separator:a5acdf639e912d1e78814b7fae21afc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85936e0bdb5509ede7ebb2543de5be42"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a85936e0bdb5509ede7ebb2543de5be42">GameMusicState</a> { <a class="el" href="namespace_chase_game.html#a85936e0bdb5509ede7ebb2543de5be42ae2cef0894718493a1e334a948734fe65">GMS_TITLE</a>, 
 <a class="el" href="namespace_chase_game.html#a85936e0bdb5509ede7ebb2543de5be42a9c9cc6c997ce9d50efd2f3d815323b11">GMS_STARTING</a>, 
-<a class="el" href="namespace_chase_game.html#a85936e0bdb5509ede7ebb2543de5be42a575913ea08f1bd0667c644624b56102f">GMS_INGAME</a>
+<a class="el" href="namespace_chase_game.html#a85936e0bdb5509ede7ebb2543de5be42a575913ea08f1bd0667c644624b56102f">GMS_INGAME</a>, 
+<a class="el" href="namespace_chase_game.html#a85936e0bdb5509ede7ebb2543de5be42aeff71e80a88a58ab6f8d049daaccc84a">GMS_STOP</a>
  }</td></tr>
 <tr class="memdesc:a85936e0bdb5509ede7ebb2543de5be42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Music state.  <a href="namespace_chase_game.html#a85936e0bdb5509ede7ebb2543de5be42">More...</a><br/></td></tr>
 <tr class="separator:a85936e0bdb5509ede7ebb2543de5be42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7d444b6a4ab8bbb4fa6ae736eb629477"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a7d444b6a4ab8bbb4fa6ae736eb629477">SetGameState</a> (map&lt; string, sf::Music &amp; &gt; &amp;Tracks, int GameState)</td></tr>
-<tr class="separator:a7d444b6a4ab8bbb4fa6ae736eb629477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aeec1309079c5c64aec0fd24a4b17c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a5aeec1309079c5c64aec0fd24a4b17c1">SetGameState</a> (std::map&lt; std::string, sf::Music &amp; &gt; &amp;Tracks, int GameState)</td></tr>
-<tr class="memdesc:a5aeec1309079c5c64aec0fd24a4b17c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets music volumes according to the game state.  <a href="#a5aeec1309079c5c64aec0fd24a4b17c1">More...</a><br/></td></tr>
-<tr class="separator:a5aeec1309079c5c64aec0fd24a4b17c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af423e47c7318b7eeb67ff1f1a6b1547d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d">SetGameState</a> (map&lt; string, sf::Music &amp; &gt; &amp;Tracks, int GameState, bool DoFade)</td></tr>
+<tr class="separator:af423e47c7318b7eeb67ff1f1a6b1547d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b7d4727ff31281f8efdf46175e94c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#af1b7d4727ff31281f8efdf46175e94c3">InitSongs</a> (sf::Music &amp;Track1A, sf::Music &amp;Track1B, sf::Music &amp;Track1C, sf::Music &amp;Track2)</td></tr>
+<tr class="memdesc:af1b7d4727ff31281f8efdf46175e94c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the songs and inits them.  <a href="#af1b7d4727ff31281f8efdf46175e94c3">More...</a><br/></td></tr>
+<tr class="separator:af1b7d4727ff31281f8efdf46175e94c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fafa6862bb2df06c93d286361fefaa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4">DoubleSongVolumeFading</a> (sf::Music &amp;A, sf::Music &amp;B, float VolumeA, float VolumeB, float FadeDuration)</td></tr>
+<tr class="memdesc:a1fafa6862bb2df06c93d286361fefaa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a crossface between two songs.  <a href="#a1fafa6862bb2df06c93d286361fefaa4">More...</a><br/></td></tr>
+<tr class="separator:a1fafa6862bb2df06c93d286361fefaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9e1d486d981f5332d23142eb4777b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7">TripleSongVolumeFading</a> (sf::Music &amp;A, sf::Music &amp;B, sf::Music &amp;C, float VolumeA, float VolumeB, float VolumeC, float FadeDuration)</td></tr>
+<tr class="memdesc:a3b9e1d486d981f5332d23142eb4777b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a crossface between three song.  <a href="#a3b9e1d486d981f5332d23142eb4777b7">More...</a><br/></td></tr>
+<tr class="separator:a3b9e1d486d981f5332d23142eb4777b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac628bcb1f9de7ece2d9705ea5c6e9e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#ac628bcb1f9de7ece2d9705ea5c6e9e91">SetGameState</a> (std::map&lt; std::string, sf::Music &amp; &gt; &amp;Tracks, int GameState, bool DoFade)</td></tr>
+<tr class="memdesc:ac628bcb1f9de7ece2d9705ea5c6e9e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets music volumes according to the game state.  <a href="#ac628bcb1f9de7ece2d9705ea5c6e9e91">More...</a><br/></td></tr>
+<tr class="separator:ac628bcb1f9de7ece2d9705ea5c6e9e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b95183bbaf6684ffc6511a4f9922f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5">SuperBanana</a> ()</td></tr>
+<tr class="separator:a19b95183bbaf6684ffc6511a4f9922f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee2df7cbf4974e167612a7415943f3b0"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#aee2df7cbf4974e167612a7415943f3b0">RRand</a> (unsigned Min, unsigned Max)</td></tr>
 <tr class="separator:aee2df7cbf4974e167612a7415943f3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a831cfcb5623ab30034f57cbfff28c720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a831cfcb5623ab30034f57cbfff28c720">GenBonus_Malus</a> (<a class="el" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp;Mat)</td></tr>
@@ -197,13 +209,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a561c85a018e34c8baa21f7f500a3c9c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a561c85a018e34c8baa21f7f500a3c9c7">SaveGameConfig</a> (const std::string &amp;FileName, <a class="el" href="struct_chase_game_1_1_s_game_status.html">SGameStatus</a> &amp;Config)</td></tr>
 <tr class="memdesc:a561c85a018e34c8baa21f7f500a3c9c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves game configuration in a config file.  <a href="#a561c85a018e34c8baa21f7f500a3c9c7">More...</a><br/></td></tr>
 <tr class="separator:a561c85a018e34c8baa21f7f500a3c9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b28a3a3594d145b0ce1d1bf179e88a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3">StoreCharHistory</a> (const char Input, <a class="el" href="struct_chase_game_1_1_s_game_status.html">SGameStatus</a> &amp;GameStatus)</td></tr>
+<tr class="memdesc:a4b28a3a3594d145b0ce1d1bf179e88a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores last 6 inputs.  <a href="#a4b28a3a3594d145b0ce1d1bf179e88a3">More...</a><br/></td></tr>
+<tr class="separator:a4b28a3a3594d145b0ce1d1bf179e88a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5112517855da810fe3b7bdb81d58484"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484">ProcessInput</a> (<a class="el" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp;Mat, const char Input, <a class="el" href="struct_chase_game_1_1_s_game_status.html">SGameStatus</a> &amp;Config)</td></tr>
 <tr class="memdesc:ab5112517855da810fe3b7bdb81d58484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes user input.  <a href="#ab5112517855da810fe3b7bdb81d58484">More...</a><br/></td></tr>
 <tr class="separator:ab5112517855da810fe3b7bdb81d58484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb136d1f2b7073d2dc61bc2e2d65b931"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931">GameRoundLoop</a> (<a class="el" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp;Mat, <a class="el" href="struct_chase_game_1_1_s_map_gen_params.html">SMapGenParams</a> &amp;MapGenParams, <a class="el" href="struct_chase_game_1_1_s_game_status.html">SGameStatus</a> &amp;GameStatus)</td></tr>
 <tr class="separator:acb136d1f2b7073d2dc61bc2e2d65b931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaedf9429ec62c336f4324d580eec51c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c">Pause</a> ()</td></tr>
-<tr class="separator:aaaedf9429ec62c336f4324d580eec51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ca6f3f9092b35d9bea0343fd032d7f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0">GameLoop</a> (<a class="el" href="struct_chase_game_1_1_s_map_gen_params.html">SMapGenParams</a> &amp;MapGenParams, <a class="el" href="struct_chase_game_1_1_s_game_status.html">SGameStatus</a> &amp;GameStatus, map&lt; string, sf::Music &amp; &gt; &amp;Music)</td></tr>
 <tr class="separator:a1ca6f3f9092b35d9bea0343fd032d7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528073d13296b3cf84a6ae07c3550e74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74">StartGame</a> ()</td></tr>
@@ -241,6 +254,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8ca147721cdfaf96ee1f9c5007c27142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142">Sleep</a> (int MSec)</td></tr>
 <tr class="memdesc:a8ca147721cdfaf96ee1f9c5007c27142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls usleep.  <a href="#a8ca147721cdfaf96ee1f9c5007c27142">More...</a><br/></td></tr>
 <tr class="separator:a8ca147721cdfaf96ee1f9c5007c27142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaedf9429ec62c336f4324d580eec51c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c">Pause</a> ()</td></tr>
+<tr class="memdesc:aaaedf9429ec62c336f4324d580eec51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pauses the program.  <a href="#aaaedf9429ec62c336f4324d580eec51c">More...</a><br/></td></tr>
+<tr class="separator:aaaedf9429ec62c336f4324d580eec51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -259,6 +275,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a12d6411bb9a72150acba6060bb1587e1"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a12d6411bb9a72150acba6060bb1587e1">KCancelled</a> = '0'</td></tr>
 <tr class="memdesc:a12d6411bb9a72150acba6060bb1587e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character sent when a move is not allowed.  <a href="#a12d6411bb9a72150acba6060bb1587e1">More...</a><br/></td></tr>
 <tr class="separator:a12d6411bb9a72150acba6060bb1587e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f787138e31b0a9dc2fbaad3547b246a"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a1f787138e31b0a9dc2fbaad3547b246a">KExit</a> = 'Q'</td></tr>
+<tr class="memdesc:a1f787138e31b0a9dc2fbaad3547b246a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character sent when the user wants to exit the game (escape)  <a href="#a1f787138e31b0a9dc2fbaad3547b246a">More...</a><br/></td></tr>
+<tr class="separator:a1f787138e31b0a9dc2fbaad3547b246a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main namespace Project namespace for the game Contains all the funcitons, structs, enums and constansts related to the game. </p>
@@ -378,6 +397,8 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a85936e0bdb5509ede7ebb2543de5be42a575913ea08f1bd0667c644624b56102f"></a>GMS_INGAME</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a85936e0bdb5509ede7ebb2543de5be42aeff71e80a88a58ab6f8d049daaccc84a"></a>GMS_STOP</em>&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="globals_8hxx_source.html#l00044">44</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
@@ -431,7 +452,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00032">32</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
+<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00034">34</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -459,14 +480,14 @@ Here is the caller graph for this function:</div>
 
 <p>Clears screen. </p>
 
-<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00024">24</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
+<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00026">26</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6_icgraph.png" border="0" usemap="#namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6_icgraph" alt=""/></div>
 <map name="namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6_icgraph" id="namespace_chase_game_a3a7382465f6f23fe77cde4e589fb80d6_icgraph">
-<area shape="rect" id="node2" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="227,5,392,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="440,31,605,57"/><area shape="rect" id="node4" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="653,31,704,57"/></map>
+<area shape="rect" id="node2" href="namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="ChaseGame::SuperBanana" alt="" coords="238,5,418,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="477,81,643,108"/><area shape="rect" id="node4" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="691,120,856,147"/><area shape="rect" id="node6" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="227,107,429,133"/><area shape="rect" id="node5" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="904,120,955,147"/></map>
 </div>
 </p>
 
@@ -494,14 +515,90 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00028">28</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
+<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00030">30</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_chase_game_a3a120300b1e200a26fe8680a33300283_icgraph.png" border="0" usemap="#namespace_chase_game_a3a120300b1e200a26fe8680a33300283_icgraph" alt=""/></div>
 <map name="namespace_chase_game_a3a120300b1e200a26fe8680a33300283_icgraph" id="namespace_chase_game_a3a120300b1e200a26fe8680a33300283_icgraph">
-<area shape="rect" id="node2" href="namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c" title="ChaseGame::Pause" alt="" coords="437,5,576,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="656,81,821,108"/><area shape="rect" id="node6" href="namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="187,107,357,133"/><area shape="rect" id="node4" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="869,81,1035,108"/><area shape="rect" id="node5" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1083,81,1133,108"/><area shape="rect" id="node7" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="405,157,608,184"/></map>
+<area shape="rect" id="node2" href="namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="ChaseGame::SuperBanana" alt="" coords="187,5,367,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="667,120,832,147"/><area shape="rect" id="node6" href="namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="192,107,363,133"/><area shape="rect" id="node8" href="namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c" title="This function pauses the program. " alt="" coords="448,208,587,235"/><area shape="rect" id="node4" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="880,152,1045,179"/><area shape="rect" id="node5" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1093,152,1144,179"/><area shape="rect" id="node7" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="416,157,619,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1fafa6862bb2df06c93d286361fefaa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChaseGame::DoubleSongVolumeFading </td>
+          <td>(</td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>B</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>VolumeA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>VolumeB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>FadeDuration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do a crossface between two songs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>Song A </td></tr>
+    <tr><td class="paramname">B</td><td>Song B </td></tr>
+    <tr><td class="paramname">VolumeA</td><td>Wanted volume for song A </td></tr>
+    <tr><td class="paramname">VolumeB</td><td>Wanted volume for song B </td></tr>
+    <tr><td class="paramname">FadeDuration</td><td>Duration of the crossfade (in seconds) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="audio_8cxx_source.html#l00105">105</a> of file <a class="el" href="audio_8cxx_source.html">audio.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4_cgraph.png" border="0" usemap="#namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4_cgraph" alt=""/></div>
+<map name="namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4_cgraph" id="namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4_cgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="270,12,405,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4_icgraph.png" border="0" usemap="#namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4_icgraph" alt=""/></div>
+<map name="namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4_icgraph" id="namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4_icgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d" title="ChaseGame::SetGameState" alt="" coords="270,31,458,57"/><area shape="rect" id="node3" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="507,5,672,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="720,31,885,57"/><area shape="rect" id="node5" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="933,31,984,57"/></map>
 </div>
 </p>
 
@@ -617,14 +714,14 @@ false If game is ended </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="game_8cxx_source.html#l00076">76</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
+<p>Definition at line <a class="el" href="game_8cxx_source.html#l00083">83</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0_cgraph.png" border="0" usemap="#namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0_cgraph" alt=""/></div>
 <map name="namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0_cgraph" id="namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0_cgraph">
-<area shape="rect" id="node2" href="namespace_chase_game.html#a15617c8a111cd66bf5d24fd1e82a119d" title="Creates game matrix from the parameters and config file. " alt="" coords="245,5,395,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="233,56,407,83"/><area shape="rect" id="node5" href="namespace_chase_game.html#a7d444b6a4ab8bbb4fa6ae736eb629477" title="ChaseGame::SetGameState" alt="" coords="226,107,414,133"/><area shape="rect" id="node6" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="731,208,863,235"/><area shape="rect" id="node7" href="namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c" title="ChaseGame::Pause" alt="" coords="489,208,628,235"/><area shape="rect" id="node8" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="219,309,421,336"/><area shape="rect" id="node9" href="namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="473,259,644,285"/><area shape="rect" id="node3" href="namespace_chase_game.html#ac12626138d0e2c49669eba73ffb4e4b7" title="ChaseGame::MatShape" alt="" coords="478,5,639,32"/><area shape="rect" id="node11" href="namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="483,309,634,336"/><area shape="rect" id="node12" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="469,360,648,387"/><area shape="rect" id="node10" href="namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="697,259,898,285"/><area shape="rect" id="node13" href="namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="714,360,881,387"/></map>
+<area shape="rect" id="node2" href="namespace_chase_game.html#a15617c8a111cd66bf5d24fd1e82a119d" title="Creates game matrix from the parameters and config file. " alt="" coords="245,31,395,57"/><area shape="rect" id="node4" href="namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="491,208,664,235"/><area shape="rect" id="node5" href="namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d" title="ChaseGame::SetGameState" alt="" coords="226,469,414,496"/><area shape="rect" id="node9" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="769,309,901,336"/><area shape="rect" id="node10" href="namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c" title="This function pauses the program. " alt="" coords="251,335,389,361"/><area shape="rect" id="node11" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="219,107,421,133"/><area shape="rect" id="node12" href="namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="492,157,663,184"/><area shape="rect" id="node18" href="namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="ChaseGame::SuperBanana" alt="" coords="230,259,410,285"/><area shape="rect" id="node3" href="namespace_chase_game.html#ac12626138d0e2c49669eba73ffb4e4b7" title="ChaseGame::MatShape" alt="" coords="497,5,658,32"/><area shape="rect" id="node6" href="namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="469,462,685,503"/><area shape="rect" id="node8" href="namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="474,527,681,569"/><area shape="rect" id="node7" href="namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="767,469,902,496"/><area shape="rect" id="node14" href="namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="502,107,653,133"/><area shape="rect" id="node15" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="488,56,667,83"/><area shape="rect" id="node13" href="namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="734,157,935,184"/><area shape="rect" id="node16" href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="734,31,935,57"/><area shape="rect" id="node17" href="namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="751,81,918,108"/></map>
 </div>
 </p>
 
@@ -669,14 +766,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="game_8cxx_source.html#l00046">46</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
+<p>Definition at line <a class="el" href="game_8cxx_source.html#l00062">62</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_cgraph.png" border="0" usemap="#namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_cgraph" alt=""/></div>
 <map name="namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_cgraph" id="namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931_cgraph">
-<area shape="rect" id="node2" href="namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="260,31,431,57"/><area shape="rect" id="node5" href="namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="270,81,421,108"/><area shape="rect" id="node6" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="256,132,435,159"/><area shape="rect" id="node3" href="namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="483,5,685,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="518,56,650,83"/><area shape="rect" id="node7" href="namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="501,132,667,159"/></map>
+<area shape="rect" id="node2" href="namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="260,31,431,57"/><area shape="rect" id="node5" href="namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="270,81,421,108"/><area shape="rect" id="node6" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="256,132,435,159"/><area shape="rect" id="node9" href="namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="259,183,432,209"/><area shape="rect" id="node3" href="namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="483,5,685,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="518,56,650,83"/><area shape="rect" id="node7" href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="483,107,685,133"/><area shape="rect" id="node8" href="namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="501,157,667,184"/></map>
 </div>
 </p>
 
@@ -796,14 +893,74 @@ Here is the caller graph for this function:</div>
 <p>Captures a character from stdin. </p>
 <dl class="section return"><dt>Returns</dt><dd>captured character </dd></dl>
 
-<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00037">37</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
+<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00039">39</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a_icgraph.png" border="0" usemap="#namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a_icgraph" alt=""/></div>
 <map name="namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a_icgraph" id="namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a_icgraph">
-<area shape="rect" id="node2" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="205,5,408,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="669,31,835,57"/><area shape="rect" id="node3" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="456,5,621,32"/><area shape="rect" id="node5" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="883,31,933,57"/></map>
+<area shape="rect" id="node2" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="205,5,408,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="456,5,621,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="669,5,835,32"/><area shape="rect" id="node5" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="883,5,933,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af1b7d4727ff31281f8efdf46175e94c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChaseGame::InitSongs </td>
+          <td>(</td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>Track1A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>Track1B</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>Track1C</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>Track2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads the songs and inits them. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Track1A</td><td>Song </td></tr>
+    <tr><td class="paramname">Track1B</td><td>Song </td></tr>
+    <tr><td class="paramname">Track1C</td><td>Song </td></tr>
+    <tr><td class="paramname">Track2</td><td>Song </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="audio_8cxx_source.html#l00090">90</a> of file <a class="el" href="audio_8cxx_source.html">audio.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_af1b7d4727ff31281f8efdf46175e94c3_icgraph.png" border="0" usemap="#namespace_chase_game_af1b7d4727ff31281f8efdf46175e94c3_icgraph" alt=""/></div>
+<map name="namespace_chase_game_af1b7d4727ff31281f8efdf46175e94c3_icgraph" id="namespace_chase_game_af1b7d4727ff31281f8efdf46175e94c3_icgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="211,5,376,32"/><area shape="rect" id="node3" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="424,5,475,32"/></map>
 </div>
 </p>
 
@@ -1081,7 +1238,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="game_8cxx_source.html#l00066">66</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
+<p>This function pauses the program. </p>
+
+<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00087">87</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1097,7 +1256,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c_icgraph.png" border="0" usemap="#namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c_icgraph" alt=""/></div>
 <map name="namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c_icgraph" id="namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c_icgraph">
-<area shape="rect" id="node2" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="192,5,357,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="405,5,571,32"/><area shape="rect" id="node4" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="619,5,669,32"/></map>
+<area shape="rect" id="node2" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="192,5,357,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="405,31,571,57"/><area shape="rect" id="node4" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="619,31,669,57"/></map>
 </div>
 </p>
 
@@ -1146,14 +1305,14 @@ Here is the caller graph for this function:</div>
 <dd>
 KCancelled if the move was cancelled </dd></dl>
 
-<p>Definition at line <a class="el" href="game_8cxx_source.html#l00031">31</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
+<p>Definition at line <a class="el" href="game_8cxx_source.html#l00043">43</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_chase_game_ab5112517855da810fe3b7bdb81d58484_cgraph.png" border="0" usemap="#namespace_chase_game_ab5112517855da810fe3b7bdb81d58484_cgraph" alt=""/></div>
 <map name="namespace_chase_game_ab5112517855da810fe3b7bdb81d58484_cgraph" id="namespace_chase_game_ab5112517855da810fe3b7bdb81d58484_cgraph">
-<area shape="rect" id="node2" href="namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="233,5,399,32"/></map>
+<area shape="rect" id="node2" href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="233,5,434,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="250,56,417,83"/></map>
 </div>
 </p>
 
@@ -1355,7 +1514,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5aeec1309079c5c64aec0fd24a4b17c1"></a>
+<a class="anchor" id="ac628bcb1f9de7ece2d9705ea5c6e9e91"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1369,7 +1528,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>GameState</em>&#160;</td>
+          <td class="paramname"><em>GameState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>DoFade</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1384,13 +1549,14 @@ Here is the caller graph for this function:</div>
   <table class="params">
     <tr><td class="paramname">Tracks</td><td>Music map </td></tr>
     <tr><td class="paramname">GameState</td><td>from the GameMusicState enum </td></tr>
+    <tr><td class="paramname">DoFade</td><td>Do a crossfade </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a7d444b6a4ab8bbb4fa6ae736eb629477"></a>
+<a class="anchor" id="af423e47c7318b7eeb67ff1f1a6b1547d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1404,7 +1570,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>GameState</em>&#160;</td>
+          <td class="paramname"><em>GameState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>DoFade</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1414,13 +1586,22 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="audio_8cxx_source.html#l00029">29</a> of file <a class="el" href="audio_8cxx_source.html">audio.cxx</a>.</p>
+<p>Definition at line <a class="el" href="audio_8cxx_source.html#l00030">30</a> of file <a class="el" href="audio_8cxx_source.html">audio.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d_cgraph.png" border="0" usemap="#namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d_cgraph" alt=""/></div>
+<map name="namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d_cgraph" id="namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d_cgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="243,5,459,46"/><area shape="rect" id="node4" href="namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="247,70,454,111"/><area shape="rect" id="node3" href="namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="507,45,642,72"/></map>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477_icgraph.png" border="0" usemap="#namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477_icgraph" alt=""/></div>
-<map name="namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477_icgraph" id="namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477_icgraph">
+<div class="center"><img src="namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d_icgraph.png" border="0" usemap="#namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d_icgraph" alt=""/></div>
+<map name="namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d_icgraph" id="namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d_icgraph">
 <area shape="rect" id="node2" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="243,5,408,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="456,31,621,57"/><area shape="rect" id="node4" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="669,31,720,57"/></map>
 </div>
 </p>
@@ -1504,7 +1685,16 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00070">70</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
+<p>Definition at line <a class="el" href="unix_8cxx_source.html#l00083">83</a> of file <a class="el" href="unix_8cxx_source.html">unix.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a8ca147721cdfaf96ee1f9c5007c27142_icgraph.png" border="0" usemap="#namespace_chase_game_a8ca147721cdfaf96ee1f9c5007c27142_icgraph" alt=""/></div>
+<map name="namespace_chase_game_a8ca147721cdfaf96ee1f9c5007c27142_icgraph" id="namespace_chase_game_a8ca147721cdfaf96ee1f9c5007c27142_icgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="189,5,405,46"/><area shape="rect" id="node7" href="namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="194,70,401,111"/><area shape="rect" id="node8" href="namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="ChaseGame::SuperBanana" alt="" coords="458,132,638,159"/><area shape="rect" id="node3" href="namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d" title="ChaseGame::SetGameState" alt="" coords="454,77,642,104"/><area shape="rect" id="node4" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="691,128,856,155"/><area shape="rect" id="node5" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="904,103,1069,129"/><area shape="rect" id="node6" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1117,103,1168,129"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1523,14 +1713,14 @@ Here is the caller graph for this function:</div>
 
 <p>This function starts the game. </p>
 
-<p>Definition at line <a class="el" href="game_8cxx_source.html#l00183">183</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
+<p>Definition at line <a class="el" href="game_8cxx_source.html#l00196">196</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74_cgraph.png" border="0" usemap="#namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74_cgraph" alt=""/></div>
 <map name="namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74_cgraph" id="namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74_cgraph">
-<area shape="rect" id="node2" href="namespace_chase_game.html#addd460052ec5a5fe3010665ca84b07ec" title="Loads game configuration. " alt="" coords="226,5,427,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a4779af792d3de8e274049bf2019e0343" title="ChaseGame::LoadMapGenConfig" alt="" coords="219,56,434,83"/><area shape="rect" id="node6" href="namespace_chase_game.html#a7d444b6a4ab8bbb4fa6ae736eb629477" title="ChaseGame::SetGameState" alt="" coords="490,107,678,133"/><area shape="rect" id="node7" href="namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="497,157,671,184"/><area shape="rect" id="node8" href="namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="747,461,898,488"/><area shape="rect" id="node9" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="244,233,409,260"/><area shape="rect" id="node3" href="namespace_chase_game.html#a39f8b039151b1a3eef82fdc1c6f52091" title="ChaseGame::SaveGameConfig" alt="" coords="483,5,685,32"/><area shape="rect" id="node5" href="namespace_chase_game.html#a98e8d90127c802c1445266e39966c3fb" title="ChaseGame::SaveMapConfig" alt="" coords="489,56,679,83"/><area shape="rect" id="node10" href="namespace_chase_game.html#a15617c8a111cd66bf5d24fd1e82a119d" title="Creates game matrix from the parameters and config file. " alt="" coords="509,208,659,235"/><area shape="rect" id="node12" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="995,309,1127,336"/><area shape="rect" id="node13" href="namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c" title="ChaseGame::Pause" alt="" coords="753,309,892,336"/><area shape="rect" id="node14" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="483,411,685,437"/><area shape="rect" id="node15" href="namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="737,360,908,387"/><area shape="rect" id="node11" href="namespace_chase_game.html#ac12626138d0e2c49669eba73ffb4e4b7" title="ChaseGame::MatShape" alt="" coords="742,208,903,235"/><area shape="rect" id="node17" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="733,411,912,437"/><area shape="rect" id="node16" href="namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="961,360,1162,387"/><area shape="rect" id="node18" href="namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="978,411,1145,437"/></map>
+<area shape="rect" id="node2" href="namespace_chase_game.html#addd460052ec5a5fe3010665ca84b07ec" title="Loads game configuration. " alt="" coords="226,5,427,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a4779af792d3de8e274049bf2019e0343" title="ChaseGame::LoadMapGenConfig" alt="" coords="219,56,434,83"/><area shape="rect" id="node6" href="namespace_chase_game.html#af1b7d4727ff31281f8efdf46175e94c3" title="Loads the songs and inits them. " alt="" coords="249,107,405,133"/><area shape="rect" id="node7" href="namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d" title="ChaseGame::SetGameState" alt="" coords="490,107,678,133"/><area shape="rect" id="node11" href="namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="755,259,928,285"/><area shape="rect" id="node12" href="namespace_chase_game.html#aaaedf9429ec62c336f4324d580eec51c" title="This function pauses the program. " alt="" coords="515,309,653,336"/><area shape="rect" id="node14" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="244,309,409,336"/><area shape="rect" id="node3" href="namespace_chase_game.html#a39f8b039151b1a3eef82fdc1c6f52091" title="ChaseGame::SaveGameConfig" alt="" coords="483,5,685,32"/><area shape="rect" id="node5" href="namespace_chase_game.html#a98e8d90127c802c1445266e39966c3fb" title="ChaseGame::SaveMapConfig" alt="" coords="489,56,679,83"/><area shape="rect" id="node8" href="namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="733,26,949,67"/><area shape="rect" id="node10" href="namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="738,91,945,133"/><area shape="rect" id="node9" href="namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="1031,99,1166,125"/><area shape="rect" id="node13" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="1033,335,1165,361"/><area shape="rect" id="node15" href="namespace_chase_game.html#a15617c8a111cd66bf5d24fd1e82a119d" title="Creates game matrix from the parameters and config file. " alt="" coords="509,537,659,564"/><area shape="rect" id="node17" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="483,411,685,437"/><area shape="rect" id="node18" href="namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="756,461,927,488"/><area shape="rect" id="node24" href="namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="ChaseGame::SuperBanana" alt="" coords="494,157,674,184"/><area shape="rect" id="node16" href="namespace_chase_game.html#ac12626138d0e2c49669eba73ffb4e4b7" title="ChaseGame::MatShape" alt="" coords="761,563,922,589"/><area shape="rect" id="node20" href="namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="766,411,917,437"/><area shape="rect" id="node21" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="752,512,931,539"/><area shape="rect" id="node19" href="namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="998,461,1199,488"/><area shape="rect" id="node22" href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="998,512,1199,539"/><area shape="rect" id="node23" href="namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="1015,563,1182,589"/></map>
 </div>
 </p>
 
@@ -1540,6 +1730,177 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74_icgraph.png" border="0" usemap="#namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74_icgraph" alt=""/></div>
 <map name="namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74_icgraph" id="namespace_chase_game_a528073d13296b3cf84a6ae07c3550e74_icgraph">
 <area shape="rect" id="node2" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="219,5,269,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b28a3a3594d145b0ce1d1bf179e88a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChaseGame::StoreCharHistory </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>Input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SGameStatus &amp;&#160;</td>
+          <td class="paramname"><em>GameStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stores last 6 inputs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Input</td><td>last char inputed </td></tr>
+    <tr><td class="paramname">GameStatus</td><td>Game object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="game_8cxx_source.html#l00031">31</a> of file <a class="el" href="game_8cxx_source.html">game.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3_icgraph.png" border="0" usemap="#namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3_icgraph" alt=""/></div>
+<map name="namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3_icgraph" id="namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3_icgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="256,5,435,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="483,5,685,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="733,5,899,32"/><area shape="rect" id="node5" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="947,5,1112,32"/><area shape="rect" id="node6" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1160,5,1211,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a19b95183bbaf6684ffc6511a4f9922f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChaseGame::SuperBanana </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="banana_8cxx_source.html#l00024">24</a> of file <a class="el" href="banana_8cxx_source.html">banana.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5_cgraph.png" border="0" usemap="#namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5_cgraph" alt=""/></div>
+<map name="namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5_cgraph" id="namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5_cgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="255,5,387,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="254,56,389,83"/><area shape="rect" id="node4" href="namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="235,107,408,133"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5_icgraph.png" border="0" usemap="#namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5_icgraph" alt=""/></div>
+<map name="namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5_icgraph" id="namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5_icgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="235,5,400,32"/><area shape="rect" id="node3" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="448,5,613,32"/><area shape="rect" id="node4" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="661,5,712,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b9e1d486d981f5332d23142eb4777b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChaseGame::TripleSongVolumeFading </td>
+          <td>(</td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>B</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Music &amp;&#160;</td>
+          <td class="paramname"><em>C</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>VolumeA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>VolumeB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>VolumeC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>FadeDuration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do a crossface between three song. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>Song A </td></tr>
+    <tr><td class="paramname">B</td><td>Song B </td></tr>
+    <tr><td class="paramname">C</td><td>Song C </td></tr>
+    <tr><td class="paramname">VolumeA</td><td>Wanted volume for song A </td></tr>
+    <tr><td class="paramname">VolumeB</td><td>Wanted volume for song B </td></tr>
+    <tr><td class="paramname">VolumeC</td><td>Wanted volume for song C </td></tr>
+    <tr><td class="paramname">FadeDuration</td><td>Duration of the crossfade (in seconds) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="audio_8cxx_source.html#l00129">129</a> of file <a class="el" href="audio_8cxx_source.html">audio.cxx</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7_cgraph.png" border="0" usemap="#namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7_cgraph" alt=""/></div>
+<map name="namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7_cgraph" id="namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7_cgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="262,12,397,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7_icgraph.png" border="0" usemap="#namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7_icgraph" alt=""/></div>
+<map name="namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7_icgraph" id="namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7_icgraph">
+<area shape="rect" id="node2" href="namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d" title="ChaseGame::SetGameState" alt="" coords="262,31,450,57"/><area shape="rect" id="node3" href="namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="499,5,664,32"/><area shape="rect" id="node4" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="712,31,877,57"/><area shape="rect" id="node5" href="main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="925,31,976,57"/></map>
 </div>
 </p>
 
@@ -1575,6 +1936,22 @@ Here is the caller graph for this function:</div>
 <p>Character representing voidness. </p>
 
 <p>Definition at line <a class="el" href="globals_8hxx_source.html#l00053">53</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f787138e31b0a9dc2fbaad3547b246a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char ChaseGame::KExit = 'Q'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Character sent when the user wants to exit the game (escape) </p>
+
+<p>Definition at line <a class="el" href="globals_8hxx_source.html#l00062">62</a> of file <a class="el" href="globals_8hxx_source.html">globals.hxx</a>.</p>
 
 </div>
 </div>
@@ -1629,7 +2006,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 10 2014 18:31:31 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 11 2014 01:08:42 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

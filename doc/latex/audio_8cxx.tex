@@ -11,6 +11,7 @@
 {\ttfamily \#include $<$S\-F\-M\-L/\-System.\-hpp$>$}\\*
 {\ttfamily \#include $<$S\-F\-M\-L/\-Audio.\-hpp$>$}\\*
 {\ttfamily \#include \char`\"{}globals.\-hxx\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}audio.\-hxx\char`\"{}}\\*
 Include dependency graph for audio.\-cxx\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -26,5 +27,11 @@ Include dependency graph for audio.\-cxx\-:\nopagebreak
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{namespace_chase_game_a7d444b6a4ab8bbb4fa6ae736eb629477}{Chase\-Game\-::\-Set\-Game\-State} (map$<$ string, sf\-::\-Music \& $>$ \&Tracks, int Game\-State)
-\end{DoxyCompactItemize}
+void \hyperlink{namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d}{Chase\-Game\-::\-Set\-Game\-State} (map$<$ string, sf\-::\-Music \& $>$ \&Tracks, int Game\-State, bool Do\-Fade)
+\item 
+void \hyperlink{namespace_chase_game_af1b7d4727ff31281f8efdf46175e94c3}{Chase\-Game\-::\-Init\-Songs} (sf\-::\-Music \&Track1\-A, sf\-::\-Music \&Track1\-B, sf\-::\-Music \&Track1\-C, sf\-::\-Music \&Track2)
+\begin{DoxyCompactList}\small\item\em Loads the songs and inits them. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a1fafa6862bb2df06c93d286361fefaa4}{Chase\-Game\-::\-Double\-Song\-Volume\-Fading} (sf\-::\-Music \&A, sf\-::\-Music \&B, float Volume\-A, float Volume\-B, float Fade\-Duration)
+\begin{DoxyCompactList}\small\item\em Do a crossface between two songs. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7}{Chase\-Game\-::\-Triple\-Song\-Volume\-Fading} (sf\-::\-Music \&A, sf\-::\-Music \&B, sf\-::\-Music \&C, float Volume\-A, float Volume\-B, float Volume\-C, float Fade\-Duration)
+\begin{DoxyCompactList}\small\item\em Do a crossface between three song. \end{DoxyCompactList}\end{DoxyCompactItemize}
