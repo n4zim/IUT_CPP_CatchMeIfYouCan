@@ -24,6 +24,7 @@
 #include "map.hxx" 
 #include "audio.hxx" 
 #include "banana.hxx" 
+#include "game.hxx" 
 
 using namespace std;
 
@@ -106,7 +107,7 @@ namespace ChaseGame {
 		SetGameState (Music, GMS_STARTING, true);
 
 		Color (CLR_RESET);
-		cout << "\n               [ROUND " << GameStatus.Round + 1 << "]";
+		cout << "\n            [ROUND " << GameStatus.Round + 1 << " ON " << GameStatus.MaxRounds << "]";
 		cout << "\n\n           {";
 		Color (ColorH);
 		cout << Hunter;
@@ -205,7 +206,7 @@ namespace ChaseGame {
 		GameStatus.P2.Score = 0;
 
 		GameStatus.Round = 0;
-		GameStatus.MaxRounds = 5;
+		GameStatus.MaxRounds = 4;
 
 		// SOUND INITIALISATION
 
