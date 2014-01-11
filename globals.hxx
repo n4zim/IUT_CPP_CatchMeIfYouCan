@@ -43,28 +43,28 @@ namespace ChaseGame {
 	//! Music state, the value changes the music tracks being played.
 	enum GameMusicState { GMS_TITLE, GMS_STARTING, GMS_INGAME, GMS_STOP };
 
-	//! Caracter representing player one
+	//! Character representing player one
 	const char KTokenPlayer1 = 'X';
 	
-	//! Caracter representing player two
+	//! Character representing player two
 	const char KTokenPlayer2 = 'O';
 
-	//! Caracter representing voidness
+	//! Character representing voidness
 	const char KEmpty = ' ';
 
-	//! Caracter representing obstacles and walls
+	//! Character representing obstacles and walls
 	const char KObstacle = '#';
 
-	//! Caracter sent when a move is not allowed
+	//! Character sent when a move is not allowed
 	const char KCancelled = '0';
 
-	//! Caracter sent when the user wants to exit the game (escape)
+	//! Character sent when the user wants to exit the game (escape)
 	const char KExit = 'Q';
 
-	//! Caracter representing bonuses
+	//! Character representing bonuses
 	const char KBonus = '@';
 	
-	//! Caracter representing maluses
+	//! Character representing maluses
 	const char KMalus = '$';
 
 	//! Defines a position
