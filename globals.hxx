@@ -40,7 +40,7 @@ namespace ChaseGame {
 	//! Unix color values
 	enum ConsoleColors { CLR_BLACK=30, CLR_RED=31, CLR_GREEN=32, CLR_YELLOW=33, CLR_BLUE=34, CLR_MAGENTA=35, CLR_CYAN=36, CLR_WHITE=37, CLR_GREY=30, CLR_RESET=0 };
 
-	//! Music state
+	//! Music state, the value changes the music tracks being played.
 	enum GameMusicState { GMS_TITLE, GMS_STARTING, GMS_INGAME, GMS_STOP };
 
 	//! Character representing player one

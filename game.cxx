@@ -28,18 +28,6 @@
 using namespace std;
 
 namespace ChaseGame {
-	void StoreCharHistory (const char Input, SGameStatus& GameStatus) {
-		if (GameStatus.CharHistory.size () > 1 && GameStatus.CharHistory[GameStatus.CharHistory.size () - 1] == Input)
-			return; // Do not save duplicates
-
-		if (GameStatus.CharHistory.size () < 6) {
-			GameStatus.CharHistory.push_back (Input);
-		} else {
-			GameStatus.CharHistory.erase (GameStatus.CharHistory.begin ());	
-			GameStatus.CharHistory.push_back (Input);
-		}
-	}
-
 	char ProcessInput (CMatrix& Mat, const char Input, SGameStatus& GameStatus) {
 		StoreCharHistory (Input, GameStatus);
 		char MovedChar = KCancelled;
@@ -58,6 +46,18 @@ namespace ChaseGame {
 
 		return MovedChar;
 	} // ProcessInput ()
+
+	void StoreCharHistory (const char Input, SGameStatus& GameStatus) {
+		if (GameStatus.CharHistory.size () > 1 && GameStatus.CharHistory[GameStatus.CharHistory.size () - 1] == Input)
+			return; // Do not save duplicates
+
+		if (GameStatus.CharHistory.size () < 6) {
+			GameStatus.CharHistory.push_back (Input);
+		} else {
+			GameStatus.CharHistory.erase (GameStatus.CharHistory.begin ());	
+			GameStatus.CharHistory.push_back (Input);
+		}
+	} // StoreCharHistory ()
 
 	bool GameRoundLoop (CMatrix& Mat, SMapGenParams& MapGenParams, SGameStatus& GameStatus) {
 		ShowMatrix (Mat, GameStatus.ColorSet);
@@ -134,8 +134,10 @@ namespace ChaseGame {
 			if (!GameRoundLoop (Mat, MapGenParams, GameStatus)) // stop if someone catched someone
 				break;
 
-
-			if (GameStatus.CharHistory[0] == 66 && GameStatus.CharHistory[1] == 65 && GameStatus.CharHistory[2] == 78 && GameStatus.CharHistory[3] == 65 && GameStatus.CharHistory[4] == 78 && GameStatus.CharHistory[5] == 65) {
+			// This is not an easter egg or anything
+			if (GameStatus.CharHistory[0] == 66 && GameStatus.CharHistory[1] == 65 &&
+				GameStatus.CharHistory[2] == 78 && GameStatus.CharHistory[3] == 65 &&
+				GameStatus.CharHistory[4] == 78 && GameStatus.CharHistory[5] == 65) {
 				SetGameState (Music, GMS_STOP, true);
 				SuperBanana ();
 			}

@@ -62,7 +62,7 @@ enum \hyperlink{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42}{Game\-Mu
 \hyperlink{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42a575913ea08f1bd0667c644624b56102f}{G\-M\-S\-\_\-\-I\-N\-G\-A\-M\-E}, 
 \hyperlink{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42aeff71e80a88a58ab6f8d049daaccc84a}{G\-M\-S\-\_\-\-S\-T\-O\-P}
  \}
-\begin{DoxyCompactList}\small\item\em Music state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Music state, the value changes the music tracks being played. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -98,10 +98,10 @@ bool \hyperlink{namespace_chase_game_a4c62f61c6aac5bf06292aa51294fd211}{Save\-Ma
 \begin{DoxyCompactList}\small\item\em Saves parameters in a config file. \end{DoxyCompactList}\item 
 bool \hyperlink{namespace_chase_game_a561c85a018e34c8baa21f7f500a3c9c7}{Save\-Game\-Config} (const std\-::string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
 \begin{DoxyCompactList}\small\item\em Saves game configuration in a config file. \end{DoxyCompactList}\item 
-void \hyperlink{namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3}{Store\-Char\-History} (const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status)
-\begin{DoxyCompactList}\small\item\em Stores last 6 inputs. \end{DoxyCompactList}\item 
 char \hyperlink{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}{Process\-Input} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
 \begin{DoxyCompactList}\small\item\em Processes user input. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3}{Store\-Char\-History} (const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status)
+\begin{DoxyCompactList}\small\item\em Stores last 6 inputs. \end{DoxyCompactList}\item 
 bool \hyperlink{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}{Game\-Round\-Loop} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status)
 \item 
 bool \hyperlink{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}{Game\-Loop} (\hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Map\-Gen\-Params, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status, map$<$ string, sf\-::\-Music \& $>$ \&Music)
@@ -243,7 +243,7 @@ Definition at line 38 of file globals.\-hxx.
 \subsubsection[{Game\-Music\-State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Chase\-Game\-::\-Game\-Music\-State}}}\label{namespace_chase_game_a85936e0bdb5509ede7ebb2543de5be42}
 
 
-Music state. 
+Music state, the value changes the music tracks being played. 
 
 \begin{Desc}
 \item[Enumerator]\par
@@ -305,7 +305,7 @@ Changes background color.
 \end{DoxyParams}
 
 
-Definition at line 34 of file unix.\-cxx.
+Definition at line 35 of file unix.\-cxx.
 
 
 
@@ -331,7 +331,7 @@ Clears screen.
 
 
 
-Definition at line 26 of file unix.\-cxx.
+Definition at line 27 of file unix.\-cxx.
 
 
 
@@ -362,7 +362,7 @@ Changes text color.
 \end{DoxyParams}
 
 
-Definition at line 30 of file unix.\-cxx.
+Definition at line 31 of file unix.\-cxx.
 
 
 
@@ -627,7 +627,7 @@ captured character
 \end{DoxyReturn}
 
 
-Definition at line 39 of file unix.\-cxx.
+Definition at line 40 of file unix.\-cxx.
 
 
 
@@ -878,7 +878,7 @@ This function pauses the program.
 
 
 
-Definition at line 87 of file unix.\-cxx.
+Definition at line 79 of file unix.\-cxx.
 
 
 
@@ -931,7 +931,7 @@ K\-Cancelled if the move was cancelled
 \end{DoxyReturn}
 
 
-Definition at line 43 of file game.\-cxx.
+Definition at line 31 of file game.\-cxx.
 
 
 
@@ -1192,7 +1192,7 @@ Calls usleep.
 \end{DoxyParams}
 
 
-Definition at line 83 of file unix.\-cxx.
+Definition at line 75 of file unix.\-cxx.
 
 
 
@@ -1218,7 +1218,7 @@ This function starts the game.
 
 
 
-Definition at line 196 of file game.\-cxx.
+Definition at line 198 of file game.\-cxx.
 
 
 
@@ -1263,7 +1263,7 @@ Stores last 6 inputs.
 \end{DoxyParams}
 
 
-Definition at line 31 of file game.\-cxx.
+Definition at line 50 of file game.\-cxx.
 
 
 

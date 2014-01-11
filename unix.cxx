@@ -7,6 +7,7 @@
  * \version 1
  *
  * Defines unix-only functions
+ * (the game was cross platform in the first time)
  * 
  */
 
@@ -37,31 +38,24 @@ namespace ChaseGame {
 
 
 	char GetInput () {
-		/*// We only want one NEW char so we clear the cin
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        if(!cin) {
-            cin.clear();
-        }*/
-
-		//*
 		// Adapted from http://stackoverflow.com/questions/1798511/how-to-avoid-press-enter-with-any-getchar/1798833#1798833
-		char input;   
-	    static struct termios oldt, newt;
+		char Input;   
+	    static struct termios Oldt, Newt;
 
 	    // save old terminal settings
-	    tcgetattr (STDIN_FILENO, &oldt);
-	    newt = oldt;
+	    tcgetattr (STDIN_FILENO, &Oldt);
+	    Newt = Oldt;
 
 	    // Disabling ICANON and ECHO flags to disable validation and input echo
-	    newt.c_lflag &= ~(ICANON | ECHO);          
+	    Newt.c_lflag &= ~(ICANON | ECHO);          
 
 	    // apply new terminal settings
-	    tcsetattr (STDIN_FILENO, TCSANOW, &newt);
+	    tcsetattr (STDIN_FILENO, TCSANOW, &Newt);
 
-	    input = getchar ();
+	    Input = getchar ();
 		
-		if(input == 27) { // bugfix for arrow sequence sending escape
-			input = getchar ();
+		if(Input == 27) { // bugfix for arrow sequence sending escape
+			Input = getchar ();
 			/*if(input == 91) {
 				input = getchar ();
 			}*/
@@ -73,11 +67,9 @@ namespace ChaseGame {
 
 
 	    // restore old terminal settings
-	    tcsetattr (STDIN_FILENO, TCSANOW, &oldt);
-	    //if(input == char(27))
-	    //	return char(42);
-		return input; //*/
-		//return ' ';
+	    tcsetattr (STDIN_FILENO, TCSANOW, &Oldt);
+
+		return Input;
 	} // GetInput ()
 
 	void Sleep (int USec) {
