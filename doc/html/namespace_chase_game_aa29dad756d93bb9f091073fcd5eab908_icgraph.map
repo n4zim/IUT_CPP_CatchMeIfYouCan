@@ -1,5 +1,0 @@
-<map id="ChaseGame::MatForm" name="ChaseGame::MatForm">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#adfaa7677a16626893e1fb0739e50e7c6" title="Creates game matrix from the parameters and config file. " alt="" coords="209,5,359,32"/>
-<area shape="rect" id="node3" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="408,5,573,32"/>
-<area shape="rect" id="node4" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="621,5,672,32"/>
-</map>
