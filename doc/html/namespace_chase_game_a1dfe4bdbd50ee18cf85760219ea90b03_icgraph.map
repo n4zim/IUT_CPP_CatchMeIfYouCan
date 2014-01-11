@@ -1,3 +1,7 @@
 <map id="ChaseGame::MoveToken" name="ChaseGame::MoveToken">
 <area shape="rect" id="node2" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="221,5,400,32"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="448,5,651,32"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="699,5,864,32"/>
+<area shape="rect" id="node5" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="912,5,1077,32"/>
+<area shape="rect" id="node6" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1125,5,1176,32"/>
 </map>

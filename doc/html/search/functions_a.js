@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triplesongvolumefading',['TripleSongVolumeFading',['../namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7',1,'ChaseGame']]]
+  ['rrand',['RRand',['../namespace_chase_game.html#aee2df7cbf4974e167612a7415943f3b0',1,'ChaseGame']]]
 ];

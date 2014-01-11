@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['file_2ecxx',['file.cxx',['../file_8cxx.html',1,'']]],
-  ['file_2ehxx',['file.hxx',['../file_8hxx.html',1,'']]]
+  ['effect',['Effect',['../namespace_chase_game.html#ab2f720c0666cf49dd6ce958a0bb94e7e',1,'ChaseGame']]]
 ];

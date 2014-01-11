@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['gameloop',['GameLoop',['../namespace_chase_game.html#a978204f0ec269a6fa5f43bb523d84e57',1,'ChaseGame']]],
-  ['genmap',['GenMap',['../namespace_chase_game.html#a15617c8a111cd66bf5d24fd1e82a119d',1,'ChaseGame']]],
-  ['getinput',['GetInput',['../namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a',1,'ChaseGame']]]
+  ['effect',['Effect',['../namespace_chase_game.html#ab2f720c0666cf49dd6ce958a0bb94e7e',1,'ChaseGame']]]
 ];

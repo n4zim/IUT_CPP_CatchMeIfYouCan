@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cxx']]],
-  ['matshape',['MatShape',['../namespace_chase_game.html#a049d8d8beb22431889ca7ba34cc90871',1,'ChaseGame']]],
-  ['movetoken',['MoveToken',['../namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03',1,'ChaseGame']]]
+  ['loadgameconfig',['LoadGameConfig',['../namespace_chase_game.html#addd460052ec5a5fe3010665ca84b07ec',1,'ChaseGame']]],
+  ['loadmapgenconfig',['LoadMapGenConfig',['../namespace_chase_game.html#a4779af792d3de8e274049bf2019e0343',1,'ChaseGame::LoadMapGenConfig(const string &amp;FileName)'],['../namespace_chase_game.html#a9c5b5d91cb4251cae461faa4ace8a0cf',1,'ChaseGame::LoadMapGenConfig(const std::string &amp;FileName)']]]
 ];
