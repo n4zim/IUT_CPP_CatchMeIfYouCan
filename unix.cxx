@@ -76,10 +76,12 @@ namespace ChaseGame {
 		usleep(USec);
 	} // Sleep ()
 
-	void Pause () {
+	void Pause (bool DisplayText) {
 		Color(CLR_RESET);
 
-		cout << "\n\n\nPress enter to continue";
+		if(!DisplayText)
+			cout << "\n\n\nPress enter to continue";
+		
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
         if(!cin) {
             cin.clear();

@@ -9,6 +9,7 @@
 
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <vector>
 #include <limits>
@@ -67,10 +68,6 @@ namespace ChaseGame {
 
 		char c = ProcessInput (Mat, Input, GameStatus);
 
-		for (char C: GameStatus.CharHistory) {
-			cout << "-" << int (C) << endl;
-		}
-
 		if (c == KTokenPlayer1 || c == KTokenPlayer2) {
 			return false;
 		} else if (c == KExit) {
@@ -118,7 +115,7 @@ namespace ChaseGame {
 		Color (CLR_RESET);
 		cout << "}" << endl;
 
-		Pause ();
+		Pause (true);
 		SetGameState (Music, GMS_INGAME, true);
 
 		GameStatus.MvLeft = (rand () % 40 + 10) * 10;
@@ -147,7 +144,6 @@ namespace ChaseGame {
 		// Round end
 
 		ClearScreen ();
-		SetGameState (Music, GMS_STARTING, true);
 
 		bool HunterWon = false;
 		
@@ -178,20 +174,40 @@ namespace ChaseGame {
 		}
 
 		ShowMatrix (Mat, GameStatus.ColorSet);
+		SetGameState (Music, GMS_STARTING, true);
 
-		Pause ();
+		Pause (true);
 		SetGameState (Music, GMS_TITLE, true);
 
 		++GameStatus.Round;
 
 		ClearScreen ();
-		cout << "\n >>> Scores >>>" << endl; 
+
+		Color (CLR_GREEN);
+		cout << "\n";
+		cout << "  .oPYo. .oPYo. .oPYo.  .oPYo. .oPYo.  .oPYo. .oPYo.      .oo  .oPYo. ooo.   \n";
+		cout << "  8      8    8 8    8  8   `8 8.      8   `8 8    8     .P 8  8   `8 8  `8. \n";
+		cout << "  `Yooo. 8      8    8 o8YooP' `boo   o8YooP' 8    8    .P  8 o8YooP' 8   `8 \n";
+		cout << "      `8 8      8    8  8   `b .P      8   `b 8    8   oPooo8  8   `b 8    8 \n";
+		cout << "       8 8    8 8    8  8    8 8       8    8 8    8  .P    8  8    8 8   .P \n";
+		cout << "  `YooP' `YooP' `YooP'  8    8 `YooP'  8oooP' `YooP' .P     8  8    8 8ooo'  \n";
+		Color (CLR_RESET);
+		cout << "  :.....::.....::.....::..:::..:.....::......::.....:..:::::..:..:::.......::\n";
+		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n";
+		cout << "  ::::::::::::::::::::::::::- ";
 		Color (GameStatus.ColorSet.ColorP1);
-		cout << "  > " << KTokenPlayer1 << " : " << GameStatus.P1.Score << endl;
+		cout << "PLAYER " << KTokenPlayer1 << " > " << setw(3) << GameStatus.P1.Score << " pts";
+		Color (CLR_RESET);
+		cout << " -:::::::::::::::::::::::::::\n";
+		cout << "  ::::::::::::::::::::::::::- ";
 		Color (GameStatus.ColorSet.ColorP2);
-		cout << "  > " << KTokenPlayer2 << " : " << GameStatus.P2.Score << endl;
+		cout << "PLAYER " << KTokenPlayer2 << " > " << setw(3) << GameStatus.P2.Score << " pts";
+		Color (CLR_RESET);
+		cout << " -:::::::::::::::::::::::::::\n";
+		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n";
+		cout << "  ...........................................................................\n";
 		
-		Pause ();
+		Pause (true);
 
 		return GameStatus.Round < GameStatus.MaxRounds;
 	}
@@ -219,8 +235,22 @@ namespace ChaseGame {
 
 		// Title screen
 		ClearScreen ();
-		cout << "Écran titre avec menu" << endl;
-		Pause ();
+
+		cout << "\n";
+		cout << "  .oPYo.  o    o      .oo .oPYo. .oPYo.   .oPYo.      .oo o     o .oPYo. \n";
+		cout << "  7    8  8    8     .P 8 8      8.       8    8     .P 8 8b   d8 8.     \n";
+		cout << "  8      o8oooo8    .P  8 `Yooo. `boo     8         .P  8 8`b d'8 `boo   \n";
+		cout << "  8       8    8   oPooo8     `8 .P       8   oo   oPooo8 8 `o' 8 .P     \n";
+		cout << "  7    8  8    8  .P    8      8 8        8    8  .P    8 8     8 8      \n";
+		cout << "  `YooP'  8    8 .P     8 `YooP' `YooP'   `YooP8 .P     8 8     8 `YooP' \n";
+		cout << "  :.....::..:::....:::::..:.....::.....::::....8 ..:::::....::::..:.....:\n";
+		cout << "  :::::::::::::::::::::::::::::::::::::::::::::8 ::::::::::::::::::::::::\n";
+		cout << "  :::::::::::::::::::::::::::::::::::::::::::::..::::::::::::::::::::::::\n";
+		cout << "  ::::::::::::::- PRESS ENTER WHENEVER TO START PLAYING ! -::::::::::::::\n";
+		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n";
+		cout << "  .......................................................................\n" << endl;
+		
+		Pause (false);
 
 		// MAIN LIFE LOOP
 		while (GameLoop (MapGenParams, GameStatus, Tracks)) {

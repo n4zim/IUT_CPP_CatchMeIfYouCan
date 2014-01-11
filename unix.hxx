@@ -45,8 +45,9 @@ namespace ChaseGame {
 
 	/*!
 	 * \brief This function pauses the program
+	 * \param DisplayText Display "press enter" text or not
 	 */
-	void Pause ();
+	void Pause (bool DisplayText);
 
 }
 
