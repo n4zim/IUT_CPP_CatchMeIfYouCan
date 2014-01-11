@@ -24,6 +24,7 @@
 #include "file.hxx" 
 #include "map.hxx" 
 #include "audio.hxx" 
+#include "bonus.hxx" 
 #include "banana.hxx" 
 #include "game.hxx" 
 
@@ -136,10 +137,15 @@ namespace ChaseGame {
 				break;
 
 			// Detect the bonuses or maluses [EXPERIMENTAL]
-			if (Mat[GameStatus.Player.Position.Y][GameStatus.Player.Position.X] == KBonus)
-				Effect (Mat, Player, 1);
-			if (Mat[GameStatus.Player.Position.Y][GameStatus.Player.Position.X] == KMalus)
-				Effect (Mat, Player, 0);
+			if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KBonus)
+				Effect (Mat, GameStatus.P1.Position, 1);
+			if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KMalus)
+				Effect (Mat, GameStatus.P1.Position, 0);
+
+			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KBonus)
+				Effect (Mat, GameStatus.P2.Position, 1);
+			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KMalus)
+				Effect (Mat, GameStatus.P2.Position, 0);
 
 			// This is not an easter egg or anything
 			if (GameStatus.CharHistory[0] == 66 && GameStatus.CharHistory[1] == 65 &&
