@@ -39,7 +39,7 @@ namespace ChaseGame {
 		Sleep (1000000);
 		cout << "                   ...FOREVER.\n" << endl;
 		Sleep (1000000);
-		cout << "You knew typing banana..." << endl;
+		cout << "You knew typing BANANA..." << endl;
 		Sleep (1000000);
 		cout << "                 ... was a bad idea." << endl;
 
