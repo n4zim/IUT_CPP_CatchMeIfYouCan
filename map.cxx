@@ -223,13 +223,11 @@ namespace ChaseGame {
 
 	} // ShowMatrix ()
 
-	unsigned RRand(unsigned Min, unsigned Max)
-	{
+	unsigned RRand (unsigned Min, unsigned Max) {
 		return rand() % (Max - Min) + Min;
 	} // RRand ()
 
-	void GenBonusMalus(CMatrix & Mat)
-	{
+	void GenBonusMalus (CMatrix & Mat) {
 		/*
 		{Bonus} Warp mur     = ¤
 		{Bonus/Malus} Swap de rôle  = $
@@ -241,8 +239,7 @@ namespace ChaseGame {
 		unsigned y = RRand(0, Mat.size());
 		unsigned x = RRand(0, Mat[y].size());
 
-		if ((rand() % 100) > 98 && Mat[y][x] == KEmpty)
-		{
+		if ((rand() % 100) > 98 && Mat[y][x] == KEmpty) {
 			unsigned chance = RRand(0, 2);
 		if (chance == 0)
 			Mat[y][x] = KBonus;

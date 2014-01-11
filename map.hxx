@@ -52,6 +52,10 @@ namespace ChaseGame {
 
 	unsigned RRand (unsigned Min, unsigned Max);
 
+	/*!
+	 * \brief Display bonus
+	 * \param Mat Game matrix
+	 */
 	void GenBonusMalus (CMatrix & Mat);
 }
 

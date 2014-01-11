@@ -14,10 +14,6 @@
 
 namespace ChaseGame {
 
-	unsigned RRand (unsigned Min, unsigned Max);
-
-	void GenBonus_Malus (CMatrix & Mat);
-
 	void Effect (CMatrix & Mat, SPlayerPos Player);
 
 }

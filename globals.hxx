@@ -61,6 +61,18 @@ namespace ChaseGame {
 	//! Character sent when the user wants to exit the game (escape)
 	const char KExit = 'Q';
 
+	//! Bonus : Warp
+	const char KBWarp = '¤';
+	
+	//! Bonus : Swap
+	const char KBSwap = '$';
+	
+	//! Bonus : Stun
+	const char KBStun = '%';
+	
+	//! Bonus : Stun
+	const char KMStun = '£';
+
 	//! Defines a position
 	struct SPlayerPos
 	{
