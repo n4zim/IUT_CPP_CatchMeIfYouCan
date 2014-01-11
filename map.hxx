@@ -49,6 +49,10 @@ namespace ChaseGame {
 	 * \return Replaced char
 	 */
 	char MoveToken (CMatrix & Mat, const char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes);
+
+	unsigned RRand (unsigned Min, unsigned Max);
+
+	void GenBonusMalus (CMatrix & Mat);
 }
 
 #endif

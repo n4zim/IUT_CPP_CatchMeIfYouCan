@@ -226,7 +226,7 @@ namespace ChaseGame {
 	unsigned RRand(unsigned Min, unsigned Max)
 	{
 		return rand() % (Max - Min) + Min;
-	} 
+	} // RRand ()
 
 	void GenBonusMalus(CMatrix & Mat)
 	{
