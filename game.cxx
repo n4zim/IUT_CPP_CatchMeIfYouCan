@@ -118,7 +118,7 @@ namespace ChaseGame {
 		Pause (true);
 		SetGameState (Music, GMS_INGAME, true);
 
-		GameStatus.MvLeft = (rand () % 40 + 10) * 10;
+		GameStatus.MvLeft = (rand () % 25 + 10) * 10;
 
 		// The round starts here
 		while (true) {
