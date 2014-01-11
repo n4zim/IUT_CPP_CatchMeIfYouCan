@@ -79,9 +79,9 @@ namespace ChaseGame {
 	void Pause (bool DisplayText) {
 		Color(CLR_RESET);
 
-		if(!DisplayText)
+		if(DisplayText)
 			cout << "\n\n\nPress enter to continue";
-		
+
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
         if(!cin) {
             cin.clear();
