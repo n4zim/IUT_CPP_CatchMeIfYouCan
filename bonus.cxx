@@ -22,7 +22,7 @@ using namespace std;
 
 namespace ChaseGame {
 
-	void Effect (CMatrix & Mat, SPlayerPos Player, bool Bonus) {
+	void Effect (CMatrix & Mat, SPlayerPos Player, bool IsBonus, bool IsP1) {
 		// A finir
 	}
 
