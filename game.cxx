@@ -135,6 +135,12 @@ namespace ChaseGame {
 			if (!GameRoundLoop (Mat, MapGenParams, GameStatus)) // stop if someone catched someone
 				break;
 
+			// Detect the bonuses or maluses [EXPERIMENTAL]
+			if (Mat[GameStatus.Player.Position] == KBonus)
+				Effect (Mat, Player, 1);
+			if (Mat[GameStatus.Player.Position] == KMalus)
+				Effect (Mat, Player, 0);
+
 			// This is not an easter egg or anything
 			if (GameStatus.CharHistory[0] == 66 && GameStatus.CharHistory[1] == 65 &&
 				GameStatus.CharHistory[2] == 78 && GameStatus.CharHistory[3] == 65 &&
