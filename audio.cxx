@@ -96,6 +96,10 @@ namespace ChaseGame {
 		Track1B.SetLoop (true);
 		Track1C.SetLoop (true);
 		Track2.SetLoop (true);
+		Track1A.SetVolume (0.0f);
+		Track1B.SetVolume (0.0f);
+		Track1C.SetVolume (0.0f);
+		Track2.SetVolume (0.0f);
 		Track1A.Play ();
 		Track1B.Play ();
 		Track1C.Play ();
