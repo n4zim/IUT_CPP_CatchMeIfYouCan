@@ -32,6 +32,19 @@ namespace ChaseGame {
 		
 		Color (CLR_YELLOW);
 
+		ClearScreen ();
+		cout << "WELCOME TO THE BANANA ZONE \n" << endl;
+		Sleep (1000000);
+		cout << "YOU ARE NOW TRAPPED HERE..." << endl;
+		Sleep (1000000);
+		cout << "                   ...FOREVER.\n" << endl;
+		Sleep (1000000);
+		cout << "You knew typing banana..." << endl;
+		Sleep (1000000);
+		cout << "                 ... was a bad idea." << endl;
+
+		Sleep (1500000);
+
 		while (true) {
 
 			// Frame 1
