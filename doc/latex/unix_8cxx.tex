@@ -12,6 +12,7 @@ Defines unix-\/only functions.
 {\ttfamily \#include $<$limits$>$}\\*
 {\ttfamily \#include $<$termios.\-h$>$}\\*
 {\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
 Include dependency graph for unix.\-cxx\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -36,7 +37,9 @@ void \hyperlink{namespace_chase_game_ad2dbfd93f4fd5725ab396d5dfa78a0c4}{Chase\-G
 char \hyperlink{namespace_chase_game_afa8eec677de5433e0e886da19f7e9c4a}{Chase\-Game\-::\-Get\-Input} ()
 \begin{DoxyCompactList}\small\item\em Captures a character from stdin. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a8ca147721cdfaf96ee1f9c5007c27142}{Chase\-Game\-::\-Sleep} (int M\-Sec)
-\begin{DoxyCompactList}\small\item\em Calls usleep. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calls usleep. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_aaaedf9429ec62c336f4324d580eec51c}{Chase\-Game\-::\-Pause} ()
+\begin{DoxyCompactList}\small\item\em This function pauses the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}

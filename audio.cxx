@@ -31,14 +31,14 @@ namespace ChaseGame {
 		switch (GameState) {
 		  case GMS_TITLE:
 		  	try {
-			  	Tracks.at("C1").SetVolume(0.0f);
-			  	Tracks.at("2").SetVolume(0.0f);
+			  	Tracks.at ("C1").SetVolume (0.0f);
+			  	Tracks.at ("2").SetVolume (0.0f);
 
-			  	if(DoFade)
-			  		DoubleSongVolumeFading (Tracks.at("A1"), Tracks.at("B1"), 80.0f, 0.0f, 0.5f);
+			  	if (DoFade)
+			  		DoubleSongVolumeFading (Tracks.at ("A1"), Tracks.at ("B1"), 80.0f, 0.0f, 0.5f);
 			  	else {
-			  		Tracks.at("A1").SetVolume(80.0f);
-			  		Tracks.at("B1").SetVolume(0.0f);
+			  		Tracks.at ("A1").SetVolume (80.0f);
+			  		Tracks.at ("B1").SetVolume (0.0f);
 			  	}
 			} catch (out_of_range) {
 				cerr << "Error switching music" << endl;
@@ -46,14 +46,14 @@ namespace ChaseGame {
 			break;
 		  case GMS_STARTING:
 		  	try {
-			  	Tracks.at("C1").SetVolume(0.0f);
-			  	Tracks.at("2").SetVolume(0.0f);
+			  	Tracks.at ("C1").SetVolume (0.0f);
+			  	Tracks.at ("2").SetVolume (0.0f);
 
-			  	if(DoFade)
-			  		DoubleSongVolumeFading (Tracks.at("A1"), Tracks.at("B1"), 0.0f, 70.0f, 0.5f);
+			  	if (DoFade)
+			  		DoubleSongVolumeFading (Tracks.at ("A1"), Tracks.at ("B1"), 0.0f, 70.0f, 0.5f);
 			  	else {
-				  	Tracks.at("A1").SetVolume(0.0f);
-				  	Tracks.at("B1").SetVolume(70.0f);
+				  	Tracks.at ("A1").SetVolume (0.0f);
+				  	Tracks.at ("B1").SetVolume (70.0f);
 			  	}
 			} catch (out_of_range) {
 				cerr << "Error switching music" << endl;
@@ -61,35 +61,45 @@ namespace ChaseGame {
 			break;
 		  case GMS_INGAME:
 		  	try {
-			  	Tracks.at("A1").SetVolume(0.0f);
+			  	Tracks.at ("A1").SetVolume (0.0f);
 
-			  	if(DoFade) {
-			  		TripleSongVolumeFading (Tracks.at("B1"), Tracks.at("C1"), Tracks.at("2"), 0.0f, 70.0f, 80.0f, 0.5f);
+			  	if (DoFade) {
+			  		TripleSongVolumeFading (Tracks.at ("B1"), Tracks.at ("C1"), Tracks.at ("2"), 0.0f, 70.0f, 80.0f, 0.5f);
 			  	} else {
-				  	Tracks.at("B1").SetVolume(0.0f);
-				  	Tracks.at("C1").SetVolume(100.0f);
-			  		Tracks.at("2").SetVolume(80.0f);
+				  	Tracks.at ("B1").SetVolume (0.0f);
+				  	Tracks.at ("C1").SetVolume (100.0f);
+			  		Tracks.at ("2").SetVolume (80.0f);
 			  	}
 			} catch (out_of_range) {
 				cerr << "Error switching music" << endl;
+			}
+			break;
+		  case GMS_STOP:
+		  	try {
+			  	Tracks.at ("A1").Stop ();
+			  	Tracks.at ("B1").Stop ();
+			  	Tracks.at ("C1").Stop ();
+			  	Tracks.at ("2").Stop ();
+			} catch (out_of_range) {
+				cerr << "Error stopping music" << endl;
 			}
 			break;
 		}
 	}
 
 	void InitSongs (sf::Music& Track1A, sf::Music& Track1B, sf::Music& Track1C, sf::Music& Track2) {		
-		Track1A.OpenFromFile("sound/bgm_trackA-1.ogg");
-		Track1B.OpenFromFile("sound/bgm_trackA-2.ogg");
-		Track1C.OpenFromFile("sound/bgm_trackA-3.ogg");
-		Track2.OpenFromFile("sound/bgm_trackB.ogg");
-		Track1A.SetLoop(true);
-		Track1B.SetLoop(true);
-		Track1C.SetLoop(true);
-		Track2.SetLoop(true);
-		Track1A.Play();
-		Track1B.Play();
-		Track1C.Play();
-		Track2.Play();
+		Track1A.OpenFromFile ("sound/bgm_trackA-1.ogg");
+		Track1B.OpenFromFile ("sound/bgm_trackA-2.ogg");
+		Track1C.OpenFromFile ("sound/bgm_trackA-3.ogg");
+		Track2.OpenFromFile ("sound/bgm_trackB.ogg");
+		Track1A.SetLoop (true);
+		Track1B.SetLoop (true);
+		Track1C.SetLoop (true);
+		Track2.SetLoop (true);
+		Track1A.Play ();
+		Track1B.Play ();
+		Track1C.Play ();
+		Track2.Play ();
 	}
 
 	void DoubleSongVolumeFading (sf::Music& A, sf::Music& B, float VolumeA, float VolumeB, float FadeDuration) {
@@ -99,13 +109,13 @@ namespace ChaseGame {
 		float VolumeDiffB = VolumeB - B.GetVolume ();
 
 		Clock.Reset ();
-		for(;;) {
+		for (;;) {
 			Sleep (SleepDuration);
 
 			A.SetVolume (Clock.GetElapsedTime () / FadeDuration * VolumeDiffA);
 			B.SetVolume (Clock.GetElapsedTime () / FadeDuration * VolumeDiffB);
 
-			if(Clock.GetElapsedTime () > FadeDuration)
+			if (Clock.GetElapsedTime () > FadeDuration)
 				break;
 
 			//cout << Clock.GetElapsedTime () << endl;
@@ -124,14 +134,14 @@ namespace ChaseGame {
 		float VolumeDiffC = VolumeC - C.GetVolume ();
 
 		Clock.Reset ();
-		for(;;) {
+		for (;;) {
 			Sleep (SleepDuration);
 
 			A.SetVolume (Clock.GetElapsedTime () / FadeDuration * VolumeDiffA);
 			B.SetVolume (Clock.GetElapsedTime () / FadeDuration * VolumeDiffB);
 			C.SetVolume (Clock.GetElapsedTime () / FadeDuration * VolumeDiffC);
 
-			if(Clock.GetElapsedTime () > FadeDuration)
+			if (Clock.GetElapsedTime () > FadeDuration)
 				break;
 
 			//cout << Clock.GetElapsedTime () << endl;

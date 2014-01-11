@@ -57,9 +57,9 @@ namespace ChaseGame {
 	/*!
 	 * \brief Stores last 6 inputs
 	 * \param Input last char inputed
-	 * \param Input GameStaus Game object
+	 * \param GameStatus Game object
 	 */
-	void StoreCharHistory (const char Input, SGameStatus& GameStatus)
+	void StoreCharHistory (const char Input, SGameStatus& GameStatus);
 
 }
 

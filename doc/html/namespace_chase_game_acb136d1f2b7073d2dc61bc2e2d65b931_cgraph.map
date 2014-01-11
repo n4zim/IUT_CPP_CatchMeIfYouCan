@@ -2,7 +2,9 @@
 <area shape="rect" id="node2" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="260,31,431,57"/>
 <area shape="rect" id="node5" href="$namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="270,81,421,108"/>
 <area shape="rect" id="node6" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="256,132,435,159"/>
+<area shape="rect" id="node9" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="259,183,432,209"/>
 <area shape="rect" id="node3" href="$namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="483,5,685,32"/>
 <area shape="rect" id="node4" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="518,56,650,83"/>
-<area shape="rect" id="node7" href="$namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="501,132,667,159"/>
+<area shape="rect" id="node7" href="$namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="483,107,685,133"/>
+<area shape="rect" id="node8" href="$namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="501,157,667,184"/>
 </map>

@@ -41,7 +41,7 @@ namespace ChaseGame {
 	enum ConsoleColors { CLR_BLACK=30, CLR_RED=31, CLR_GREEN=32, CLR_YELLOW=33, CLR_BLUE=34, CLR_MAGENTA=35, CLR_CYAN=36, CLR_WHITE=37, CLR_GREY=30, CLR_RESET=0 };
 
 	//! Music state
-	enum GameMusicState { GMS_TITLE, GMS_STARTING, GMS_INGAME };
+	enum GameMusicState { GMS_TITLE, GMS_STARTING, GMS_INGAME, GMS_STOP };
 
 	//! Character representing player one
 	const char KTokenPlayer1 = 'X';
