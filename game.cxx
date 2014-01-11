@@ -252,6 +252,29 @@ namespace ChaseGame {
 		
 		Pause (false);
 
+		// Display Key configuration
+		ClearScreen ();
+
+		cout << "\n";
+		cout << "   o   o .oPYo. o   o   .oPYo. .oPYo. o    o  ooooo o .oPYo. \n";
+		cout << "   8  .P 8.     `b d'   8    8 8    8 8b   8  8     8 8    8 \n";
+		cout << "  o8ob'  `boo    `b'    8      8    8 8`b  8 o8oo   8 8      \n";
+		cout << "   8  `b .P       8     8      8    8 8 `b 8  8     8 8   oo \n";
+		cout << "   8   8 8        8     8    8 8    8 8  `b8  8     8 8    8 \n";
+		cout << "   8   8 `YooP'   8     `YooP' `YooP' 8   `8  8     8 `YooP8 \n";
+		cout << "  :..::..:.....:::..:::::.....::.....:..:::..:..::::..:....8 \n";
+		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::8 \n";
+		cout << "  :::::...PLAYER1...:::......RULES.....:::...PLAYER2...::::: \n";
+		cout << "  :::::.    UP > " << char (GameStatus.P1.Keys.Up   ) << " .:::.  ONE PLAYER  .:::.    UP > " << char (GameStatus.P2.Keys.Up   ) << " .::::: \n";
+		cout << "  :::::.  DOWN > " << char (GameStatus.P1.Keys.Down ) << " .:::. HAS TO CATCH .:::.  DOWN > " << char (GameStatus.P2.Keys.Down ) << ".::::: \n";
+		cout << "  :::::.  LEFT > " << char (GameStatus.P1.Keys.Left ) << " .:::.   THE OTHER  .:::.  LEFT > " << char (GameStatus.P2.Keys.Left ) << " .::::: \n";
+		cout << "  :::::. RIGHT > " << char (GameStatus.P1.Keys.Right) << " .:::................:::. RIGHT > " << char (GameStatus.P2.Keys.Right) << " .::::: \n";
+		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
+		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
+		cout << "  .......................................................... \n" << endl;
+
+		Pause (true);
+
 		// MAIN LIFE LOOP
 		while (GameLoop (MapGenParams, GameStatus, Tracks)) {
 			if (GameStatus.P1.IsChasing) {
