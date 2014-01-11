@@ -137,7 +137,7 @@ namespace ChaseGame {
 				break;
 
 			// Detect the bonuses or maluses
-			if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KBonus)
+			/*if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KBonus)
 				Effect (Mat, GameStatus, 1, 0);
 			if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KMalus)
 				Effect (Mat, GameStatus, 0, 0);
@@ -145,7 +145,7 @@ namespace ChaseGame {
 			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KBonus)
 				Effect (Mat, GameStatus, 1, 1);
 			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KMalus)
-				Effect (Mat, GameStatus, 0, 1);
+				Effect (Mat, GameStatus, 0, 1);*/
 
 			// This is not an easter egg or anything
 			if (GameStatus.CharHistory[0] == 66 && GameStatus.CharHistory[1] == 65 &&
@@ -230,6 +230,9 @@ namespace ChaseGame {
 	void StartGame () {
 		SGameStatus GameStatus = LoadGameConfig (".gameconfig"); // Load game config from file
 		SMapGenParams MapGenParams = LoadMapGenConfig (".mapconfig"); // Load map config from file
+		// Init sound-related variables
+		sf::Music Track1A, Track1B, Track1C, Track2;
+		InitSongs (Track1A, Track1B, Track1C, Track2);
 
 		GameStatus.P1.IsChasing = true;
 		GameStatus.P2.IsChasing = false;
@@ -242,8 +245,6 @@ namespace ChaseGame {
 		// SOUND INITIALISATION
 
 		// MUSIC LOADING
-		sf::Music Track1A, Track1B, Track1C, Track2;
-		InitSongs (Track1A, Track1B, Track1C, Track2);
 		map <string, sf::Music&> Tracks = {{ "A1", Track1A }, { "B1", Track1B }, { "C1", Track1C }, { "2", Track2 }};
 
 		SetGameState (Tracks, GMS_TITLE, false);
@@ -281,7 +282,7 @@ namespace ChaseGame {
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::8 \n";
 		cout << "  :::::...PLAYER1...:::......RULES.....:::...PLAYER2...::::: \n";
 		cout << "  :::::.    UP > " << char (GameStatus.P1.Keys.Up   ) << " .:::.  ONE PLAYER  .:::.    UP > " << char (GameStatus.P2.Keys.Up   ) << " .::::: \n";
-		cout << "  :::::.  DOWN > " << char (GameStatus.P1.Keys.Down ) << " .:::. HAS TO CATCH .:::.  DOWN > " << char (GameStatus.P2.Keys.Down ) << ".::::: \n";
+		cout << "  :::::.  DOWN > " << char (GameStatus.P1.Keys.Down ) << " .:::. HAS TO CATCH .:::.  DOWN > " << char (GameStatus.P2.Keys.Down ) << " .::::: \n";
 		cout << "  :::::.  LEFT > " << char (GameStatus.P1.Keys.Left ) << " .:::.   THE OTHER  .:::.  LEFT > " << char (GameStatus.P2.Keys.Left ) << " .::::: \n";
 		cout << "  :::::. RIGHT > " << char (GameStatus.P1.Keys.Right) << " .:::................:::. RIGHT > " << char (GameStatus.P2.Keys.Right) << " .::::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
@@ -299,6 +300,18 @@ namespace ChaseGame {
 				GameStatus.P1.IsChasing = true;
 				GameStatus.P2.IsChasing = false;
 			}
+		}
+
+		if (GameStatus.P1.Score == GameStatus.P2.Score) { // TIE
+				// A random player is hunting the other
+				GameStatus.P1.IsChasing = (rand() % 2 == 1);
+				GameStatus.P2.IsChasing = !GameStatus.P1.IsChasing;
+
+				cout << "\n  TIE !\n Now starting a new round to know who the real winner is..." << endl;
+
+				Pause (true);
+				++GameStatus.MaxRounds;
+				GameLoop (MapGenParams, GameStatus, Tracks);
 		}
 
 		cout << "Game end" << endl;
