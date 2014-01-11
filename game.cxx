@@ -63,6 +63,9 @@ namespace ChaseGame {
 
 	bool GameRoundLoop (CMatrix& Mat, SMapGenParams& MapGenParams, SGameStatus& GameStatus) {
 		ShowMatrix (Mat, GameStatus.ColorSet);
+		
+		// Call the Bonus and Malus generator
+		GenBonusMalus(Mat);
 
 		char Input = toupper (GetInput ());
 
