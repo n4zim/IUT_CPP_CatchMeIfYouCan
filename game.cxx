@@ -136,9 +136,9 @@ namespace ChaseGame {
 				break;
 
 			// Detect the bonuses or maluses [EXPERIMENTAL]
-			if (Mat[GameStatus.Player.Position] == KBonus)
+			if (Mat[GameStatus.Player.Position.Y][GameStatus.Player.Position.X] == KBonus)
 				Effect (Mat, Player, 1);
-			if (Mat[GameStatus.Player.Position] == KMalus)
+			if (Mat[GameStatus.Player.Position.Y][GameStatus.Player.Position.X] == KMalus)
 				Effect (Mat, Player, 0);
 
 			// This is not an easter egg or anything
