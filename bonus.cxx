@@ -50,7 +50,7 @@ namespace ChaseGame {
 
     void BMSwap(SGameStatus & GameStatus) {
     	ClearScreen ();
-    	cout << "\n\n Roles swapped !" << endl;
+    	cout << "\n\n " << GameStatus.LocaleStr.MsgRolesSwapped << endl;
 
         GameStatus.P1.IsChasing = !GameStatus.P1.IsChasing;
         GameStatus.P2.IsChasing = !GameStatus.P2.IsChasing;
