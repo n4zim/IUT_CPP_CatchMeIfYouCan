@@ -1,7 +1,7 @@
 <map id="globals.hxx" name="globals.hxx">
-<area shape="rect" id="node2" href="$audio_8cxx.html" title="audio.cxx" alt="" coords="5,155,83,181"/>
+<area shape="rect" id="node2" href="$audio_8cxx.html" title="Audio related functions. " alt="" coords="5,155,83,181"/>
 <area shape="rect" id="node3" href="$audio_8hxx.html" title="audio.cxx function prototypes " alt="" coords="75,80,153,107"/>
-<area shape="rect" id="node4" href="$game_8cxx.html" title="Audio related functions. " alt="" coords="275,229,353,256"/>
+<area shape="rect" id="node4" href="$game_8cxx.html" title="Gameplay related functions. " alt="" coords="275,229,353,256"/>
 <area shape="rect" id="node5" href="$banana_8cxx.html" title="Super Banana ! " alt="" coords="821,80,909,107"/>
 <area shape="rect" id="node6" href="$bonus_8hxx.html" title="bonus.cxx function prototypes " alt="" coords="249,80,332,107"/>
 <area shape="rect" id="node7" href="$bonus_8cxx.html" title="File related bonus and malus. " alt="" coords="273,155,356,181"/>
