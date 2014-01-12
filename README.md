@@ -15,4 +15,4 @@ http://www.freesound.org/people/broumbroum/sounds/50565/
 Game music is "Trickyness" under CC BY licence by Josua Gonzalez
 https://soundcloud.com/josuag/trickyness-wip
 
-See #CHANGES to see changes of the project (in french)
+See CHANGES.md to see changes of the project (in french)
