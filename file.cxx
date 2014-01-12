@@ -97,8 +97,12 @@ namespace ChaseGame {
 		Config.P2.Keys.Left  = 'K';
 		Config.P2.Keys.Right = 'M';
 
-		Config.KeyPause   = 27;
-		Config.KeyExit    = 27;
+		Config.KeyPause = 27;
+		Config.KeyExit  = 27;
+
+		Config.MaxRounds = 4;
+		Config.PlaySound = true;
+		Config.Lang      = LANG_EN;
 
 		Config.ColorSet.ColorP1 = CLR_RED;
 		Config.ColorSet.ColorP2 = CLR_BLUE;
@@ -159,6 +163,10 @@ namespace ChaseGame {
 			// Other config
 			else if (VarId == "Lang")
 				Config.Lang = Value;
+			else if (VarId == "MaxRounds")
+				Config.MaxRounds = Value;
+			else if (VarId == "PlaySound")
+				Config.PlaySound = (Value > 0) ? true : false;
 		}  
 
 		return Config;
@@ -189,6 +197,8 @@ namespace ChaseGame {
 		file << "ColorMalus " << Config.ColorSet.ColorMalus << endl;
 
 		file << "Lang " << Config.Lang << endl;
+		file << "MaxRounds " << Config.MaxRounds << endl;
+		file << "PlaySound " << Config.PlaySound << endl;
 
 		return true;
 	}
