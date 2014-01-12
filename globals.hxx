@@ -116,6 +116,10 @@ namespace ChaseGame {
 		unsigned Score;
 		//! Player role : chasing or being chased
 		bool IsChasing;
+		//! If the player is stunned
+		bool IsStunned = false;
+		//! Duration of stun
+		unsigned StunDuration;
 	};
 
 	//! Color set to use when displaying the map
