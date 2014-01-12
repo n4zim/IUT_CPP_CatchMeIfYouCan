@@ -36,7 +36,6 @@ namespace ChaseGame {
 	    cout << "\033[" << Color + 10 <<"m";
 	} // BackgroundColor ()
 
-
 	char GetInput () {
 		// Adapted from http://stackoverflow.com/questions/1798511/how-to-avoid-press-enter-with-any-getchar/1798833#1798833
 		char Input;   

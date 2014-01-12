@@ -27,28 +27,28 @@ namespace ChaseGame {
         if (IsBonus == true) { // swaps the roles
             BMSwap (GameStatus);
         } else { // stuns the opponant
-            if(IsP1)
+            if (IsP1)
             	MStun (GameStatus.P2);
             else
             	MStun (GameStatus.P1);
         }
     }
 
-    void MStun(SPlayerState& Player) {
+    void MStun (SPlayerState& Player) {
         Player.IsStunned = true;
         Player.StunDuration = rand () % 25 + 5;
     }
 
-    void CheckStun(SPlayerState& Player) {
-        if(Player.IsStunned) {
-        	if(Player.StunDuration > 0)
+    void CheckStun (SPlayerState& Player) {
+        if (Player.IsStunned) {
+        	if (Player.StunDuration > 0)
         		--Player.StunDuration;
         	else
         		Player.IsStunned = false; 
         }
     }
 
-    void BMSwap(SGameStatus & GameStatus) {
+    void BMSwap (SGameStatus & GameStatus) {
     	ClearScreen ();
     	cout << "\n\n " << GameStatus.LocaleStr.MsgRolesSwapped << endl;
 

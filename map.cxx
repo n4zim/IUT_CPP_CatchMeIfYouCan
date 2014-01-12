@@ -60,16 +60,16 @@ namespace ChaseGame {
 
 		switch (Difficulty) {
 		  case DIFFLVL_EASY:
-			NbObst = rand() % 4 + 2;
+			NbObst = rand () % 4 + 2;
 			break;
 		  case DIFFLVL_NORM:
-			NbObst = rand() % 8 + 4;
+			NbObst = rand () % 8 + 4;
 			break;
 		  case DIFFLVL_HARD:
-			NbObst = rand() % 15 + 6;
+			NbObst = rand () % 15 + 6;
 			break;
 		  case DIFFLVL_CRZY:
-			NbObst = rand() % 20 + 10;
+			NbObst = rand () % 20 + 10;
 			break;
 		}
 
@@ -81,10 +81,10 @@ namespace ChaseGame {
 			unsigned X, Y;
 
 			// Choosing position (STEP 2)
-			for( ; ; ) {
+			for ( ; ; ) {
 				// Random generation of shapes coords from map size and 3 cells offset
-				X = rand() % (Params.MapWidth - 3);
-				Y = rand() % (Params.MapHeight - 3);
+				X = rand () % (Params.MapWidth - 3);
+				Y = rand () % (Params.MapHeight - 3);
 				
 				// Detect if the cells are empty and if so stop coordinates generation
 				if (Mat[Y][X]   == KEmpty && Mat[Y+1][X]   == KEmpty && Mat[Y+2][X]   == KEmpty &&
@@ -99,39 +99,39 @@ namespace ChaseGame {
            		// Shape : +
                 case 1:
                     MatShape (Mat, { 0, 1, 0, 
-                    		        1, 1, 1, 
-                    		        0, 1, 0 }, Y, X);
+                    		         1, 1, 1, 
+                    		         0, 1, 0 }, Y, X);
                     break;
                 // Shape : |
                 case 2:
                     MatShape (Mat, { 0, 1, 0, 
-                    		        0, 1, 0, 
-                    		        0, 1, 0 }, Y, X);
+                    		         0, 1, 0, 
+                    		         0, 1, 0 }, Y, X);
                     break;
                 // Shape : L
                 case 3:
                     MatShape (Mat, { 1, 0, 0, 
-                    		        1, 0, 0, 
-                    		        1, 1, 1 }, Y, X);
+                    		         1, 0, 0, 
+                    		         1, 1, 1 }, Y, X);
                     break;
                 // Shape : Dot
                 case 4:
                 case 6:
                     MatShape (Mat, { 0, 0, 0, 
-                    		        0, 1, 0, 
-                    		        0, 0, 0 }, Y, X);
+                    		         0, 1, 0, 
+                    		         0, 0, 0 }, Y, X);
                     break;
                 // Shape : |-
                 case 5:
                     MatShape (Mat, { 1, 0, 0, 
-                    		        1, 1, 1, 
-                    		        1, 0, 0 }, Y, X);
+                    		         1, 1, 1, 
+                    		         1, 0, 0 }, Y, X);
                     break;
                 // Shape : +
                 case 7:
                     MatShape (Mat, { 0, 1, 0, 
-                    		        1, 1, 1, 
-                    		        0, 1, 0 }, Y, X);
+                    		         1, 1, 1, 
+                    		         0, 1, 0 }, Y, X);
                     break;
             }
         }
@@ -147,7 +147,7 @@ namespace ChaseGame {
 		SPlayerPos Pos = Player.Position;
 		SPlayerPos NewPos = Pos;
 
-		if(Player.IsStunned)
+		if (Player.IsStunned)
 			return KCancelled;
 
 	 	if (Move == KeyCodes.Up && NewPos.Y > 0) {
@@ -162,7 +162,7 @@ namespace ChaseGame {
 			return KCancelled; // We cancel the movement by stopping the function
 		}
 
-		if(Mat[NewPos.Y][NewPos.X] == KObstacle) // Prevent player from walking into walls
+		if (Mat[NewPos.Y][NewPos.X] == KObstacle) // Prevent player from walking into walls
 			return KCancelled; // Cancel movement
 
 
@@ -235,7 +235,7 @@ namespace ChaseGame {
 	} // ShowMatrix ()
 
 	void GenBonusMalus(CMatrix & Mat) {
-		if((rand () % 100) > 97) {
+		if ((rand () % 100) > 97) {
 			unsigned y = rand () % Mat.size ();
 			unsigned x = rand () % Mat[y].size ();
 
@@ -247,6 +247,6 @@ namespace ChaseGame {
 			}
 		}
 
-	} // GenBonusMalus()
+	} // GenBonusMalus ()
 
 }

@@ -7,6 +7,7 @@
  */
 
 #include <string>
+
 #include "globals.hxx"
 
 #ifndef file_h 

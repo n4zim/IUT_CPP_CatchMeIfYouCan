@@ -27,7 +27,6 @@
 using namespace std;
 
 namespace ChaseGame {
-
 	/*!
 	 * \brief Processes user input
 	 * \param Mat Game Matrix
@@ -37,7 +36,7 @@ namespace ChaseGame {
 	 * \return Chararcter representing the replaced charachter while moving
 	 * \return KCancelled if the move was cancelled
 	 */
-	char ProcessInput(CMatrix& Mat, const char Input, SGameStatus& Config, int& MovedPlayer);
+	char ProcessInput (CMatrix& Mat, const char Input, SGameStatus& Config, int& MovedPlayer);
 	
 	/*!
 	 * \brief This is the game loop

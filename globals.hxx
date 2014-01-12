@@ -16,6 +16,7 @@
 
 //#define UNIX
 #include "unix.hxx"
+
 #include <vector> 
 #include <string> 
 
@@ -68,8 +69,7 @@ namespace ChaseGame {
 	const char KMalus = '$';
 
 	//! Defines a position
-	struct SPlayerPos
-	{
+	struct SPlayerPos {
 		//! X position
 		unsigned X = 0;
 		//! Y position

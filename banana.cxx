@@ -26,9 +26,9 @@ namespace ChaseGame {
 		unsigned TimeBetwFrames = 1.2 * 100000;
 		
 		sf::Music Music;
-		Music.OpenFromFile("sound/banana.ogg");
-		Music.SetLoop(true);
-		Music.Play();
+		Music.OpenFromFile ("sound/banana.ogg");
+		Music.SetLoop (true);
+		Music.Play ();
 		
 		Color (CLR_YELLOW);
 

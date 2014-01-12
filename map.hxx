@@ -8,13 +8,13 @@
 
 #include <string>
 #include <array>
+
 #include "globals.hxx"
 
 #ifndef map_h 
 #define map_h
 
 namespace ChaseGame {
-
 	/*!
 	 * \brief Generate a random shape in the map
 	 * \param Mat Game matrix
@@ -38,7 +38,6 @@ namespace ChaseGame {
 	 * \param ColorSet Colors to use
 	 */
 	void ShowMatrix (const CMatrix & Mat, const SColorSet& ColorSet);
-
 
 	/*!
 	 * \brief Move a token in the game matrix

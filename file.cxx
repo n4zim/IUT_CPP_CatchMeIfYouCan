@@ -128,23 +128,23 @@ namespace ChaseGame {
 
 			// P1 keys
 			if (VarId == "KeyP1Up")
-				Config.P1.Keys.Up = char(Value);
+				Config.P1.Keys.Up = char (Value);
 			else if (VarId == "KeyP1Left")
-				Config.P1.Keys.Left = char(Value);
+				Config.P1.Keys.Left = char (Value);
 			else if (VarId == "KeyP1Right")
-				Config.P1.Keys.Right = char(Value);
+				Config.P1.Keys.Right = char (Value);
 			else if (VarId == "KeyP1Down")
-				Config.P1.Keys.Down = char(Value);
+				Config.P1.Keys.Down = char (Value);
 
 			// P2 keys
 			else if (VarId == "KeyP2Up")
-				Config.P2.Keys.Up = char(Value);
+				Config.P2.Keys.Up = char (Value);
 			else if (VarId == "KeyP2Left")
-				Config.P2.Keys.Left = char(Value);
+				Config.P2.Keys.Left = char (Value);
 			else if (VarId == "KeyP2Right")
-				Config.P2.Keys.Right = char(Value);
+				Config.P2.Keys.Right = char (Value);
 			else if (VarId == "KeyP2Down")
-				Config.P2.Keys.Down = char(Value);
+				Config.P2.Keys.Down = char (Value);
 
 			// Color config
 			else if (VarId == "ColorP1")

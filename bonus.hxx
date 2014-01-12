@@ -13,7 +13,6 @@
 #define bonus_h
 
 namespace ChaseGame {
-
 	/*!
 	 * \brief Applies an effect on the player
 	 * \param GameStatus Game current status

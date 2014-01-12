@@ -10,6 +10,7 @@
 #include <SFML/Audio.hpp>
 #include <string>
 #include <map>
+
 #include "globals.hxx"
 
 #ifndef audio_h 
@@ -22,7 +23,7 @@ namespace ChaseGame {
 	 * \param GameState from the GameMusicState enum
 	 * \param DoFade Do a crossfade
 	 */
-	void SetGameState(std::map <std::string, sf::Music&>& Tracks, int GameState, bool DoFade);
+	void SetGameState (std::map <std::string, sf::Music&>& Tracks, int GameState, bool DoFade);
 
 	/*!
 	 * \brief Loads the songs and inits them
