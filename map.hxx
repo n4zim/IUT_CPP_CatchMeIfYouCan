@@ -51,14 +51,6 @@ namespace ChaseGame {
 	char MoveToken (CMatrix & Mat, const char Move, SPlayerState & Player, const SPlayerKeys& KeyCodes);
 
 	/*!
-	 * \brief Random between min and max
-	 * \param Min minimum
-	 * \param Max maximum
-	 * \return A random value
-	 */
-	unsigned RRand (unsigned Min, unsigned Max);
-
-	/*!
 	 * \brief Display bonus
 	 * \param Mat Game matrix
 	 */
