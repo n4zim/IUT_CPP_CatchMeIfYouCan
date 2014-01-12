@@ -108,18 +108,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>ChaseGame {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="namespace_chase_game.html#a927ceb6d76ebd1a6eb8f2a393db06c86">ProcessInput</a>(<a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a>&amp; Mat, <span class="keyword">const</span> <span class="keywordtype">char</span> Input, SGameStatus&amp; Config, <span class="keywordtype">int</span>&amp; MovedPlayer);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespace_chase_game.html#a978204f0ec269a6fa5f43bb523d84e57">GameLoop</a> (<a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a>&amp; Mat, SMapGenParams&amp; MapGenParams, SGameStatus&amp; Config, map &lt;string, sf::Music&amp;&gt;&amp; Music);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74">StartGame</a> ();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3">StoreCharHistory</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> Input, SGameStatus&amp; GameStatus);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="namespace_chase_game.html#a927ceb6d76ebd1a6eb8f2a393db06c86">ProcessInput</a> (<a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a>&amp; Mat, <span class="keyword">const</span> <span class="keywordtype">char</span> Input, SGameStatus&amp; Config, <span class="keywordtype">int</span>&amp; MovedPlayer);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespace_chase_game.html#a978204f0ec269a6fa5f43bb523d84e57">GameLoop</a> (<a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a>&amp; Mat, SMapGenParams&amp; MapGenParams, SGameStatus&amp; Config, map &lt;string, sf::Music&amp;&gt;&amp; Music);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74">StartGame</a> ();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3">StoreCharHistory</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> Input, SGameStatus&amp; GameStatus);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="file_8hxx_html"><div class="ttname"><a href="file_8hxx.html">file.hxx</a></div><div class="ttdoc">file.cxx function prototypes </div></div>
 <div class="ttc" id="map_8hxx_html"><div class="ttname"><a href="map_8hxx.html">map.hxx</a></div><div class="ttdoc">map.cxx function prototypes </div></div>
 <div class="ttc" id="namespace_chase_game_html_a528073d13296b3cf84a6ae07c3550e74"><div class="ttname"><a href="namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74">ChaseGame::StartGame</a></div><div class="ttdeci">void StartGame()</div><div class="ttdoc">This function starts the game. </div><div class="ttdef"><b>Definition:</b> game.cxx:274</div></div>
@@ -128,11 +127,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="globals_8hxx_html"><div class="ttname"><a href="globals_8hxx.html">globals.hxx</a></div><div class="ttdoc">Defines global constants and variables for the ChaseGame namespace. </div></div>
 <div class="ttc" id="namespace_chase_game_html_a4b28a3a3594d145b0ce1d1bf179e88a3"><div class="ttname"><a href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3">ChaseGame::StoreCharHistory</a></div><div class="ttdeci">void StoreCharHistory(const char Input, SGameStatus &amp;GameStatus)</div><div class="ttdoc">Stores last 6 inputs. </div><div class="ttdef"><b>Definition:</b> game.cxx:58</div></div>
 <div class="ttc" id="unix_8hxx_html"><div class="ttname"><a href="unix_8hxx.html">unix.hxx</a></div><div class="ttdoc">unix.cxx function prototypes </div></div>
-<div class="ttc" id="namespace_chase_game_html_a469449f9237e59efce3982127366c550"><div class="ttname"><a href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">ChaseGame::CMatrix</a></div><div class="ttdeci">std::vector&lt; CVLine &gt; CMatrix</div><div class="ttdoc">Matrix type. </div><div class="ttdef"><b>Definition:</b> globals.hxx:32</div></div>
+<div class="ttc" id="namespace_chase_game_html_a469449f9237e59efce3982127366c550"><div class="ttname"><a href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">ChaseGame::CMatrix</a></div><div class="ttdeci">std::vector&lt; CVLine &gt; CMatrix</div><div class="ttdoc">Matrix type. </div><div class="ttdef"><b>Definition:</b> globals.hxx:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 12 2014 22:17:49 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 12 2014 22:34:27 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
