@@ -154,6 +154,8 @@ namespace ChaseGame {
 		unsigned MvLeft;
 		//! Game lang
 		int Lang;
+		//! Game lang
+		bool PlaySound;
 		//! Contains last pressed keys
 		std::vector <char> CharHistory;
 	};
