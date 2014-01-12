@@ -159,9 +159,9 @@ namespace ChaseGame {
 		//! Label : mini game rule line 3
 		std::string TitleMGRL3 = "  THE OTHER ";
 		//! Label : player 1 (exacty 11 chars)
-		std::string TitlePlayer1 = "..PLAYER1..";
+		std::string TitlePlayer1 = "...PLAYER1...";
 		//! Label : player 2 (exacty 11 chars)
-		std::string TitlePlayer2 = "..PLAYER2..";
+		std::string TitlePlayer2 = "...PLAYER2...";
 		//! Label : rules (exacty 12 chars)
 		std::string TitleRules = "....RULES...";
 		//! Label : shown when tie
@@ -184,6 +184,10 @@ namespace ChaseGame {
 		std::string MsgRound = "ROUND";
 		//! Label : "On" message (round x on y)
 		std::string MsgOn = "ON";
+		//! Label : "IS STUNNED" message (player x IS STUNNED)
+		std::string MsgIsStunned = "IS STUNNED";
+		//! Label : "Roles swapped" message
+		std::string MsgRolesSwapped = "Roles swapped!";
 	};
 
 	//! Contains game configuration

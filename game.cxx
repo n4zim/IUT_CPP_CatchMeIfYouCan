@@ -156,9 +156,9 @@ namespace ChaseGame {
 			
 			Color (CLR_RESET);
 			if(GameStatus.P1.IsStunned) 
-				cout << "[" << KTokenPlayer1 << " IS STUNNED]";
+				cout << "[" << KTokenPlayer1 << " " << GameStatus.LocaleStr.MsgIsStunned << "]";
 			else if(GameStatus.P2.IsStunned) 
-				cout << "[" << KTokenPlayer2 << " IS STUNNED]";
+				cout << "[" << KTokenPlayer2 << " " << GameStatus.LocaleStr.MsgIsStunned << "]";
 			cout << endl;
 
 
@@ -309,7 +309,7 @@ namespace ChaseGame {
 	        cout << "\n       Langage         /       Language        /       Lengaje\n\n\n";
 	        cout << "       1 . Français "  << endl;
 	        cout << "       2 . English  "  << endl;
-	        cout << "       3 . Enpanol\n";
+	        cout << "       3 . Español\n";
 
 	        if(Reply == "")
 	        	cout << "\n\n";
@@ -359,15 +359,15 @@ namespace ChaseGame {
 			GameStatus.LocaleStr.DirLeft = "BAS";
 			GameStatus.LocaleStr.DirDown = "GAUCHE";
 			GameStatus.LocaleStr.DirRight = "DROITE";
-			GameStatus.LocaleStr.TitleMGRL1 = " JOUEUR 1 ";
-			GameStatus.LocaleStr.TitleMGRL2 = "DOIT CHOPER";
-			GameStatus.LocaleStr.TitleMGRL3 = "  L'AUTRE ";
-			GameStatus.LocaleStr.TitlePlayer1 = "..JOUEUR1..";
-			GameStatus.LocaleStr.TitlePlayer2 = "..JOUEUR2..";
+			GameStatus.LocaleStr.TitleMGRL1 = "  UN JOUEUR ";
+			GameStatus.LocaleStr.TitleMGRL2 = "DOIT ATTAPR.";
+			GameStatus.LocaleStr.TitleMGRL3 = "   L'AUTRE  "; 
+			GameStatus.LocaleStr.TitlePlayer1 = "...JOUEUR1...";
+			GameStatus.LocaleStr.TitlePlayer2 = "...JOUEUR2...";
 			GameStatus.LocaleStr.TitleRules = "....REGLE...";
 			GameStatus.LocaleStr.MsgTie = "\n  EGALITE !\n Maintenant, commencez une nouvelle manche pour connaîte le grand Gagnant ...";
 			GameStatus.LocaleStr.MsgEnd = "FIN !";
-			GameStatus.LocaleStr.MsgPause = "\n\n\nAppuyez sur entrer pour continuer";
+			GameStatus.LocaleStr.MsgPause = "\n\n\nAppuyez sur entrée pour continuer";
 			GameStatus.LocaleStr.MsgCatch = " A ATTRAPE SA PROIE!";
 			GameStatus.LocaleStr.MsgEscape = " A reussi à s'échaper dans les temps!";
 			GameStatus.LocaleStr.MsgHeadHunts = "chasse";
@@ -375,19 +375,21 @@ namespace ChaseGame {
 			GameStatus.LocaleStr.MsgIsHunting = "chasse";
 			GameStatus.LocaleStr.MsgRound = "MANCHE";
 			GameStatus.LocaleStr.MsgOn = "SUR";
+			GameStatus.LocaleStr.MsgIsStunned = "EST GELÉ";
+			GameStatus.LocaleStr.MsgRolesSwapped = "Roles changés";
 		} else if (GameStatus.Lang == LANG_ES) {
 			GameStatus.LocaleStr.TitlePlayGameLabel    = "ENTRAR 'PLAY' PARA JUGAR O  ...      ";
 			GameStatus.LocaleStr.TitleGameOptionsLabel = "ENTRAR 'OPTIONS' PARA CONFIGURAR !   ";
 			GameStatus.LocaleStr.DirUp = "ARRIBA";
-			GameStatus.LocaleStr.DirLeft = "BASTA";
-			GameStatus.LocaleStr.DirDown = "GAUCHA";
-			GameStatus.LocaleStr.DirRight = "DROITA";
-			GameStatus.LocaleStr.TitleMGRL1 = " JUU 1 ";
-			GameStatus.LocaleStr.TitleMGRL2 = "DEBE COGER";
-			GameStatus.LocaleStr.TitleMGRL3 = "  OTRO ";
-			GameStatus.LocaleStr.TitlePlayer1 = "..JUGADOR1..";
-			GameStatus.LocaleStr.TitlePlayer2 = "..JUGADOR2..";
-			GameStatus.LocaleStr.TitleRules = "....REGLAS...";
+			GameStatus.LocaleStr.DirLeft = "ABAJO";
+			GameStatus.LocaleStr.DirDown = "IZQRD";
+			GameStatus.LocaleStr.DirRight = "DERECH";
+			GameStatus.LocaleStr.TitleMGRL1 = " UN JUGADOR ";
+			GameStatus.LocaleStr.TitleMGRL2 = " DEBE COGER ";
+			GameStatus.LocaleStr.TitleMGRL3 = "   EL OTRO  ";
+			GameStatus.LocaleStr.TitlePlayer1 = "..JUGADOR1...";
+			GameStatus.LocaleStr.TitlePlayer2 = "..JUGADOR2...";
+			GameStatus.LocaleStr.TitleRules = "...REGLAS...";
 			GameStatus.LocaleStr.MsgTie = "\n  EGUALDAD !\n Empezamos una nueva manga para determinar quien es el ganador real.";
 			GameStatus.LocaleStr.MsgEnd = "FIN !";
 			GameStatus.LocaleStr.MsgPause = "\n\n\nENTRAR PARA CONTINUAR";
@@ -398,6 +400,8 @@ namespace ChaseGame {
 			GameStatus.LocaleStr.MsgIsHunting = "esta cazando";
 			GameStatus.LocaleStr.MsgRound = "MANGA";
 			GameStatus.LocaleStr.MsgOn = "DE";
+			GameStatus.LocaleStr.MsgIsStunned = "ESTA ESTUNEADO";
+			GameStatus.LocaleStr.MsgRolesSwapped = "funciones invertidas!";
 		}
 
 		// Title screen
@@ -430,11 +434,11 @@ namespace ChaseGame {
 		cout << "   8   8 `YooP'   8     `YooP' `YooP' 8   `8  8     8 `YooP8 \n";
 		cout << "  :..::..:.....:::..:::::.....::.....:..:::..:..::::..:....8 \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::8 \n";
-		cout << "  :::::." << GameStatus.LocaleStr.TitlePlayer1  << ".:::.." << GameStatus.LocaleStr.TitleRules << "..:::." << GameStatus.LocaleStr.TitlePlayer2  << ".::::: \n";
-		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P1.Keys.Up   ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL1 << " .:::. " << setw(5) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P2.Keys.Up   ) << " .::::: \n";
-		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P1.Keys.Down ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL2 << " .:::. " << setw(5) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P2.Keys.Down ) << " .::::: \n";
-		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P1.Keys.Left ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL3 << " .:::. " << setw(5) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P2.Keys.Left ) << " .::::: \n";
-		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P1.Keys.Right) << " .:::................:::. " << setw(5) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P2.Keys.Right) << " .::::: \n";
+		cout << "  :::::" << GameStatus.LocaleStr.TitlePlayer1  << ":::.." << GameStatus.LocaleStr.TitleRules << "..:::" << GameStatus.LocaleStr.TitlePlayer2  << ".:::: \n";
+		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P1.Keys.Up   ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL1 << " .:::. " << setw(6) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P2.Keys.Up   ) << " .:::: \n";
+		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P1.Keys.Down ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL2 << " .:::. " << setw(6) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P2.Keys.Down ) << " .:::: \n";
+		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P1.Keys.Left ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL3 << " .:::. " << setw(6) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P2.Keys.Left ) << " .:::: \n";
+		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P1.Keys.Right) << " .:::................:::. " << setw(6) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P2.Keys.Right) << " .:::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
 		cout << "  .......................................................... \n" << endl;
