@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['main_2ecxx',['main.cxx',['../main_8cxx.html',1,'']]],
-  ['map_2ecxx',['map.cxx',['../map_8cxx.html',1,'']]],
-  ['map_2ehxx',['map.hxx',['../map_8hxx.html',1,'']]]
+  ['game_2ecxx',['game.cxx',['../game_8cxx.html',1,'']]],
+  ['game_2ehxx',['game.hxx',['../game_8hxx.html',1,'']]],
+  ['globals_2ehxx',['globals.hxx',['../globals_8hxx.html',1,'']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['canpassthroughwalls',['CanPassThroughWalls',['../struct_chase_game_1_1_s_player_state.html#acd7030969c414605901e551171078bb1',1,'ChaseGame::SPlayerState']]],
+  ['changes_2emd',['CHANGES.md',['../_c_h_a_n_g_e_s_8md.html',1,'']]],
   ['charhistory',['CharHistory',['../struct_chase_game_1_1_s_game_status.html#a9aa8227d792a823032742d456e43b9a8',1,'ChaseGame::SGameStatus']]],
   ['chasegame',['ChaseGame',['../namespace_chase_game.html',1,'']]],
   ['clearscreen',['ClearScreen',['../namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6',1,'ChaseGame']]],
@@ -24,5 +25,6 @@ var searchData=
   ['colorset',['ColorSet',['../struct_chase_game_1_1_s_game_status.html#adc7431634611868499b650c2dc6a67b6',1,'ChaseGame::SGameStatus']]],
   ['colorwall',['ColorWall',['../struct_chase_game_1_1_s_color_set.html#a7a7a8dae118390ce5b4432aa4d99a474',1,'ChaseGame::SColorSet']]],
   ['consolecolors',['ConsoleColors',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7b',1,'ChaseGame']]],
-  ['cvline',['CVLine',['../namespace_chase_game.html#aa09cf1806d3b1f59d36cfabadeaca6a2',1,'ChaseGame']]]
+  ['cvline',['CVLine',['../namespace_chase_game.html#aa09cf1806d3b1f59d36cfabadeaca6a2',1,'ChaseGame']]],
+  ['cyclecount',['CycleCount',['../struct_chase_game_1_1_s_game_status.html#a0a306693a394c28318c8015a975e426d',1,'ChaseGame::SGameStatus']]]
 ];

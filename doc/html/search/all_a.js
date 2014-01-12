@@ -19,5 +19,6 @@ var searchData=
   ['msgpause',['MsgPause',['../struct_chase_game_1_1_s_lang_strings.html#ad8e029116bf5c6ad81dd7e116195d5cc',1,'ChaseGame::SLangStrings']]],
   ['msground',['MsgRound',['../struct_chase_game_1_1_s_lang_strings.html#a637a94fa33b573cec57d98e6855c823f',1,'ChaseGame::SLangStrings']]],
   ['msgtie',['MsgTie',['../struct_chase_game_1_1_s_lang_strings.html#aedfc3595110c1d1da944d4ca35fc1510',1,'ChaseGame::SLangStrings']]],
+  ['mstun',['MStun',['../namespace_chase_game.html#a04f9ea52b462f83e342d15407ccd25fb',1,'ChaseGame']]],
   ['mvleft',['MvLeft',['../struct_chase_game_1_1_s_game_status.html#ae06758bdc7c2bda68801afd314837532',1,'ChaseGame::SGameStatus']]]
 ];

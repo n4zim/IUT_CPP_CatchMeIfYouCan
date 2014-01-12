@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['file_2ecxx',['file.cxx',['../file_8cxx.html',1,'']]],
-  ['file_2ehxx',['file.hxx',['../file_8hxx.html',1,'']]]
+  ['changes_2emd',['CHANGES.md',['../_c_h_a_n_g_e_s_8md.html',1,'']]]
 ];

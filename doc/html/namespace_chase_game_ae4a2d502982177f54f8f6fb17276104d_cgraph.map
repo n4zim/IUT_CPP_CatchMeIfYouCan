@@ -1,0 +1,5 @@
+<map id="ChaseGame::Effect" name="ChaseGame::Effect">
+<area shape="rect" id="node2" href="$namespace_chase_game.html#ac731c5ea06d812c5fe132b1306c4c3c1" title="ChaseGame::BMSwap" alt="" coords="189,5,344,32"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a145c2ac5cea072b89d389acb2a598a23" title="ChaseGame::BStun" alt="" coords="197,56,336,83"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a04f9ea52b462f83e342d15407ccd25fb" title="ChaseGame::MStun" alt="" coords="197,107,337,133"/>
+</map>

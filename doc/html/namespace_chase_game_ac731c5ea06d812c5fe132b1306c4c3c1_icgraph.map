@@ -1,0 +1,6 @@
+<map id="ChaseGame::BMSwap" name="ChaseGame::BMSwap">
+<area shape="rect" id="node2" href="$namespace_chase_game.html#ae4a2d502982177f54f8f6fb17276104d" title="ChaseGame::Effect" alt="" coords="209,5,343,32"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="392,5,557,32"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="605,5,771,32"/>
+<area shape="rect" id="node5" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="819,5,869,32"/>
+</map>

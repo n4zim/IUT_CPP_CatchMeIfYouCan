@@ -1,12 +1,11 @@
 <map id="ChaseGame::GameRoundLoop" name="ChaseGame::GameRoundLoop">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="271,56,441,83"/>
-<area shape="rect" id="node5" href="$namespace_chase_game.html#a6351b2bdc824272990926fbb8e8ad359" title="Display bonus. " alt="" coords="257,107,455,133"/>
-<area shape="rect" id="node7" href="$namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="281,157,431,184"/>
-<area shape="rect" id="node8" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="267,208,445,235"/>
-<area shape="rect" id="node11" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="269,259,443,285"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="271,31,441,57"/>
+<area shape="rect" id="node5" href="$namespace_chase_game.html#a6351b2bdc824272990926fbb8e8ad359" title="Display bonus. " alt="" coords="257,81,455,108"/>
+<area shape="rect" id="node6" href="$namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="281,132,431,159"/>
+<area shape="rect" id="node7" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="267,183,445,209"/>
+<area shape="rect" id="node10" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="269,233,443,260"/>
 <area shape="rect" id="node3" href="$namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="505,5,706,32"/>
 <area shape="rect" id="node4" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="539,56,671,83"/>
-<area shape="rect" id="node6" href="$namespace_chase_game.html#aee2df7cbf4974e167612a7415943f3b0" title="ChaseGame::RRand" alt="" coords="535,107,676,133"/>
-<area shape="rect" id="node9" href="$namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="505,183,706,209"/>
-<area shape="rect" id="node10" href="$namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="522,233,689,260"/>
+<area shape="rect" id="node8" href="$namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="505,157,706,184"/>
+<area shape="rect" id="node9" href="$namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="522,208,689,235"/>
 </map>
