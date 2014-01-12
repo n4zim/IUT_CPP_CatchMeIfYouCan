@@ -34,18 +34,20 @@
 using namespace std;
 
 namespace ChaseGame {
-	char ProcessInput (CMatrix& Mat, const char Input, SGameStatus& GameStatus) {
+	char ProcessInput (CMatrix& Mat, const char Input, SGameStatus& GameStatus, int& MovedPlayer) {
 		StoreCharHistory (Input, GameStatus);
 		char MovedChar = KCancelled;
 
 		if (Input == GameStatus.P1.Keys.Up || Input == GameStatus.P1.Keys.Down || Input == GameStatus.P1.Keys.Left || Input == GameStatus.P1.Keys.Right) {
-			MovedChar = MoveToken (Mat, Input, GameStatus.P1.Position, GameStatus.P1.Keys);
+			MovedChar = MoveToken (Mat, Input, GameStatus.P1, GameStatus.P1.Keys);
 			if (GameStatus.P1.IsChasing && MovedChar != KCancelled) 
 				--GameStatus.MvLeft;
+			MovedPlayer = 1;
 		} else if (Input == GameStatus.P2.Keys.Up || Input == GameStatus.P2.Keys.Down || Input == GameStatus.P2.Keys.Left || Input == GameStatus.P2.Keys.Right) {
-			MovedChar = MoveToken (Mat, Input, GameStatus.P2.Position, GameStatus.P2.Keys);
+			MovedChar = MoveToken (Mat, Input, GameStatus.P2, GameStatus.P2.Keys);
 			if (GameStatus.P2.IsChasing && MovedChar != KCancelled) 
 				--GameStatus.MvLeft;
+			MovedPlayer = 2;
 		} else if (Input == GameStatus.KeyExit) {
 			return KExit;
 		}
@@ -66,6 +68,7 @@ namespace ChaseGame {
 	} // StoreCharHistory ()
 
 	bool GameRoundLoop (CMatrix& Mat, SMapGenParams& MapGenParams, SGameStatus& GameStatus) {
+		int MovedPlayer = 0;
 		ShowMatrix (Mat, GameStatus.ColorSet);
 		
 		// Call the Bonus and Malus generator
@@ -73,10 +76,22 @@ namespace ChaseGame {
 
 		char Input = toupper (GetInput ());
 
-		char c = ProcessInput (Mat, Input, GameStatus);
+		char c = ProcessInput (Mat, Input, GameStatus, MovedPlayer);
 
 		if (c == KTokenPlayer1 || c == KTokenPlayer2) {
 			return false;
+		} else if (c == KBonus) {
+			if (MovedPlayer == 1)
+				Effect (GameStatus, 1, 0);
+			else
+				Effect (GameStatus, 1, 1);
+
+		} else if (c == KMalus) {
+			if (MovedPlayer == 0)
+				Effect (GameStatus, 0, 0);
+			else
+				Effect (GameStatus, 0, 1);
+
 		} else if (c == KExit) {
 			ClearScreen ();
 			exit (0);
@@ -133,25 +148,23 @@ namespace ChaseGame {
 		// The round starts here
 		while (true) {
 			ClearScreen ();
+
 			Color (ColorH);
-			cout << Hunter << " " << GameStatus.LocaleStr.MsgHeadHunts << " " << Prey << " ! [" << GameStatus.MvLeft << " " << GameStatus.LocaleStr.MsgHeadMoves << "]" << endl;
+			cout << Hunter << " " << GameStatus.LocaleStr.MsgHeadHunts << " " << Prey << " ! [" << GameStatus.MvLeft << " " << GameStatus.LocaleStr.MsgHeadMoves << "] ";
+			
+			Color (CLR_RESET);
+			if(GameStatus.P1.IsStunned) 
+				cout << "[" << KTokenPlayer1 << " IS STUNNED]";
+			else if(GameStatus.P2.IsStunned) 
+				cout << "[" << KTokenPlayer2 << " IS STUNNED]";
+			cout << endl;
+
 
 			if (GameStatus.MvLeft == 0) // if there is no more movements, we stop the game.
 				break;
 
 			if (!GameRoundLoop (Mat, MapGenParams, GameStatus)) // stop if someone catched someone
 				break;
-
-			// Detect the bonuses or maluses
-			if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KBonus)
-				Effect (Mat, GameStatus, 1, 0);
-			if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KMalus)
-				Effect (Mat, GameStatus, 0, 0);
-
-			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KBonus)
-				Effect (Mat, GameStatus, 1, 1);
-			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KMalus)
-				Effect (Mat, GameStatus, 0, 1);
 
 			++GameStatus.CycleCount;
 
@@ -162,6 +175,22 @@ namespace ChaseGame {
 				SetGameState (Music, GMS_STOP, true);
 				SuperBanana ();
 			}
+
+			// recalculate roles because they can change during the game
+			if (GameStatus.P1.IsChasing) {
+				Hunter = KTokenPlayer1;
+				Prey = KTokenPlayer2;
+				ColorH = GameStatus.ColorSet.ColorP1;
+				ColorP = GameStatus.ColorSet.ColorP2;
+			} else {
+				Hunter = KTokenPlayer2;
+				Prey = KTokenPlayer1;
+				ColorH = GameStatus.ColorSet.ColorP2;
+				ColorP = GameStatus.ColorSet.ColorP1;
+			}
+
+			CheckStun(GameStatus.P1);
+			CheckStun(GameStatus.P2);
 		}
 
 		// Round end

@@ -33,10 +33,11 @@ namespace ChaseGame {
 	 * \param Mat Game Matrix
 	 * \param Input input given
 	 * \param Config Game configuration
+	 * \param MovedPlayer Player number that moved
 	 * \return Chararcter representing the replaced charachter while moving
 	 * \return KCancelled if the move was cancelled
 	 */
-	char ProcessInput(CMatrix& Mat, const char Input, SGameStatus& Config);
+	char ProcessInput(CMatrix& Mat, const char Input, SGameStatus& Config, int& MovedPlayer);
 	
 	/*!
 	 * \brief This is the game loop
