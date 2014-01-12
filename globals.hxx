@@ -153,11 +153,11 @@ namespace ChaseGame {
 		//! Label : direction right
 		std::string DirRight = "RIGHT";
 		//! Label : mini game rule line 1
-		std::string TitleMGRL1 = " ONE PLAYER ";
+		std::string TitleMGRL1 = "  ONE PLAYER  ";
 		//! Label : mini game rule line 4
-		std::string TitleMGRL2 = "HAS TO CATCH";
+		std::string TitleMGRL2 = " HAS TO CATCH ";
 		//! Label : mini game rule line 3
-		std::string TitleMGRL3 = "  THE OTHER ";
+		std::string TitleMGRL3 = "   THE OTHER  ";
 		//! Label : player 1 (exacty 11 chars)
 		std::string TitlePlayer1 = "...PLAYER1...";
 		//! Label : player 2 (exacty 11 chars)

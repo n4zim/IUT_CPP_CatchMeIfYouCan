@@ -359,9 +359,9 @@ namespace ChaseGame {
 			GameStatus.LocaleStr.DirLeft = "BAS";
 			GameStatus.LocaleStr.DirDown = "GAUCHE";
 			GameStatus.LocaleStr.DirRight = "DROITE";
-			GameStatus.LocaleStr.TitleMGRL1 = "  UN JOUEUR ";
-			GameStatus.LocaleStr.TitleMGRL2 = "DOIT ATTAPR.";
-			GameStatus.LocaleStr.TitleMGRL3 = "   L'AUTRE  "; 
+			GameStatus.LocaleStr.TitleMGRL1 = "   UN JOUEUR  ";
+			GameStatus.LocaleStr.TitleMGRL2 = " DOIT ATTRAPER";
+			GameStatus.LocaleStr.TitleMGRL3 = "    L'AUTRE   "; 
 			GameStatus.LocaleStr.TitlePlayer1 = "...JOUEUR1...";
 			GameStatus.LocaleStr.TitlePlayer2 = "...JOUEUR2...";
 			GameStatus.LocaleStr.TitleRules = "....REGLE...";
@@ -384,9 +384,9 @@ namespace ChaseGame {
 			GameStatus.LocaleStr.DirLeft = "ABAJO";
 			GameStatus.LocaleStr.DirDown = "IZQRD";
 			GameStatus.LocaleStr.DirRight = "DERECH";
-			GameStatus.LocaleStr.TitleMGRL1 = " UN JUGADOR ";
-			GameStatus.LocaleStr.TitleMGRL2 = " DEBE COGER ";
-			GameStatus.LocaleStr.TitleMGRL3 = "   EL OTRO  ";
+			GameStatus.LocaleStr.TitleMGRL1 = "  UN JUGADOR  ";
+			GameStatus.LocaleStr.TitleMGRL2 = "  DEBE COGER  ";
+			GameStatus.LocaleStr.TitleMGRL3 = "    EL OTRO   ";
 			GameStatus.LocaleStr.TitlePlayer1 = "..JUGADOR1...";
 			GameStatus.LocaleStr.TitlePlayer2 = "..JUGADOR2...";
 			GameStatus.LocaleStr.TitleRules = "...REGLAS...";
@@ -435,9 +435,9 @@ namespace ChaseGame {
 		cout << "  :..::..:.....:::..:::::.....::.....:..:::..:..::::..:....8 \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::8 \n";
 		cout << "  :::::" << GameStatus.LocaleStr.TitlePlayer1  << ":::.." << GameStatus.LocaleStr.TitleRules << "..:::" << GameStatus.LocaleStr.TitlePlayer2  << ".:::: \n";
-		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P1.Keys.Up   ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL1 << " .:::. " << setw(6) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P2.Keys.Up   ) << " .:::: \n";
-		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P1.Keys.Down ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL2 << " .:::. " << setw(6) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P2.Keys.Down ) << " .:::: \n";
-		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P1.Keys.Left ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL3 << " .:::. " << setw(6) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P2.Keys.Left ) << " .:::: \n";
+		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P1.Keys.Up   ) << " .:::." << GameStatus.LocaleStr.TitleMGRL1 << ".:::. " << setw(6) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P2.Keys.Up   ) << " .:::: \n";
+		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P1.Keys.Down ) << " .:::." << GameStatus.LocaleStr.TitleMGRL2 << ".:::. " << setw(6) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P2.Keys.Down ) << " .:::: \n";
+		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P1.Keys.Left ) << " .:::." << GameStatus.LocaleStr.TitleMGRL3 << ".:::. " << setw(6) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P2.Keys.Left ) << " .:::: \n";
 		cout << "  ::::. " << setw(6) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P1.Keys.Right) << " .:::................:::. " << setw(6) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P2.Keys.Right) << " .:::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
