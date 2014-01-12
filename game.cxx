@@ -109,12 +109,12 @@ namespace ChaseGame {
 			SetGameState (Music, GMS_STARTING, true);
 
 		Color (CLR_RESET);
-		cout << "\n            [ROUND " << GameStatus.Round + 1 << " ON " << GameStatus.MaxRounds << "]";
+		cout << "\n            [" << GameStatus.LocaleStr.MsgRound << " " << GameStatus.Round + 1 << " " << GameStatus.LocaleStr.MsgOn << " " << GameStatus.MaxRounds << "]";
 		cout << "\n\n           {";
 		Color (ColorH);
 		cout << Hunter;
 		Color (CLR_RESET);
-		cout << " IS HUNTING ";
+		cout << " " << GameStatus.LocaleStr.MsgIsHunting << " ";
 		Color (ColorP);
 		cout << Prey;
 		Color (CLR_RESET);
@@ -130,7 +130,7 @@ namespace ChaseGame {
 		while (true) {
 			ClearScreen ();
 			Color (ColorH);
-			cout << Hunter << " hunts " << Prey << " ! [" << GameStatus.MvLeft << " moves]" << endl;
+			cout << Hunter << " " << GameStatus.LocaleStr.MsgHeadHunts << " " << Prey << " ! [" << GameStatus.MvLeft << " " << GameStatus.LocaleStr.MsgHeadMoves << "]" << endl;
 
 			if (GameStatus.MvLeft == 0) // if there is no more movements, we stop the game.
 				break;
@@ -184,10 +184,10 @@ namespace ChaseGame {
 
 		if (HunterWon) {
 			Color (ColorH);
-			cout << Hunter << " SUCCESSFULLY CATCHED HIS PREY!" << endl;
+			cout << Hunter << GameStatus.LocaleStr.MsgCatch << endl;
 		} else {
 			Color (ColorP);
-			cout << Prey << " ESCAPED JUST IN TIME AND WON THIS ROUND!" << endl;
+			cout << Prey << GameStatus.LocaleStr.MsgEscape << endl;
 		}
 
 		ShowMatrix (Mat, GameStatus.ColorSet);
@@ -270,8 +270,8 @@ namespace ChaseGame {
 		cout << "  :.....::..:::....:::::..:.....::.....::::....8 ..:::::....::::..:.....:\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::8 ::::::::::::::::::::::::\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::..::::::::::::::::::::::::\n";
-		cout << "  :::::::::::::- " << GameStatus.LocaleStr.TitlePlayGameLabel    << " -:::::::::::::\n";
-		cout << "  :::::::::::::- " << GameStatus.LocaleStr.TitleGameOptionsLabel << " -:::::::::::::\n";
+		cout << "  :::::::::::::- " << GameStatus.LocaleStr.TitlePlayGameLabel    << " -::::::::::::::\n";
+		cout << "  :::::::::::::- " << GameStatus.LocaleStr.TitleGameOptionsLabel << " -::::::::::::::\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n";
 		cout << "  .......................................................................\n" << endl;
 		
@@ -289,16 +289,17 @@ namespace ChaseGame {
 		cout << "   8   8 `YooP'   8     `YooP' `YooP' 8   `8  8     8 `YooP8 \n";
 		cout << "  :..::..:.....:::..:::::.....::.....:..:::..:..::::..:....8 \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::8 \n";
-		cout << "  :::::...PLAYER1...:::......RULES.....:::...PLAYER2...::::: \n";
-		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P1.Keys.Up   ) << " .:::.  ONE PLAYER  .:::. " << setw(5) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P2.Keys.Up   ) << " .::::: \n";
-		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P1.Keys.Down ) << " .:::. HAS TO CATCH .:::. " << setw(5) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P2.Keys.Down ) << " .::::: \n";
-		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P1.Keys.Left ) << " .:::.   THE OTHER  .:::. " << setw(5) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P2.Keys.Left ) << " .::::: \n";
+		cout << "  :::::." << GameStatus.LocaleStr.TitlePlayer1  << ".:::.." << GameStatus.LocaleStr.TitleRules << "..:::." << GameStatus.LocaleStr.TitlePlayer2  << ".::::: \n";
+		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P1.Keys.Up   ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL1 << " .:::. " << setw(5) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P2.Keys.Up   ) << " .::::: \n";
+		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P1.Keys.Down ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL2 << " .:::. " << setw(5) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P2.Keys.Down ) << " .::::: \n";
+		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P1.Keys.Left ) << " .:::. " << GameStatus.LocaleStr.TitleMGRL3 << " .:::. " << setw(5) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P2.Keys.Left ) << " .::::: \n";
 		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P1.Keys.Right) << " .:::................:::. " << setw(5) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P2.Keys.Right) << " .::::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
 		cout << "  .......................................................... \n" << endl;
 
-		Pause (true);
+		cout << GameStatus.LocaleStr.MsgPause;
+		Pause (false);
 
 		// MAIN LIFE LOOP
 		while (GameLoop (MapGenParams, GameStatus, Tracks)) {
@@ -316,14 +317,15 @@ namespace ChaseGame {
 				GameStatus.P1.IsChasing = (rand() % 2 == 1);
 				GameStatus.P2.IsChasing = !GameStatus.P1.IsChasing;
 
-				cout << "\n  TIE !\n Now starting a new round to know who the real winner is..." << endl;
+				cout << GameStatus.LocaleStr.MsgTie << endl;
 
-				Pause (true);
+				cout << GameStatus.LocaleStr.MsgPause;
+				Pause (false);
 				++GameStatus.MaxRounds;
 				GameLoop (MapGenParams, GameStatus, Tracks);
 		}
 
-		cout << "Game end" << endl;
+		cout << GameStatus.LocaleStr.MsgEnd << endl;
 
 	}  // ppal ()
 

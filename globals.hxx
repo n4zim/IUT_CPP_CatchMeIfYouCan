@@ -148,6 +148,38 @@ namespace ChaseGame {
 		std::string DirDown = "LEFT";
 		//! Label : direction right
 		std::string DirRight = "RIGHT";
+		//! Label : mini game rule line 1
+		std::string TitleMGRL1 = " ONE PLAYER ";
+		//! Label : mini game rule line 4
+		std::string TitleMGRL2 = "HAS TO CATCH";
+		//! Label : mini game rule line 3
+		std::string TitleMGRL3 = "  THE OTHER ";
+		//! Label : player 1 (exacty 11 chars)
+		std::string TitlePlayer1 = "..PLAYER1..";
+		//! Label : player 2 (exacty 11 chars)
+		std::string TitlePlayer2 = "..PLAYER2..";
+		//! Label : rules (exacty 12 chars)
+		std::string TitleRules = "....RULES...";
+		//! Label : shown when tie
+		std::string MsgTie = "\n  TIE !\n Now starting a new round to know who the real winner is...";
+		//! Label : shown when the game quits
+		std::string MsgEnd = "The end !";
+		//! Label : pause
+		std::string MsgPause = "\n\n\nPress enter to continue";
+		//! Label : shown when someone catched someone "X catched.."
+		std::string MsgCatch = " SUCCESSFULLY CATCHED HIS PREY!";
+		//! Label : shown when someone escaped someone "X escaped.."
+		std::string MsgEscape = " ESCAPED JUST IN TIME AND WON THIS ROUND!";
+		//! Label : "hunts" in header "X hunts O [__ moves]"
+		std::string MsgHeadHunts = "hunts";
+		//! Label : "mvoes" in header "X hunts O [__ moves]"
+		std::string MsgHeadMoves = "moves";
+		//! Label : Is hunting message (x is hunting y)
+		std::string MsgIsHunting = "IS HUNTING";
+		//! Label : Round message (round x on y)
+		std::string MsgRound = "ROUND";
+		//! Label : "On" message (round x on y)
+		std::string MsgOn = "ON";
 	};
 
 	//! Contains game configuration
