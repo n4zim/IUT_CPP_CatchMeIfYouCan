@@ -34,6 +34,6 @@ Méthode de test et de travail
 Afin de tester les nouvelles fonctionalités alors que le jeu n'était pas terminé, nous nous étions basés sur un moteur simple (le code de base), en y rajoutant notre code et testant s'il fonctionnait bien.
 
 
-Nous avons aussi utilisé la technologie de versioning Git pour générer les différentes versions du programme, et créer quelques branches quand on voulait implémenter une fonctionnalité qui pouvait causer des problèmes au reste du code.
+Nous avons aussi utilisé la technologie de versioning Git pour générer les différentes versions du programme, et créer quelques branches quand on voulait implémenter une fonctionnalité qui pouvait causer des problèmes au reste du code. Le code source et les commits relatifs aux modifications du projet sont disonibles à cette adresse : https://bitbucket.org/n4zim/catch-me-if-you-can
 
 Ainsi, et aussi grâce à la séparation en plusieurs fichiers, nous avons pu nous diviser plus facilement le travail.
