@@ -141,14 +141,14 @@ namespace ChaseGame {
 
 			// Detect the bonuses or maluses
 			if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KBonus)
-				Effect (Mat, GameStatus.Player.Position, 1, 0);
+				Effect (Mat, GameStatus.P1.Position, 1, 0);
 			if (Mat[GameStatus.P1.Position.Y][GameStatus.P1.Position.X] == KMalus)
-				Effect (Mat, GameStatus.Player.Position, 0, 0);
+				Effect (Mat, GameStatus.P1.Position, 0, 0);
 
 			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KBonus)
-				Effect (Mat, GameStatus.Player.Position, 1, 1);
+				Effect (Mat, GameStatus.P2.Position, 1, 1);
 			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KMalus)
-				Effect (Mat, GameStatus.Player.Position, 0, 1);
+				Effect (Mat, GameStatus.P2.Position, 0, 1);
 
 			++GameStatus.CycleCount;
 
