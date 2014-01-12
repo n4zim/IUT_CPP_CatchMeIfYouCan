@@ -22,8 +22,20 @@ using namespace std;
 
 namespace ChaseGame {
 
-	void Effect (CMatrix & Mat, SPlayerPos Player, bool IsBonus, bool IsP1) {
-		// A finir
+	void Effect (CMatrix & Mat, bool IsBonus, bool IsP1) {
+		if (IsP1) {
+			if (IsBonus) {
+				cout << "Bonus joueur 1";
+			} else {
+				cout << "Malus joueur 1";
+			}
+		} else {
+			if (IsBonus) {
+				cout << "Bonus joueur 2";
+			} else {
+				cout << "Malus joueur 2";
+			}
+		}
 	}
 
 }
