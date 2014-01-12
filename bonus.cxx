@@ -23,19 +23,47 @@ using namespace std;
 namespace ChaseGame {
 
 	void Effect (CMatrix & Mat, SGameStatus& GameStatus, bool IsBonus, bool IsP1) {
-		if (IsP1) {
-			if (IsBonus) {
-				cout << "Bonus joueur 1";
-			} else {
-				cout << "Malus joueur 1";
-			}
-		} else {
-			if (IsBonus) {
-				cout << "Bonus joueur 2";
-			} else {
-				cout << "Malus joueur 2";
-			}
-		}
-	}
+
+        if (IsBonus) {
+                cout << "isbonus init random effect"; // test
+                if ((rand() % 100) > 10)
+                        BMSwap();
+                else
+                        BStun();
+        }
+        else
+        {
+                MStun();
+        }
+    }
+ 
+    void MStun()
+    {
+            /*
+                    sf::Clock Clock;
+                    Clock.Reset();
+                    Clock.GetElapsedTime();
+
+                    Auto blocage.
+            */
+    }
+
+    void BStun()
+    {
+            /*
+                    sf::Clock Clock;
+                    Clock.Reset();
+                    Clock.GetElapsedTime();
+
+                    Bloquer le joueur adverse
+            */
+    }
+
+    void BMSwap()
+    {
+            // Sans effet ? pk ?
+            swap(GameStatus.P1.IsChasing, GameStatus.P2.IsChasing);
+
+    }
 
 }

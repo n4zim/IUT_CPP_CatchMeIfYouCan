@@ -229,16 +229,16 @@ namespace ChaseGame {
 
 	void GenBonusMalus(CMatrix & Mat) {
 
-		unsigned y = RRand(0, Mat.size());
-		unsigned x = RRand(0, Mat[y].size());
+		unsigned y = rand () % Mat.size ();
+		unsigned x = rand () % Mat[y].size ();
 
-		if ((rand() % 100) > 98 && Mat[y][x] == KEmpty) {
-		    unsigned chance = RRand(0, 2);
-			if (chance == 0)
+		if ((rand () % 100) > 95 && Mat[y][x] == KEmpty) {
+			if (rand () % 2)
 				Mat[y][x] = KBonus;
 		    else
 		    	Mat[y][x] = KMalus;
 		}
+
 	} // GenBonusMalus()
 
 }

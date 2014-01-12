@@ -16,6 +16,6 @@ namespace ChaseGame {
 
 	void Effect (CMatrix & Mat, SGameStatus& GameStatus, bool IsBonus, bool IsP1);
 
-}
+	}
 
 #endif
