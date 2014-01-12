@@ -82,15 +82,15 @@ namespace ChaseGame {
 			return false;
 		} else if (c == KBonus) {
 			if (MovedPlayer == 1)
-				Effect (GameStatus, 1, 0);
-			else
 				Effect (GameStatus, 1, 1);
+			else
+				Effect (GameStatus, 1, 0);
 
 		} else if (c == KMalus) {
-			if (MovedPlayer == 0)
-				Effect (GameStatus, 0, 0);
-			else
+			if (MovedPlayer == 1)
 				Effect (GameStatus, 0, 1);
+			else
+				Effect (GameStatus, 0, 0);
 
 		} else if (c == KExit) {
 			ClearScreen ();
