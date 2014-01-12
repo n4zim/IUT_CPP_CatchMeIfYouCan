@@ -208,6 +208,8 @@ namespace ChaseGame {
 		SLangStrings LocaleStr;
 		//! Contains last pressed keys
 		std::vector <char> CharHistory;
+		//! Counts total cycles done in a game loop
+		unsigned CycleCount;
 	};
 }
 

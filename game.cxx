@@ -125,6 +125,7 @@ namespace ChaseGame {
 			SetGameState (Music, GMS_INGAME, true);
 
 		GameStatus.MvLeft = (rand () % 25 + 10) * 10;
+		GameStatus.CycleCount = 0;
 
 		// The round starts here
 		while (true) {
@@ -149,6 +150,8 @@ namespace ChaseGame {
 			if (Mat[GameStatus.P2.Position.Y][GameStatus.P2.Position.X] == KMalus)
 				Effect (Mat, GameStatus, 0, 1);*/
 
+			++GameStatus.CycleCount;
+		
 			// This is not an easter egg or anything
 			if (GameStatus.CharHistory[0] == 66 && GameStatus.CharHistory[1] == 65 &&
 				GameStatus.CharHistory[2] == 78 && GameStatus.CharHistory[3] == 65 &&
