@@ -48,8 +48,14 @@ namespace ChaseGame {
 	 * \param KeyCodes Player specific key codes for movement
 	 * \return Replaced char
 	 */
-	char MoveToken (CMatrix & Mat, const char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes);
+	char MoveToken (CMatrix & Mat, const char Move, SPlayerState & Player, const SPlayerKeys& KeyCodes);
 
+	/*!
+	 * \brief Random between min and max
+	 * \param Min minimum
+	 * \param Max maximum
+	 * \return A random value
+	 */
 	unsigned RRand (unsigned Min, unsigned Max);
 
 	/*!

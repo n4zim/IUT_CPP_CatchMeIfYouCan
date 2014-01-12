@@ -142,9 +142,13 @@ namespace ChaseGame {
 	} // GenMap ()
 
 
-	char MoveToken (CMatrix & Mat, const char Move, SPlayerPos & Pos, const SPlayerKeys& KeyCodes) {
+	char MoveToken (CMatrix & Mat, const char Move, SPlayerState & Player, const SPlayerKeys& KeyCodes) {
 		char replacedChar = KEmpty;
+		SPlayerPos Pos = Player.Position;
 		SPlayerPos NewPos = Pos;
+
+		if(Player.IsStunned)
+			return KCancelled;
 
 	 	if (Move == KeyCodes.Up && NewPos.Y > 0) {
 		  	NewPos.Y -= 1; 
@@ -155,17 +159,18 @@ namespace ChaseGame {
 		} else if (Move == KeyCodes.Down && NewPos.Y < Mat.size() - 1) {
 		  	NewPos.Y += 1; 
 		} else {
-			return KEmpty; // We cancel the movement by stopping the function
+			return KCancelled; // We cancel the movement by stopping the function
 		}
 
 		if(Mat[NewPos.Y][NewPos.X] == KObstacle) // Prevent player from walking into walls
-			return KEmpty; // Cancel movement
+			return KCancelled; // Cancel movement
+
 
 		replacedChar = Mat[NewPos.Y][NewPos.X];
 		Mat[NewPos.Y][NewPos.X] = Mat[Pos.Y][Pos.X];
 		Mat[Pos.Y][Pos.X] = KEmpty;
 
-		Pos = NewPos;
+		Player.Position = NewPos;
 
 		return replacedChar;
 	} // MoveToken ()
@@ -202,7 +207,13 @@ namespace ChaseGame {
 				  case KObstacle:
 				  	Color (ColorSet.ColorObstacle);
 				  	break;
-				  case KEmpty:
+				  case KBonus:
+				  	Color (ColorSet.ColorBonus);
+				  	break;
+				  case KMalus:
+				  	Color (ColorSet.ColorMalus);
+				  	break;
+				  default:
 					Color (CLR_RESET);
 					break;
 				}
@@ -232,7 +243,7 @@ namespace ChaseGame {
 		unsigned y = rand () % Mat.size ();
 		unsigned x = rand () % Mat[y].size ();
 
-		if ((rand () % 100) > 95 && Mat[y][x] == KEmpty) {
+		if ((rand () % 100) > 97 && Mat[y][x] == KEmpty) {
 			if (rand () % 2)
 				Mat[y][x] = KBonus;
 		    else
