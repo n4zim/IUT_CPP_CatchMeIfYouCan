@@ -94,6 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Audio related functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;istream&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &lt;cctype&gt;</code><br/>
 <code>#include &lt;iomanip&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
@@ -116,7 +119,7 @@ Include dependency graph for game.cxx:</div>
 <div class="dyncontent">
 <div class="center"><img src="game_8cxx__incl.png" border="0" usemap="#game_8cxx" alt=""/></div>
 <map name="game_8cxx" id="game_8cxx">
-<area shape="rect" id="node12" href="globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="416,229,504,256"/><area shape="rect" id="node13" href="unix_8hxx.html" title="unix.cxx function prototypes " alt="" coords="724,304,794,331"/><area shape="rect" id="node14" href="file_8hxx.html" title="file.cxx function prototypes " alt="" coords="232,155,294,181"/><area shape="rect" id="node15" href="map_8hxx.html" title="map.cxx function prototypes " alt="" coords="320,155,392,181"/><area shape="rect" id="node17" href="audio_8hxx.html" title="audio.cxx function prototypes " alt="" coords="1100,80,1178,107"/><area shape="rect" id="node18" href="bonus_8hxx.html" title="bonus.cxx function prototypes " alt="" coords="29,155,112,181"/><area shape="rect" id="node19" href="banana_8hxx.html" title="banana.cxx function prototypes " alt="" coords="1580,80,1669,107"/><area shape="rect" id="node20" href="game_8hxx.html" title="game.cxx function prototypes " alt="" coords="670,80,748,107"/></map>
+<area shape="rect" id="node15" href="globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="384,229,472,256"/><area shape="rect" id="node16" href="unix_8hxx.html" title="unix.cxx function prototypes " alt="" coords="724,304,794,331"/><area shape="rect" id="node17" href="file_8hxx.html" title="file.cxx function prototypes " alt="" coords="232,155,294,181"/><area shape="rect" id="node18" href="map_8hxx.html" title="map.cxx function prototypes " alt="" coords="319,155,391,181"/><area shape="rect" id="node20" href="audio_8hxx.html" title="audio.cxx function prototypes " alt="" coords="1057,80,1135,107"/><area shape="rect" id="node21" href="bonus_8hxx.html" title="bonus.cxx function prototypes " alt="" coords="28,155,111,181"/><area shape="rect" id="node22" href="banana_8hxx.html" title="banana.cxx function prototypes " alt="" coords="1622,80,1711,107"/><area shape="rect" id="node23" href="game_8hxx.html" title="game.cxx function prototypes " alt="" coords="669,80,747,107"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -127,9 +130,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab5112517855da810fe3b7bdb81d58484"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484">ChaseGame::ProcessInput</a> (CMatrix &amp;Mat, const char Input, SGameStatus &amp;Config)</td></tr>
-<tr class="memdesc:ab5112517855da810fe3b7bdb81d58484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes user input.  <a href="#ab5112517855da810fe3b7bdb81d58484">More...</a><br/></td></tr>
-<tr class="separator:ab5112517855da810fe3b7bdb81d58484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927ceb6d76ebd1a6eb8f2a393db06c86"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a927ceb6d76ebd1a6eb8f2a393db06c86">ChaseGame::ProcessInput</a> (CMatrix &amp;Mat, const char Input, SGameStatus &amp;Config, int &amp;MovedPlayer)</td></tr>
+<tr class="memdesc:a927ceb6d76ebd1a6eb8f2a393db06c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes user input.  <a href="#a927ceb6d76ebd1a6eb8f2a393db06c86">More...</a><br/></td></tr>
+<tr class="separator:a927ceb6d76ebd1a6eb8f2a393db06c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b28a3a3594d145b0ce1d1bf179e88a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3">ChaseGame::StoreCharHistory</a> (const char Input, SGameStatus &amp;GameStatus)</td></tr>
 <tr class="memdesc:a4b28a3a3594d145b0ce1d1bf179e88a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores last 6 inputs.  <a href="#a4b28a3a3594d145b0ce1d1bf179e88a3">More...</a><br/></td></tr>
 <tr class="separator:a4b28a3a3594d145b0ce1d1bf179e88a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,7 +153,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 12 2014 16:36:27 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 12 2014 18:37:33 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

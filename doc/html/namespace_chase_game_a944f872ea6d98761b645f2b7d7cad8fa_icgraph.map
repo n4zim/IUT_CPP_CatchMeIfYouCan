@@ -1,5 +1,8 @@
 <map id="ChaseGame::Pause" name="ChaseGame::Pause">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="192,5,357,32"/>
-<area shape="rect" id="node3" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="405,31,571,57"/>
-<area shape="rect" id="node4" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="619,31,669,57"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a27ec3d5c04abe9fcf9d059030bd27656" title="Swaps roles of two players. " alt="" coords="192,5,347,32"/>
+<area shape="rect" id="node5" href="$namespace_chase_game.html#a1ca6f3f9092b35d9bea0343fd032d7f0" title="ChaseGame::GameLoop" alt="" coords="829,56,995,83"/>
+<area shape="rect" id="node6" href="$namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74" title="This function starts the game. " alt="" coords="1043,81,1208,108"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a071f5577018cd55d56097edb64ecb000" title="Applies an effect on the player. " alt="" coords="395,5,530,32"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="579,5,781,32"/>
+<area shape="rect" id="node7" href="$main_8cxx.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Program main, the program does not accept arguments. " alt="" coords="1256,81,1307,108"/>
 </map>

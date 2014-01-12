@@ -96,18 +96,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>ChaseGame {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#ae4a2d502982177f54f8f6fb17276104d">Effect</a> (<a class="code" href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">CMatrix</a> &amp; Mat, SGameStatus&amp; GameStatus, <span class="keywordtype">bool</span> IsBonus, <span class="keywordtype">bool</span> IsP1);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a071f5577018cd55d56097edb64ecb000">Effect</a> (SGameStatus&amp; GameStatus, <span class="keywordtype">bool</span> IsBonus, <span class="keywordtype">bool</span> IsP1);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a27ec3d5c04abe9fcf9d059030bd27656">BMSwap</a> (SGameStatus &amp; GameStatus);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#a70ca6da7191ff141165490765f974df2">MStun</a> (SPlayerState&amp; Player);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespace_chase_game.html#af0e06dea9207296017b37bf8bcb0224b">CheckStun</a>(SPlayerState&amp; Player);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespace_chase_game_html_a27ec3d5c04abe9fcf9d059030bd27656"><div class="ttname"><a href="namespace_chase_game.html#a27ec3d5c04abe9fcf9d059030bd27656">ChaseGame::BMSwap</a></div><div class="ttdeci">void BMSwap(SGameStatus &amp;GameStatus)</div><div class="ttdoc">Swaps roles of two players. </div><div class="ttdef"><b>Definition:</b> bonus.cxx:51</div></div>
+<div class="ttc" id="namespace_chase_game_html_a70ca6da7191ff141165490765f974df2"><div class="ttname"><a href="namespace_chase_game.html#a70ca6da7191ff141165490765f974df2">ChaseGame::MStun</a></div><div class="ttdeci">void MStun(SPlayerState &amp;Player)</div><div class="ttdoc">Stuns a player. </div><div class="ttdef"><b>Definition:</b> bonus.cxx:37</div></div>
 <div class="ttc" id="globals_8hxx_html"><div class="ttname"><a href="globals_8hxx.html">globals.hxx</a></div><div class="ttdoc">Defines global constants and variables for the ChaseGame namespace. </div></div>
-<div class="ttc" id="namespace_chase_game_html_ae4a2d502982177f54f8f6fb17276104d"><div class="ttname"><a href="namespace_chase_game.html#ae4a2d502982177f54f8f6fb17276104d">ChaseGame::Effect</a></div><div class="ttdeci">void Effect(CMatrix &amp;Mat, SGameStatus &amp;GameStatus, bool IsBonus, bool IsP1)</div><div class="ttdef"><b>Definition:</b> bonus.cxx:25</div></div>
-<div class="ttc" id="namespace_chase_game_html_a469449f9237e59efce3982127366c550"><div class="ttname"><a href="namespace_chase_game.html#a469449f9237e59efce3982127366c550">ChaseGame::CMatrix</a></div><div class="ttdeci">std::vector&lt; CVLine &gt; CMatrix</div><div class="ttdoc">Matrix type. </div><div class="ttdef"><b>Definition:</b> globals.hxx:32</div></div>
+<div class="ttc" id="namespace_chase_game_html_af0e06dea9207296017b37bf8bcb0224b"><div class="ttname"><a href="namespace_chase_game.html#af0e06dea9207296017b37bf8bcb0224b">ChaseGame::CheckStun</a></div><div class="ttdeci">void CheckStun(SPlayerState &amp;Player)</div><div class="ttdoc">Checks if a player is stunned and unstuns if it is time to do so. </div><div class="ttdef"><b>Definition:</b> bonus.cxx:42</div></div>
+<div class="ttc" id="namespace_chase_game_html_a071f5577018cd55d56097edb64ecb000"><div class="ttname"><a href="namespace_chase_game.html#a071f5577018cd55d56097edb64ecb000">ChaseGame::Effect</a></div><div class="ttdeci">void Effect(SGameStatus &amp;GameStatus, bool IsBonus, bool IsP1)</div><div class="ttdoc">Applies an effect on the player. </div><div class="ttdef"><b>Definition:</b> bonus.cxx:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 12 2014 16:36:26 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 12 2014 18:37:33 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

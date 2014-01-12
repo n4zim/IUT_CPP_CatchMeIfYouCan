@@ -1,3 +1,4 @@
 <map id="bonus.hxx" name="bonus.hxx">
-<area shape="rect" id="node2" href="$game_8cxx.html" title="Audio related functions. " alt="" coords="7,80,85,107"/>
+<area shape="rect" id="node2" href="$bonus_8cxx.html" title="File related bonus and malus. " alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$game_8cxx.html" title="Audio related functions. " alt="" coords="113,80,191,107"/>
 </map>

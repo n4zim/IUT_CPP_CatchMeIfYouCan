@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['effect',['Effect',['../namespace_chase_game.html#ae4a2d502982177f54f8f6fb17276104d',1,'ChaseGame']]]
+  ['effect',['Effect',['../namespace_chase_game.html#a071f5577018cd55d56097edb64ecb000',1,'ChaseGame']]]
 ];

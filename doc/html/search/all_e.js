@@ -15,5 +15,6 @@ var searchData=
   ['splayerstate',['SPlayerState',['../struct_chase_game_1_1_s_player_state.html',1,'ChaseGame']]],
   ['startgame',['StartGame',['../namespace_chase_game.html#a528073d13296b3cf84a6ae07c3550e74',1,'ChaseGame']]],
   ['storecharhistory',['StoreCharHistory',['../namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3',1,'ChaseGame']]],
+  ['stunduration',['StunDuration',['../struct_chase_game_1_1_s_player_state.html#afc3caabd0eb284f7bfdddae63ac86da7',1,'ChaseGame::SPlayerState']]],
   ['superbanana',['SuperBanana',['../namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5',1,'ChaseGame']]]
 ];

@@ -1,0 +1,7 @@
+<map id="ChaseGame::Effect" name="ChaseGame::Effect">
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a27ec3d5c04abe9fcf9d059030bd27656" title="Swaps roles of two players. " alt="" coords="189,56,344,83"/>
+<area shape="rect" id="node6" href="$namespace_chase_game.html#a70ca6da7191ff141165490765f974df2" title="Stuns a player. " alt="" coords="197,107,337,133"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="392,5,565,32"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="614,81,746,108"/>
+<area shape="rect" id="node5" href="$namespace_chase_game.html#a944f872ea6d98761b645f2b7d7cad8fa" title="This function pauses the program. " alt="" coords="409,107,548,133"/>
+</map>

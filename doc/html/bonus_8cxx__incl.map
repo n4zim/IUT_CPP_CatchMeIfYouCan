@@ -1,5 +1,6 @@
 <map id="bonus.cxx" name="bonus.cxx">
-<area shape="rect" id="node6" href="$globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="243,155,331,181"/>
-<area shape="rect" id="node8" href="$map_8hxx.html" title="map.cxx function prototypes " alt="" coords="321,80,393,107"/>
-<area shape="rect" id="node7" href="$unix_8hxx.html" title="unix.cxx function prototypes " alt="" coords="255,229,325,256"/>
+<area shape="rect" id="node7" href="$bonus_8hxx.html" title="bonus.cxx function prototypes " alt="" coords="448,80,531,107"/>
+<area shape="rect" id="node8" href="$globals_8hxx.html" title="Defines global constants and variables for the ChaseGame namespace. " alt="" coords="363,155,451,181"/>
+<area shape="rect" id="node10" href="$map_8hxx.html" title="map.cxx function prototypes " alt="" coords="555,80,627,107"/>
+<area shape="rect" id="node9" href="$unix_8hxx.html" title="unix.cxx function prototypes " alt="" coords="371,229,441,256"/>
 </map>

@@ -107,7 +107,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="bonus_8hxx__dep__incl.png" border="0" usemap="#bonus_8hxxdep" alt=""/></div>
 <map name="bonus_8hxxdep" id="bonus_8hxxdep">
-<area shape="rect" id="node2" href="game_8cxx.html" title="Audio related functions. " alt="" coords="7,80,85,107"/></map>
+<area shape="rect" id="node2" href="bonus_8cxx.html" title="File related bonus and malus. " alt="" coords="5,80,88,107"/><area shape="rect" id="node3" href="game_8cxx.html" title="Audio related functions. " alt="" coords="113,80,191,107"/></map>
 </div>
 </div>
 <p><a href="bonus_8hxx_source.html">Go to the source code of this file.</a></p>
@@ -120,8 +120,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae4a2d502982177f54f8f6fb17276104d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#ae4a2d502982177f54f8f6fb17276104d">ChaseGame::Effect</a> (CMatrix &amp;Mat, SGameStatus &amp;GameStatus, bool IsBonus, bool IsP1)</td></tr>
-<tr class="separator:ae4a2d502982177f54f8f6fb17276104d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071f5577018cd55d56097edb64ecb000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a071f5577018cd55d56097edb64ecb000">ChaseGame::Effect</a> (SGameStatus &amp;GameStatus, bool IsBonus, bool IsP1)</td></tr>
+<tr class="memdesc:a071f5577018cd55d56097edb64ecb000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an effect on the player.  <a href="#a071f5577018cd55d56097edb64ecb000">More...</a><br/></td></tr>
+<tr class="separator:a071f5577018cd55d56097edb64ecb000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ec3d5c04abe9fcf9d059030bd27656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a27ec3d5c04abe9fcf9d059030bd27656">ChaseGame::BMSwap</a> (SGameStatus &amp;GameStatus)</td></tr>
+<tr class="memdesc:a27ec3d5c04abe9fcf9d059030bd27656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps roles of two players.  <a href="#a27ec3d5c04abe9fcf9d059030bd27656">More...</a><br/></td></tr>
+<tr class="separator:a27ec3d5c04abe9fcf9d059030bd27656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ca6da7191ff141165490765f974df2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#a70ca6da7191ff141165490765f974df2">ChaseGame::MStun</a> (SPlayerState &amp;Player)</td></tr>
+<tr class="memdesc:a70ca6da7191ff141165490765f974df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stuns a player.  <a href="#a70ca6da7191ff141165490765f974df2">More...</a><br/></td></tr>
+<tr class="separator:a70ca6da7191ff141165490765f974df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e06dea9207296017b37bf8bcb0224b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chase_game.html#af0e06dea9207296017b37bf8bcb0224b">ChaseGame::CheckStun</a> (SPlayerState &amp;Player)</td></tr>
+<tr class="memdesc:af0e06dea9207296017b37bf8bcb0224b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a player is stunned and unstuns if it is time to do so.  <a href="#af0e06dea9207296017b37bf8bcb0224b">More...</a><br/></td></tr>
+<tr class="separator:af0e06dea9207296017b37bf8bcb0224b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="bonus_8cxx.html" title="File related bonus and malus. ">bonus.cxx</a> function prototypes </p>
@@ -131,7 +141,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 12 2014 16:36:27 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 12 2014 18:37:33 for Chase game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

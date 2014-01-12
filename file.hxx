@@ -12,11 +12,11 @@
 #ifndef file_h 
 #define file_h
 
-namespace ChaseGame {	
-	/*!
+namespace ChaseGame {
+ 	/*!
 	 * \brief Loads parameters from a config file
 	 * \param FileName Config filename
-	 * \return Map generator parametors loaded from file or default config
+	 * \return Map generator parameters loaded from file or default config
 	 */
 	SMapGenParams LoadMapGenConfig (const std::string & FileName);
 

@@ -79,15 +79,15 @@ void \hyperlink{namespace_chase_game_a3b9e1d486d981f5332d23142eb4777b7}{Triple\-
 void \hyperlink{namespace_chase_game_ac628bcb1f9de7ece2d9705ea5c6e9e91}{Set\-Game\-State} (std\-::map$<$ std\-::string, sf\-::\-Music \& $>$ \&Tracks, int Game\-State, bool Do\-Fade)
 \begin{DoxyCompactList}\small\item\em Sets music volumes according to the game state. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5}{Super\-Banana} ()
-\item 
-void \hyperlink{namespace_chase_game_ae4a2d502982177f54f8f6fb17276104d}{Effect} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status, bool Is\-Bonus, bool Is\-P1)
-\item 
-void \hyperlink{namespace_chase_game_a04f9ea52b462f83e342d15407ccd25fb}{M\-Stun} ()
-\item 
-void \hyperlink{namespace_chase_game_a145c2ac5cea072b89d389acb2a598a23}{B\-Stun} ()
-\item 
-void \hyperlink{namespace_chase_game_ac731c5ea06d812c5fe132b1306c4c3c1}{B\-M\-Swap} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Launches Ariane V. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a071f5577018cd55d56097edb64ecb000}{Effect} (\hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status, bool Is\-Bonus, bool Is\-P1)
+\begin{DoxyCompactList}\small\item\em Applies an effect on the player. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a70ca6da7191ff141165490765f974df2}{M\-Stun} (\hyperlink{struct_chase_game_1_1_s_player_state}{S\-Player\-State} \&Player)
+\begin{DoxyCompactList}\small\item\em Stuns a player. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_af0e06dea9207296017b37bf8bcb0224b}{Check\-Stun} (\hyperlink{struct_chase_game_1_1_s_player_state}{S\-Player\-State} \&Player)
+\begin{DoxyCompactList}\small\item\em Checks if a player is stunned and unstuns if it is time to do so. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a27ec3d5c04abe9fcf9d059030bd27656}{B\-M\-Swap} (\hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status)
+\begin{DoxyCompactList}\small\item\em Swaps roles of two players. \end{DoxyCompactList}\item 
 \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \hyperlink{namespace_chase_game_a4779af792d3de8e274049bf2019e0343}{Load\-Map\-Gen\-Config} (const string \&File\-Name)
 \item 
 bool \hyperlink{namespace_chase_game_a98e8d90127c802c1445266e39966c3fb}{Save\-Map\-Config} (const string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Params)
@@ -102,7 +102,7 @@ bool \hyperlink{namespace_chase_game_a4c62f61c6aac5bf06292aa51294fd211}{Save\-Ma
 \begin{DoxyCompactList}\small\item\em Saves parameters in a config file. \end{DoxyCompactList}\item 
 bool \hyperlink{namespace_chase_game_a561c85a018e34c8baa21f7f500a3c9c7}{Save\-Game\-Config} (const std\-::string \&File\-Name, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
 \begin{DoxyCompactList}\small\item\em Saves game configuration in a config file. \end{DoxyCompactList}\item 
-char \hyperlink{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}{Process\-Input} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config)
+char \hyperlink{namespace_chase_game_a927ceb6d76ebd1a6eb8f2a393db06c86}{Process\-Input} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Config, int \&Moved\-Player)
 \begin{DoxyCompactList}\small\item\em Processes user input. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3}{Store\-Char\-History} (const char Input, \hyperlink{struct_chase_game_1_1_s_game_status}{S\-Game\-Status} \&Game\-Status)
 \begin{DoxyCompactList}\small\item\em Stores last 6 inputs. \end{DoxyCompactList}\item 
@@ -118,12 +118,12 @@ void \hyperlink{namespace_chase_game_ac12626138d0e2c49669eba73ffb4e4b7}{Mat\-Sha
 \item 
 void \hyperlink{namespace_chase_game_a15617c8a111cd66bf5d24fd1e82a119d}{Gen\-Map} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const \hyperlink{struct_chase_game_1_1_s_map_gen_params}{S\-Map\-Gen\-Params} \&Params, const int Difficulty)
 \begin{DoxyCompactList}\small\item\em Creates game matrix from the parameters and config file. \end{DoxyCompactList}\item 
-char \hyperlink{namespace_chase_game_a1dfe4bdbd50ee18cf85760219ea90b03}{Move\-Token} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const char Move, \hyperlink{struct_chase_game_1_1_s_player_pos}{S\-Player\-Pos} \&Pos, const \hyperlink{struct_chase_game_1_1_s_player_keys}{S\-Player\-Keys} \&Key\-Codes)
+char \hyperlink{namespace_chase_game_ab829e8344fcd18592d9a4ae2800bd2eb}{Move\-Token} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const char Move, \hyperlink{struct_chase_game_1_1_s_player_state}{S\-Player\-State} \&Player, const \hyperlink{struct_chase_game_1_1_s_player_keys}{S\-Player\-Keys} \&Key\-Codes)
 \begin{DoxyCompactList}\small\item\em Move a token in the game matrix. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a871395f1f12e55eaa3d341b8ef2cbb78}{Show\-Matrix} (const \hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const \hyperlink{struct_chase_game_1_1_s_color_set}{S\-Color\-Set} \&Color\-Set)
 \begin{DoxyCompactList}\small\item\em Displays game matrix. \end{DoxyCompactList}\item 
 unsigned \hyperlink{namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0}{R\-Rand} (unsigned Min, unsigned Max)
-\item 
+\begin{DoxyCompactList}\small\item\em Random between min and max. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a6351b2bdc824272990926fbb8e8ad359}{Gen\-Bonus\-Malus} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat)
 \begin{DoxyCompactList}\small\item\em Display bonus. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a049d8d8beb22431889ca7ba34cc90871}{Mat\-Shape} (\hyperlink{namespace_chase_game_a469449f9237e59efce3982127366c550}{C\-Matrix} \&Mat, const std\-::array$<$ bool, 9 $>$ Tab, const unsigned Y, const unsigned X)
@@ -293,7 +293,8 @@ Changes background color.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -302,38 +303,70 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_ac731c5ea06d812c5fe132b1306c4c3c1}{\index{Chase\-Game@{Chase\-Game}!B\-M\-Swap@{B\-M\-Swap}}
+\hypertarget{namespace_chase_game_a27ec3d5c04abe9fcf9d059030bd27656}{\index{Chase\-Game@{Chase\-Game}!B\-M\-Swap@{B\-M\-Swap}}
 \index{B\-M\-Swap@{B\-M\-Swap}!ChaseGame@{Chase\-Game}}
 \subsubsection[{B\-M\-Swap}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-B\-M\-Swap (
 \begin{DoxyParamCaption}
-{}
+\item[{S\-Game\-Status \&}]{Game\-Status}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_ac731c5ea06d812c5fe132b1306c4c3c1}
+)}}\label{namespace_chase_game_a27ec3d5c04abe9fcf9d059030bd27656}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Swaps roles of two players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Game\-Status} & Game current status \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_ac731c5ea06d812c5fe132b1306c4c3c1_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a27ec3d5c04abe9fcf9d059030bd27656_cgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_a145c2ac5cea072b89d389acb2a598a23}{\index{Chase\-Game@{Chase\-Game}!B\-Stun@{B\-Stun}}
-\index{B\-Stun@{B\-Stun}!ChaseGame@{Chase\-Game}}
-\subsubsection[{B\-Stun}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-B\-Stun (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{namespace_chase_game_a145c2ac5cea072b89d389acb2a598a23}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_a145c2ac5cea072b89d389acb2a598a23_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a27ec3d5c04abe9fcf9d059030bd27656_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespace_chase_game_af0e06dea9207296017b37bf8bcb0224b}{\index{Chase\-Game@{Chase\-Game}!Check\-Stun@{Check\-Stun}}
+\index{Check\-Stun@{Check\-Stun}!ChaseGame@{Chase\-Game}}
+\subsubsection[{Check\-Stun}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Check\-Stun (
+\begin{DoxyParamCaption}
+\item[{S\-Player\-State \&}]{Player}
+\end{DoxyParamCaption}
+)}}\label{namespace_chase_game_af0e06dea9207296017b37bf8bcb0224b}
+
+
+Checks if a player is stunned and unstuns if it is time to do so. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player} & Player current status \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_chase_game_af0e06dea9207296017b37bf8bcb0224b_icgraph}
 \end{center}
 \end{figure}
 
@@ -351,7 +384,8 @@ Clears screen.
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -378,7 +412,8 @@ Changes text color.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -417,7 +452,8 @@ Do a crossface between two songs.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -428,7 +464,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -437,34 +474,48 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_ae4a2d502982177f54f8f6fb17276104d}{\index{Chase\-Game@{Chase\-Game}!Effect@{Effect}}
+\hypertarget{namespace_chase_game_a071f5577018cd55d56097edb64ecb000}{\index{Chase\-Game@{Chase\-Game}!Effect@{Effect}}
 \index{Effect@{Effect}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Effect}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-Effect (
 \begin{DoxyParamCaption}
-\item[{C\-Matrix \&}]{Mat, }
 \item[{S\-Game\-Status \&}]{Game\-Status, }
 \item[{bool}]{Is\-Bonus, }
 \item[{bool}]{Is\-P1}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_ae4a2d502982177f54f8f6fb17276104d}
+)}}\label{namespace_chase_game_a071f5577018cd55d56097edb64ecb000}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Applies an effect on the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Game\-Status} & Game current status \\
+\hline
+{\em Is\-Bonus} & Determines which type of effect to apply (true for bonus) \\
+\hline
+{\em Is\-P1} & Determines who gets the effect (true for player one) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=334pt]{namespace_chase_game_ae4a2d502982177f54f8f6fb17276104d_cgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a071f5577018cd55d56097edb64ecb000_cgraph}
 \end{center}
 \end{figure}
 
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_ae4a2d502982177f54f8f6fb17276104d_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a071f5577018cd55d56097edb64ecb000_icgraph}
 \end{center}
 \end{figure}
 
@@ -510,7 +561,8 @@ false If game is ended
 )}}\label{namespace_chase_game_a1ca6f3f9092b35d9bea0343fd032d7f0}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -521,7 +573,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -541,7 +594,8 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{namespace_chase_game_acb136d1f2b7073d2dc61bc2e2d65b931}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -552,7 +606,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -579,7 +634,8 @@ Display bonus.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -612,7 +668,8 @@ Creates game matrix from the parameters and config file.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -623,7 +680,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -648,7 +706,8 @@ captured character
 \end{DoxyReturn}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -684,7 +743,8 @@ Loads the songs and inits them.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -709,7 +769,8 @@ Game configuration structure loaded from file or default config
 \end{DoxyReturn}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -720,7 +781,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -746,7 +808,7 @@ Loads parameters from a config file.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Map generator parametors loaded from file or default config 
+Map generator parameters loaded from file or default config 
 \end{DoxyReturn}
 \hypertarget{namespace_chase_game_a4779af792d3de8e274049bf2019e0343}{\index{Chase\-Game@{Chase\-Game}!Load\-Map\-Gen\-Config@{Load\-Map\-Gen\-Config}}
 \index{Load\-Map\-Gen\-Config@{Load\-Map\-Gen\-Config}!ChaseGame@{Chase\-Game}}
@@ -757,7 +819,8 @@ Map generator parametors loaded from file or default config
 )}}\label{namespace_chase_game_a4779af792d3de8e274049bf2019e0343}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -768,7 +831,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -814,7 +878,8 @@ Generate a random shape in the map.
 )}}\label{namespace_chase_game_ac12626138d0e2c49669eba73ffb4e4b7}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -823,16 +888,16 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_a1dfe4bdbd50ee18cf85760219ea90b03}{\index{Chase\-Game@{Chase\-Game}!Move\-Token@{Move\-Token}}
+\hypertarget{namespace_chase_game_ab829e8344fcd18592d9a4ae2800bd2eb}{\index{Chase\-Game@{Chase\-Game}!Move\-Token@{Move\-Token}}
 \index{Move\-Token@{Move\-Token}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Move\-Token}]{\setlength{\rightskip}{0pt plus 5cm}char Chase\-Game\-::\-Move\-Token (
 \begin{DoxyParamCaption}
 \item[{C\-Matrix \&}]{Mat, }
 \item[{const char}]{Move, }
-\item[{S\-Player\-Pos \&}]{Pos, }
+\item[{S\-Player\-State \&}]{Player, }
 \item[{const S\-Player\-Keys \&}]{Key\-Codes}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_a1dfe4bdbd50ee18cf85760219ea90b03}
+)}}\label{namespace_chase_game_ab829e8344fcd18592d9a4ae2800bd2eb}
 
 
 Move a token in the game matrix. 
@@ -843,7 +908,7 @@ Move a token in the game matrix.
 \hline
 {\em Move} & Move code \\
 \hline
-{\em Pos} & Token position \\
+{\em Player} & Player data \\
 \hline
 {\em Key\-Codes} & Player specific key codes for movement \\
 \hline
@@ -853,29 +918,40 @@ Replaced char
 \end{DoxyReturn}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_a1dfe4bdbd50ee18cf85760219ea90b03_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_ab829e8344fcd18592d9a4ae2800bd2eb_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_a04f9ea52b462f83e342d15407ccd25fb}{\index{Chase\-Game@{Chase\-Game}!M\-Stun@{M\-Stun}}
+\hypertarget{namespace_chase_game_a70ca6da7191ff141165490765f974df2}{\index{Chase\-Game@{Chase\-Game}!M\-Stun@{M\-Stun}}
 \index{M\-Stun@{M\-Stun}!ChaseGame@{Chase\-Game}}
 \subsubsection[{M\-Stun}]{\setlength{\rightskip}{0pt plus 5cm}void Chase\-Game\-::\-M\-Stun (
 \begin{DoxyParamCaption}
-{}
+\item[{S\-Player\-State \&}]{Player}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_a04f9ea52b462f83e342d15407ccd25fb}
+)}}\label{namespace_chase_game_a70ca6da7191ff141165490765f974df2}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Stuns a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player} & Player current status \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_a04f9ea52b462f83e342d15407ccd25fb_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a70ca6da7191ff141165490765f974df2_icgraph}
 \end{center}
 \end{figure}
 
@@ -898,7 +974,8 @@ This function pauses the program.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -909,7 +986,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -918,15 +996,16 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\hypertarget{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}{\index{Chase\-Game@{Chase\-Game}!Process\-Input@{Process\-Input}}
+\hypertarget{namespace_chase_game_a927ceb6d76ebd1a6eb8f2a393db06c86}{\index{Chase\-Game@{Chase\-Game}!Process\-Input@{Process\-Input}}
 \index{Process\-Input@{Process\-Input}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Process\-Input}]{\setlength{\rightskip}{0pt plus 5cm}char Chase\-Game\-::\-Process\-Input (
 \begin{DoxyParamCaption}
 \item[{C\-Matrix \&}]{Mat, }
 \item[{const char}]{Input, }
-\item[{S\-Game\-Status \&}]{Config}
+\item[{S\-Game\-Status \&}]{Config, }
+\item[{int \&}]{Moved\-Player}
 \end{DoxyParamCaption}
-)}}\label{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}
+)}}\label{namespace_chase_game_a927ceb6d76ebd1a6eb8f2a393db06c86}
 
 
 Processes user input. 
@@ -939,6 +1018,8 @@ Processes user input.
 \hline
 {\em Config} & Game configuration \\
 \hline
+{\em Moved\-Player} & Player number that moved \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Chararcter representing the replaced charachter while moving 
@@ -947,22 +1028,24 @@ K\-Cancelled if the move was cancelled
 \end{DoxyReturn}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484_cgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a927ceb6d76ebd1a6eb8f2a393db06c86_cgraph}
 \end{center}
 \end{figure}
 
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484_icgraph}
+\includegraphics[width=350pt]{namespace_chase_game_a927ceb6d76ebd1a6eb8f2a393db06c86_icgraph}
 \end{center}
 \end{figure}
 
@@ -975,6 +1058,20 @@ Here is the caller graph for this function\-:\nopagebreak
 \item[{unsigned}]{Max}
 \end{DoxyParamCaption}
 )}}\label{namespace_chase_game_aee2df7cbf4974e167612a7415943f3b0}
+
+
+Random between min and max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Min} & minimum \\
+\hline
+{\em Max} & maximum \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random value 
+\end{DoxyReturn}
 \hypertarget{namespace_chase_game_a561c85a018e34c8baa21f7f500a3c9c7}{\index{Chase\-Game@{Chase\-Game}!Save\-Game\-Config@{Save\-Game\-Config}}
 \index{Save\-Game\-Config@{Save\-Game\-Config}!ChaseGame@{Chase\-Game}}
 \subsubsection[{Save\-Game\-Config}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-Save\-Game\-Config (
@@ -1009,7 +1106,8 @@ false if write error
 )}}\label{namespace_chase_game_a39f8b039151b1a3eef82fdc1c6f52091}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1052,7 +1150,8 @@ false if write error
 )}}\label{namespace_chase_game_a98e8d90127c802c1445266e39966c3fb}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1094,7 +1193,8 @@ Sets music volumes according to the game state.
 )}}\label{namespace_chase_game_af423e47c7318b7eeb67ff1f1a6b1547d}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1105,7 +1205,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1135,7 +1236,8 @@ Displays game matrix.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1146,7 +1248,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1173,7 +1276,8 @@ Calls usleep.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1195,7 +1299,8 @@ This function starts the game.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1206,7 +1311,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1236,7 +1342,8 @@ Stores last 6 inputs.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1254,7 +1361,12 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{namespace_chase_game_a19b95183bbaf6684ffc6511a4f9922f5}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Launches Ariane V. 
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1265,7 +1377,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1310,7 +1423,8 @@ Do a crossface between three song.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -1321,7 +1435,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

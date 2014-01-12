@@ -1,0 +1,4 @@
+<map id="ChaseGame::ProcessInput" name="ChaseGame::ProcessInput">
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="233,5,434,32"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#ab829e8344fcd18592d9a4ae2800bd2eb" title="Move a token in the game matrix. " alt="" coords="250,56,417,83"/>
+</map>

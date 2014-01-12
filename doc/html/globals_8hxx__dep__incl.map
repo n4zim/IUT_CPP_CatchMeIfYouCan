@@ -1,15 +1,15 @@
 <map id="globals.hxx" name="globals.hxx">
-<area shape="rect" id="node2" href="$audio_8cxx.html" title="audio.cxx" alt="" coords="23,155,101,181"/>
-<area shape="rect" id="node3" href="$audio_8hxx.html" title="audio.cxx function prototypes " alt="" coords="100,80,178,107"/>
-<area shape="rect" id="node4" href="$game_8cxx.html" title="Audio related functions. " alt="" coords="271,229,349,256"/>
-<area shape="rect" id="node5" href="$banana_8cxx.html" title="Super Banana ! " alt="" coords="831,80,919,107"/>
-<area shape="rect" id="node6" href="$bonus_8cxx.html" title="File related bonus and malus. " alt="" coords="283,155,366,181"/>
-<area shape="rect" id="node7" href="$map_8hxx.html" title="map.cxx function prototypes " alt="" coords="379,80,451,107"/>
-<area shape="rect" id="node8" href="$game_8hxx.html" title="game.cxx function prototypes " alt="" coords="537,155,615,181"/>
-<area shape="rect" id="node9" href="$main_8cxx.html" title="Main file. " alt="" coords="647,229,722,256"/>
-<area shape="rect" id="node10" href="$map_8cxx.html" title="Map related function. " alt="" coords="441,155,513,181"/>
-<area shape="rect" id="node11" href="$bonus_8hxx.html" title="bonus.cxx function prototypes " alt="" coords="177,155,259,181"/>
-<area shape="rect" id="node12" href="$file_8cxx.html" title="File related functions. " alt="" coords="692,155,754,181"/>
-<area shape="rect" id="node13" href="$file_8hxx.html" title="file.cxx function prototypes " alt="" coords="599,80,661,107"/>
-<area shape="rect" id="node14" href="$unix_8cxx.html" title="Defines unix&#45;only functions. " alt="" coords="944,80,1014,107"/>
+<area shape="rect" id="node2" href="$audio_8cxx.html" title="audio.cxx" alt="" coords="5,155,83,181"/>
+<area shape="rect" id="node3" href="$audio_8hxx.html" title="audio.cxx function prototypes " alt="" coords="75,80,153,107"/>
+<area shape="rect" id="node4" href="$game_8cxx.html" title="Audio related functions. " alt="" coords="275,229,353,256"/>
+<area shape="rect" id="node5" href="$banana_8cxx.html" title="Super Banana ! " alt="" coords="821,80,909,107"/>
+<area shape="rect" id="node6" href="$bonus_8hxx.html" title="bonus.cxx function prototypes " alt="" coords="249,80,332,107"/>
+<area shape="rect" id="node7" href="$bonus_8cxx.html" title="File related bonus and malus. " alt="" coords="273,155,356,181"/>
+<area shape="rect" id="node8" href="$map_8hxx.html" title="map.cxx function prototypes " alt="" coords="407,80,479,107"/>
+<area shape="rect" id="node9" href="$game_8hxx.html" title="game.cxx function prototypes " alt="" coords="527,155,605,181"/>
+<area shape="rect" id="node10" href="$main_8cxx.html" title="Main file. " alt="" coords="637,229,712,256"/>
+<area shape="rect" id="node11" href="$map_8cxx.html" title="Map related function. " alt="" coords="431,155,503,181"/>
+<area shape="rect" id="node12" href="$file_8cxx.html" title="File related functions. " alt="" coords="682,155,744,181"/>
+<area shape="rect" id="node13" href="$file_8hxx.html" title="file.cxx function prototypes " alt="" coords="607,80,669,107"/>
+<area shape="rect" id="node14" href="$unix_8cxx.html" title="Defines unix&#45;only functions. " alt="" coords="934,80,1004,107"/>
 </map>

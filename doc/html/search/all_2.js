@@ -4,6 +4,7 @@ var searchData=
   ['changes_2emd',['CHANGES.md',['../_c_h_a_n_g_e_s_8md.html',1,'']]],
   ['charhistory',['CharHistory',['../struct_chase_game_1_1_s_game_status.html#a9aa8227d792a823032742d456e43b9a8',1,'ChaseGame::SGameStatus']]],
   ['chasegame',['ChaseGame',['../namespace_chase_game.html',1,'']]],
+  ['checkstun',['CheckStun',['../namespace_chase_game.html#af0e06dea9207296017b37bf8bcb0224b',1,'ChaseGame']]],
   ['clearscreen',['ClearScreen',['../namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6',1,'ChaseGame']]],
   ['clr_5fblack',['CLR_BLACK',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba7c17af5d1ff079f2a505dd61f9e1ddae',1,'ChaseGame']]],
   ['clr_5fblue',['CLR_BLUE',['../namespace_chase_game.html#a5acdf639e912d1e78814b7fae21afc7ba206cb9e67be830b771bbf44488c40d66',1,'ChaseGame']]],

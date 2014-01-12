@@ -1,0 +1,5 @@
+<map id="ChaseGame::BMSwap" name="ChaseGame::BMSwap">
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="208,5,381,32"/>
+<area shape="rect" id="node3" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="430,81,562,108"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a944f872ea6d98761b645f2b7d7cad8fa" title="This function pauses the program. " alt="" coords="225,107,364,133"/>
+</map>

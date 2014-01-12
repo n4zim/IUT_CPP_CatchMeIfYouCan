@@ -7,6 +7,9 @@ Audio related functions.
 
 
 {\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$istream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$cctype$>$}\\*
 {\ttfamily \#include $<$iomanip$>$}\\*
 {\ttfamily \#include $<$string$>$}\\*
 {\ttfamily \#include $<$vector$>$}\\*
@@ -24,7 +27,8 @@ Audio related functions.
 {\ttfamily \#include \char`\"{}bonus.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}banana.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}game.\-hxx\char`\"{}}\\*
-Include dependency graph for game.\-cxx\-:\nopagebreak
+Include dependency graph for game.\-cxx\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -39,7 +43,7 @@ Include dependency graph for game.\-cxx\-:\nopagebreak
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-char \hyperlink{namespace_chase_game_ab5112517855da810fe3b7bdb81d58484}{Chase\-Game\-::\-Process\-Input} (C\-Matrix \&Mat, const char Input, S\-Game\-Status \&Config)
+char \hyperlink{namespace_chase_game_a927ceb6d76ebd1a6eb8f2a393db06c86}{Chase\-Game\-::\-Process\-Input} (C\-Matrix \&Mat, const char Input, S\-Game\-Status \&Config, int \&Moved\-Player)
 \begin{DoxyCompactList}\small\item\em Processes user input. \end{DoxyCompactList}\item 
 void \hyperlink{namespace_chase_game_a4b28a3a3594d145b0ce1d1bf179e88a3}{Chase\-Game\-::\-Store\-Char\-History} (const char Input, S\-Game\-Status \&Game\-Status)
 \begin{DoxyCompactList}\small\item\em Stores last 6 inputs. \end{DoxyCompactList}\item 

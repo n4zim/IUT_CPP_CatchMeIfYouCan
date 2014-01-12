@@ -1,24 +1,24 @@
 <map id="ChaseGame::GameLoop" name="ChaseGame::GameLoop">
-<area shape="rect" id="node2" href="$namespace_chase_game.html#a15617c8a111cd66bf5d24fd1e82a119d" title="Creates game matrix from the parameters and config file. " alt="" coords="245,43,395,69"/>
-<area shape="rect" id="node4" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="491,391,664,417"/>
-<area shape="rect" id="node5" href="$namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d" title="ChaseGame::SetGameState" alt="" coords="226,129,414,156"/>
-<area shape="rect" id="node9" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="769,315,901,341"/>
-<area shape="rect" id="node10" href="$namespace_chase_game.html#a944f872ea6d98761b645f2b7d7cad8fa" title="This function pauses the program. " alt="" coords="251,213,389,240"/>
-<area shape="rect" id="node11" href="$namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="219,467,421,493"/>
-<area shape="rect" id="node12" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="492,593,663,620"/>
-<area shape="rect" id="node19" href="$namespace_chase_game.html#ae4a2d502982177f54f8f6fb17276104d" title="ChaseGame::Effect" alt="" coords="253,669,387,696"/>
-<area shape="rect" id="node23" href="$namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="ChaseGame::SuperBanana" alt="" coords="230,289,410,316"/>
+<area shape="rect" id="node2" href="$namespace_chase_game.html#a15617c8a111cd66bf5d24fd1e82a119d" title="Creates game matrix from the parameters and config file. " alt="" coords="245,5,395,32"/>
+<area shape="rect" id="node4" href="$namespace_chase_game.html#a3a7382465f6f23fe77cde4e589fb80d6" title="Clears screen. " alt="" coords="984,504,1157,531"/>
+<area shape="rect" id="node5" href="$namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d" title="ChaseGame::SetGameState" alt="" coords="226,231,414,257"/>
+<area shape="rect" id="node9" href="$namespace_chase_game.html#a3a120300b1e200a26fe8680a33300283" title="Changes text color. " alt="" coords="1206,275,1338,301"/>
+<area shape="rect" id="node10" href="$namespace_chase_game.html#a944f872ea6d98761b645f2b7d7cad8fa" title="This function pauses the program. " alt="" coords="1001,644,1140,671"/>
+<area shape="rect" id="node11" href="$namespace_chase_game.html#acb136d1f2b7073d2dc61bc2e2d65b931" title="ChaseGame::GameRoundLoop" alt="" coords="219,391,421,417"/>
+<area shape="rect" id="node12" href="$namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78" title="Displays game matrix. " alt="" coords="492,289,663,316"/>
+<area shape="rect" id="node22" href="$namespace_chase_game.html#a19b95183bbaf6684ffc6511a4f9922f5" title="Launches Ariane V. " alt="" coords="487,107,667,133"/>
+<area shape="rect" id="node23" href="$namespace_chase_game.html#af0e06dea9207296017b37bf8bcb0224b" title="Checks if a player is stunned and unstuns if it is time to do so. " alt="" coords="237,745,403,772"/>
 <area shape="rect" id="node3" href="$namespace_chase_game.html#ac12626138d0e2c49669eba73ffb4e4b7" title="ChaseGame::MatShape" alt="" coords="497,5,658,32"/>
-<area shape="rect" id="node6" href="$namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="469,122,685,163"/>
-<area shape="rect" id="node8" href="$namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="474,57,681,98"/>
-<area shape="rect" id="node7" href="$namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="767,129,902,156"/>
-<area shape="rect" id="node14" href="$namespace_chase_game.html#a6351b2bdc824272990926fbb8e8ad359" title="Display bonus. " alt="" coords="478,441,677,468"/>
-<area shape="rect" id="node15" href="$namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="502,492,653,519"/>
-<area shape="rect" id="node16" href="$namespace_chase_game.html#ab5112517855da810fe3b7bdb81d58484" title="Processes user input. " alt="" coords="488,543,667,569"/>
-<area shape="rect" id="node13" href="$namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="734,593,935,620"/>
-<area shape="rect" id="node17" href="$namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="734,543,935,569"/>
-<area shape="rect" id="node18" href="$namespace_chase_game.html#a1dfe4bdbd50ee18cf85760219ea90b03" title="Move a token in the game matrix. " alt="" coords="751,492,918,519"/>
-<area shape="rect" id="node20" href="$namespace_chase_game.html#ac731c5ea06d812c5fe132b1306c4c3c1" title="ChaseGame::BMSwap" alt="" coords="500,644,655,671"/>
-<area shape="rect" id="node21" href="$namespace_chase_game.html#a145c2ac5cea072b89d389acb2a598a23" title="ChaseGame::BStun" alt="" coords="508,695,647,721"/>
-<area shape="rect" id="node22" href="$namespace_chase_game.html#a04f9ea52b462f83e342d15407ccd25fb" title="ChaseGame::MStun" alt="" coords="507,745,647,772"/>
+<area shape="rect" id="node6" href="$namespace_chase_game.html#a1fafa6862bb2df06c93d286361fefaa4" title="Do a crossface between two songs. " alt="" coords="469,158,685,199"/>
+<area shape="rect" id="node8" href="$namespace_chase_game.html#a3b9e1d486d981f5332d23142eb4777b7" title="Do a crossface between three song. " alt="" coords="474,223,681,265"/>
+<area shape="rect" id="node7" href="$namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142" title="Calls usleep. " alt="" coords="767,208,902,235"/>
+<area shape="rect" id="node14" href="$namespace_chase_game.html#a6351b2bdc824272990926fbb8e8ad359" title="Display bonus. " alt="" coords="478,340,677,367"/>
+<area shape="rect" id="node15" href="$namespace_chase_game.html#afa8eec677de5433e0e886da19f7e9c4a" title="Captures a character from stdin. " alt="" coords="502,391,653,417"/>
+<area shape="rect" id="node16" href="$namespace_chase_game.html#a927ceb6d76ebd1a6eb8f2a393db06c86" title="Processes user input. " alt="" coords="488,441,667,468"/>
+<area shape="rect" id="node19" href="$namespace_chase_game.html#a071f5577018cd55d56097edb64ecb000" title="Applies an effect on the player. " alt="" coords="510,543,645,569"/>
+<area shape="rect" id="node13" href="$namespace_chase_game.html#ad2dbfd93f4fd5725ab396d5dfa78a0c4" title="Changes background color. " alt="" coords="734,325,935,352"/>
+<area shape="rect" id="node17" href="$namespace_chase_game.html#a4b28a3a3594d145b0ce1d1bf179e88a3" title="Stores last 6 inputs. " alt="" coords="734,391,935,417"/>
+<area shape="rect" id="node18" href="$namespace_chase_game.html#ab829e8344fcd18592d9a4ae2800bd2eb" title="Move a token in the game matrix. " alt="" coords="751,441,918,468"/>
+<area shape="rect" id="node20" href="$namespace_chase_game.html#a27ec3d5c04abe9fcf9d059030bd27656" title="Swaps roles of two players. " alt="" coords="757,644,912,671"/>
+<area shape="rect" id="node21" href="$namespace_chase_game.html#a70ca6da7191ff141165490765f974df2" title="Stuns a player. " alt="" coords="765,543,905,569"/>
 </map>

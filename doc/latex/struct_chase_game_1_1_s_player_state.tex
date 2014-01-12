@@ -12,7 +12,8 @@ Player state.
 
 
 
-Collaboration diagram for Chase\-Game\-:\-:S\-Player\-State\-:\nopagebreak
+Collaboration diagram for Chase\-Game\-:\-:S\-Player\-State\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -31,7 +32,11 @@ bool \hyperlink{struct_chase_game_1_1_s_player_state_acd7030969c414605901e551171
 unsigned \hyperlink{struct_chase_game_1_1_s_player_state_a268594c795a70cf1eb9fe6061bfa57d0}{Score}
 \begin{DoxyCompactList}\small\item\em Player score. \end{DoxyCompactList}\item 
 bool \hyperlink{struct_chase_game_1_1_s_player_state_a2574de666d4744daefd7824b1c3c809f}{Is\-Chasing}
-\begin{DoxyCompactList}\small\item\em Player role \-: chasing or being chased. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Player role \-: chasing or being chased. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_chase_game_1_1_s_player_state_a83d45366d7024b55d2e05ca8338846a0}{Is\-Stunned} = false
+\begin{DoxyCompactList}\small\item\em If the player is stunned. \end{DoxyCompactList}\item 
+unsigned \hyperlink{struct_chase_game_1_1_s_player_state_afc3caabd0eb284f7bfdddae63ac86da7}{Stun\-Duration}
+\begin{DoxyCompactList}\small\item\em Duration of stun. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -51,6 +56,13 @@ Can a player bypass wall collision check ?
 
 
 Player role \-: chasing or being chased. 
+
+\hypertarget{struct_chase_game_1_1_s_player_state_a83d45366d7024b55d2e05ca8338846a0}{\index{Chase\-Game\-::\-S\-Player\-State@{Chase\-Game\-::\-S\-Player\-State}!Is\-Stunned@{Is\-Stunned}}
+\index{Is\-Stunned@{Is\-Stunned}!ChaseGame::SPlayerState@{Chase\-Game\-::\-S\-Player\-State}}
+\subsubsection[{Is\-Stunned}]{\setlength{\rightskip}{0pt plus 5cm}bool Chase\-Game\-::\-S\-Player\-State\-::\-Is\-Stunned = false}}\label{struct_chase_game_1_1_s_player_state_a83d45366d7024b55d2e05ca8338846a0}
+
+
+If the player is stunned. 
 
 \hypertarget{struct_chase_game_1_1_s_player_state_a3fc9ce0322ed28ff9c401983d91c69f2}{\index{Chase\-Game\-::\-S\-Player\-State@{Chase\-Game\-::\-S\-Player\-State}!Keys@{Keys}}
 \index{Keys@{Keys}!ChaseGame::SPlayerState@{Chase\-Game\-::\-S\-Player\-State}}
@@ -72,6 +84,13 @@ Player position.
 
 
 Player score. 
+
+\hypertarget{struct_chase_game_1_1_s_player_state_afc3caabd0eb284f7bfdddae63ac86da7}{\index{Chase\-Game\-::\-S\-Player\-State@{Chase\-Game\-::\-S\-Player\-State}!Stun\-Duration@{Stun\-Duration}}
+\index{Stun\-Duration@{Stun\-Duration}!ChaseGame::SPlayerState@{Chase\-Game\-::\-S\-Player\-State}}
+\subsubsection[{Stun\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Chase\-Game\-::\-S\-Player\-State\-::\-Stun\-Duration}}\label{struct_chase_game_1_1_s_player_state_afc3caabd0eb284f7bfdddae63ac86da7}
+
+
+Duration of stun. 
 
 
 

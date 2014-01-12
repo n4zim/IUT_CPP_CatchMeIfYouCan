@@ -10,9 +10,12 @@ File related bonus and malus.
 {\ttfamily \#include $<$fstream$>$}\\*
 {\ttfamily \#include $<$string$>$}\\*
 {\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$S\-F\-M\-L/\-System.\-hpp$>$}\\*
+{\ttfamily \#include \char`\"{}bonus.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}globals.\-hxx\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}map.\-hxx\char`\"{}}\\*
-Include dependency graph for bonus.\-cxx\-:\nopagebreak
+Include dependency graph for bonus.\-cxx\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,14 +30,14 @@ Include dependency graph for bonus.\-cxx\-:\nopagebreak
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{namespace_chase_game_ae4a2d502982177f54f8f6fb17276104d}{Chase\-Game\-::\-Effect} (C\-Matrix \&Mat, S\-Game\-Status \&Game\-Status, bool Is\-Bonus, bool Is\-P1)
-\item 
-void \hyperlink{namespace_chase_game_a04f9ea52b462f83e342d15407ccd25fb}{Chase\-Game\-::\-M\-Stun} ()
-\item 
-void \hyperlink{namespace_chase_game_a145c2ac5cea072b89d389acb2a598a23}{Chase\-Game\-::\-B\-Stun} ()
-\item 
-void \hyperlink{namespace_chase_game_ac731c5ea06d812c5fe132b1306c4c3c1}{Chase\-Game\-::\-B\-M\-Swap} ()
-\end{DoxyCompactItemize}
+void \hyperlink{namespace_chase_game_a071f5577018cd55d56097edb64ecb000}{Chase\-Game\-::\-Effect} (S\-Game\-Status \&Game\-Status, bool Is\-Bonus, bool Is\-P1)
+\begin{DoxyCompactList}\small\item\em Applies an effect on the player. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a70ca6da7191ff141165490765f974df2}{Chase\-Game\-::\-M\-Stun} (S\-Player\-State \&Player)
+\begin{DoxyCompactList}\small\item\em Stuns a player. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_af0e06dea9207296017b37bf8bcb0224b}{Chase\-Game\-::\-Check\-Stun} (S\-Player\-State \&Player)
+\begin{DoxyCompactList}\small\item\em Checks if a player is stunned and unstuns if it is time to do so. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_chase_game_a27ec3d5c04abe9fcf9d059030bd27656}{Chase\-Game\-::\-B\-M\-Swap} (S\-Game\-Status \&Game\-Status)
+\begin{DoxyCompactList}\small\item\em Swaps roles of two players. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -47,4 +50,4 @@ File related bonus and malus. \begin{DoxyAuthor}{Author}
 \begin{DoxyVersion}{Version}
 1
 \end{DoxyVersion}
-Contains functions that creates bonuses and maluses in the map 
+Contains functions that take actions when a bonus/malus is triggered 
