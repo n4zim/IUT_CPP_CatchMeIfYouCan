@@ -14,7 +14,7 @@
 
 namespace ChaseGame {
 
-	void Effect (CMatrix & Mat, SPlayerPos Player, bool IsBonus, bool IsP1);
+	void Effect (CMatrix & Mat, bool IsBonus, bool IsP1);
 
 }
 
