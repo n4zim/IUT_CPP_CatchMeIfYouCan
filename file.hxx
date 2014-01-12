@@ -1,6 +1,6 @@
 /*!
  * \file file.hxx
- * \author 
+ * \author Peanut Butter Team
  * \date 08/01/14
  * \brief file.cxx function prototypes
  * \version 1

@@ -1,7 +1,7 @@
 /*!
  *
  * \file game.cxx
- * \author 
+ * \author Peanut Butter Team
  * \date 09/01/14
  * \brief Audio related functions
  * \version 1 

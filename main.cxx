@@ -1,7 +1,7 @@
 /*!
  *
  * \file main.cxx
- * \author Josua Gonzalez
+ * \author Peanut Butter Team
  * \date 17/12/13
  * \brief Main file
  * \version 1

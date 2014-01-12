@@ -1,7 +1,7 @@
 /*!
  *
  * \file file.cxx
- * \author 
+ * \author Peanut Butter Team
  * \date 08/01/14
  * \brief File related functions
  * \version 1

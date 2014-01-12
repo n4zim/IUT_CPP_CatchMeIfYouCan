@@ -1,7 +1,7 @@
 /*!
  *
  * \file bonus.cxx
- * \author
+ * \author Peanut Butter Team
  * \date 10/01/14
  * \brief File related bonus and malus
  * \version 1

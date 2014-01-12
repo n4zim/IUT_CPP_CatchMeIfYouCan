@@ -1,7 +1,7 @@
 /*!
  *
  * \file unix.cxx
- * \author Josua Gonzalez
+ * \author Peanut Butter Team
  * \date 07/01/14
  * \brief Defines unix-only functions
  * \version 1

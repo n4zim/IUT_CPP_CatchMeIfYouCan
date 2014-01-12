@@ -1,7 +1,7 @@
 /*!
  *
  * \file globals.hxx
- * \author Josua Gonzalez
+ * \author Peanut Butter Team
  * \date 07/01/14
  * \brief Defines global constants and variables for the ChaseGame namespace
  * \version 1

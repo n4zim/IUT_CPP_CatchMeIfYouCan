@@ -1,7 +1,7 @@
 /*!
  *
  * \file map.cxx
- * \author 
+ * \author Peanut Butter Team
  * \date 08/01/14
  * \brief Map related function
  * \version 1

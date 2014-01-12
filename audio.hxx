@@ -1,6 +1,6 @@
 /*!
  * \file audio.hxx
- * \author 
+ * \author Peanut Butter Team
  * \date 09/01/14
  * \brief audio.cxx function prototypes
  * \version 1
