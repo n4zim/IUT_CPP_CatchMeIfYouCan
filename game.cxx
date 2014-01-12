@@ -393,7 +393,7 @@ namespace ChaseGame {
 			GameStatus.LocaleStr.MsgTie = "\n  EGUALDAD !\n Empezamos una nueva manga para determinar quien es el ganador real.";
 			GameStatus.LocaleStr.MsgEnd = "FIN !";
 			GameStatus.LocaleStr.MsgPause = "\n\n\nENTRAR PARA CONTINUAR";
-			GameStatus.LocaleStr.MsgCatch = " HA CAPTURADOS SU PRESA!";
+			GameStatus.LocaleStr.MsgCatch = " HA CAPTURADO SU PRESA!";
 			GameStatus.LocaleStr.MsgEscape = " Escapo a tiempó !";
 			GameStatus.LocaleStr.MsgHeadHunts = "caza";
 			GameStatus.LocaleStr.MsgHeadMoves = "movimientos";
