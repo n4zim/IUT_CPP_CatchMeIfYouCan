@@ -134,6 +134,22 @@ namespace ChaseGame {
 		int ColorMalus; 
 	};
 
+	//! Localised strings
+	struct SLangStrings {
+		//! Label : play game
+		std::string TitlePlayGameLabel    = "TYPE 'PLAY' TO START PLAYING OR...      ";
+		//! Label : configure game
+		std::string TitleGameOptionsLabel = "TYPE 'OPTIONS' TO CONFIGURE STUFF UP!   ";
+		//! Label : direction up
+		std::string DirUp = "UP";
+		//! Label : direction down
+		std::string DirLeft = "DOWN";
+		//! Label : direction left
+		std::string DirDown = "LEFT";
+		//! Label : direction right
+		std::string DirRight = "RIGHT";
+	};
+
 	//! Contains game configuration
 	struct SGameStatus {
 		//! Key to pause the game
@@ -154,8 +170,10 @@ namespace ChaseGame {
 		unsigned MvLeft;
 		//! Game lang
 		int Lang;
-		//! Game lang
+		//! Play sound
 		bool PlaySound;
+		//! Localised strings
+		SLangStrings LocaleStr;
 		//! Contains last pressed keys
 		std::vector <char> CharHistory;
 	};

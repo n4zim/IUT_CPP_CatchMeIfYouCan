@@ -270,8 +270,8 @@ namespace ChaseGame {
 		cout << "  :.....::..:::....:::::..:.....::.....::::....8 ..:::::....::::..:.....:\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::8 ::::::::::::::::::::::::\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::..::::::::::::::::::::::::\n";
-		cout << "  :::::::::::::::::- TYPE 'PLAY' TO START PLAYING OR...    -:::::::::::::\n";
-		cout << "  :::::::::::::::::- TYPE 'OPTIONS' TO CONFIGURE STUFF UP! -:::::::::::::\n";
+		cout << "  :::::::::::::- " << GameStatus.LocaleStr.TitlePlayGameLabel    << " -:::::::::::::\n";
+		cout << "  :::::::::::::- " << GameStatus.LocaleStr.TitleGameOptionsLabel << " -:::::::::::::\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n";
 		cout << "  .......................................................................\n" << endl;
 		
@@ -290,10 +290,10 @@ namespace ChaseGame {
 		cout << "  :..::..:.....:::..:::::.....::.....:..:::..:..::::..:....8 \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::8 \n";
 		cout << "  :::::...PLAYER1...:::......RULES.....:::...PLAYER2...::::: \n";
-		cout << "  :::::.    UP > " << char (GameStatus.P1.Keys.Up   ) << " .:::.  ONE PLAYER  .:::.    UP > " << char (GameStatus.P2.Keys.Up   ) << " .::::: \n";
-		cout << "  :::::.  DOWN > " << char (GameStatus.P1.Keys.Down ) << " .:::. HAS TO CATCH .:::.  DOWN > " << char (GameStatus.P2.Keys.Down ) << " .::::: \n";
-		cout << "  :::::.  LEFT > " << char (GameStatus.P1.Keys.Left ) << " .:::.   THE OTHER  .:::.  LEFT > " << char (GameStatus.P2.Keys.Left ) << " .::::: \n";
-		cout << "  :::::. RIGHT > " << char (GameStatus.P1.Keys.Right) << " .:::................:::. RIGHT > " << char (GameStatus.P2.Keys.Right) << " .::::: \n";
+		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P1.Keys.Up   ) << " .:::.  ONE PLAYER  .:::. " << setw(5) << GameStatus.LocaleStr.DirUp    << " > " << char (GameStatus.P2.Keys.Up   ) << " .::::: \n";
+		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P1.Keys.Down ) << " .:::. HAS TO CATCH .:::. " << setw(5) << GameStatus.LocaleStr.DirDown  << " > " << char (GameStatus.P2.Keys.Down ) << " .::::: \n";
+		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P1.Keys.Left ) << " .:::.   THE OTHER  .:::. " << setw(5) << GameStatus.LocaleStr.DirLeft  << " > " << char (GameStatus.P2.Keys.Left ) << " .::::: \n";
+		cout << "  :::::. " << setw(5) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P1.Keys.Right) << " .:::................:::. " << setw(5) << GameStatus.LocaleStr.DirRight << " > " << char (GameStatus.P2.Keys.Right) << " .::::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: \n";
 		cout << "  .......................................................... \n" << endl;
