@@ -11,6 +11,9 @@
 
 namespace ChaseGame {
 
+	/*!
+	 * \brief Launches Ariane V
+	 */
 	void SuperBanana ();
 
 }
