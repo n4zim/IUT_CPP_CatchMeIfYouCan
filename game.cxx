@@ -138,7 +138,9 @@ namespace ChaseGame {
 		Color (CLR_RESET);
 		cout << "}" << endl;
 
-		Pause (true);
+		cout << GameStatus.LocaleStr.MsgPause;
+		Pause (false);
+
 		if (GameStatus.PlaySound)
 			SetGameState (Music, GMS_INGAME, true);
 
@@ -229,7 +231,9 @@ namespace ChaseGame {
 		if (GameStatus.PlaySound)
 			SetGameState (Music, GMS_STARTING, true);
 
-		Pause (true);
+		cout << GameStatus.LocaleStr.MsgPause;
+		Pause (false);
+		
 		if (GameStatus.PlaySound)
 			SetGameState (Music, GMS_TITLE, true);
 
@@ -261,7 +265,8 @@ namespace ChaseGame {
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n";
 		cout << "  ...........................................................................\n";
 		
-		Pause (true);
+		cout << GameStatus.LocaleStr.MsgPause;
+		Pause (false);
 
 		return GameStatus.Round < GameStatus.MaxRounds;
 	}
@@ -292,9 +297,110 @@ namespace ChaseGame {
 			SetGameState (Tracks, GMS_STOP, false);
 		}
 
-		// Title screen
+		// LANGUAGE MENU
 		ClearScreen ();
 
+		cout << endl;
+        string Reply;
+
+        bool OutMenuLang = false;
+        while(!OutMenuLang) {
+
+	        cout << "\n       Langage         /       Language        /       Lengaje\n\n\n";
+	        cout << "       1 . Français "  << endl;
+	        cout << "       2 . English  "  << endl;
+	        cout << "       3 . Enpanol\n";
+
+	        if(Reply == "")
+	        	cout << "\n\n";
+	        else
+	        	cout << "\nErreur de l'entée   /   Input error   /   Error de valor\n";
+
+	        cout << "\nChoisissez votre langue / Choose your language / Elige tu lengua : ";
+
+        	cin >> Reply;
+
+	        Reply = Reply[0];
+	        unsigned Result;
+	        {
+	            istringstream is(Reply);
+	            is >> Result;
+	        } // convert Reply[0] (string) to unsigned 
+
+            switch (Result) {
+                case 1:
+                GameStatus.Lang = LANG_FR;
+                OutMenuLang = true;  
+                break ;
+                                
+                case 2:
+                GameStatus.Lang = LANG_EN;
+                OutMenuLang = true;
+                break;
+                                               
+                case 3:
+                GameStatus.Lang = LANG_ES;
+                OutMenuLang = true;
+                break;  
+
+                default:
+                Reply == "";
+                ClearScreen ();
+                cout << endl;
+        		break;
+            }
+        }
+
+        // Language definition
+		if (GameStatus.Lang == LANG_FR) {
+			GameStatus.LocaleStr.TitlePlayGameLabel    = "TAPE 'PLAY' POUR JOUER OU ...      ";
+			GameStatus.LocaleStr.TitleGameOptionsLabel = "TAPE 'OPTIONS' POUR CONFIGURER !   ";
+			GameStatus.LocaleStr.DirUp = "HAUT";
+			GameStatus.LocaleStr.DirLeft = "BAS";
+			GameStatus.LocaleStr.DirDown = "GAUCHE";
+			GameStatus.LocaleStr.DirRight = "DROITE";
+			GameStatus.LocaleStr.TitleMGRL1 = " JOUEUR 1 ";
+			GameStatus.LocaleStr.TitleMGRL2 = "DOIT CHOPER";
+			GameStatus.LocaleStr.TitleMGRL3 = "  L'AUTRE ";
+			GameStatus.LocaleStr.TitlePlayer1 = "..JOUEUR1..";
+			GameStatus.LocaleStr.TitlePlayer2 = "..JOUEUR2..";
+			GameStatus.LocaleStr.TitleRules = "....REGLE...";
+			GameStatus.LocaleStr.MsgTie = "\n  EGALITE !\n Maintenant, commencez une nouvelle manche pour connaîte le grand Gagnant ...";
+			GameStatus.LocaleStr.MsgEnd = "FIN !";
+			GameStatus.LocaleStr.MsgPause = "\n\n\nAppuyez sur entrer pour continuer";
+			GameStatus.LocaleStr.MsgCatch = " A ATTRAPE SA PROIE!";
+			GameStatus.LocaleStr.MsgEscape = " A reussi à s'échaper dans les temps!";
+			GameStatus.LocaleStr.MsgHeadHunts = "chasse";
+			GameStatus.LocaleStr.MsgHeadMoves = "mouvements";
+			GameStatus.LocaleStr.MsgIsHunting = "chasse";
+			GameStatus.LocaleStr.MsgRound = "MANCHE";
+			GameStatus.LocaleStr.MsgOn = "SUR";
+		} else if (GameStatus.Lang == LANG_ES) {
+			GameStatus.LocaleStr.TitlePlayGameLabel    = "ENTRAR 'PLAY' PARA JUGAR O  ...      ";
+			GameStatus.LocaleStr.TitleGameOptionsLabel = "ENTRAR 'OPTIONS' PARA CONFIGURAR !   ";
+			GameStatus.LocaleStr.DirUp = "ARRIBA";
+			GameStatus.LocaleStr.DirLeft = "BASTA";
+			GameStatus.LocaleStr.DirDown = "GAUCHA";
+			GameStatus.LocaleStr.DirRight = "DROITA";
+			GameStatus.LocaleStr.TitleMGRL1 = " JUU 1 ";
+			GameStatus.LocaleStr.TitleMGRL2 = "DEBE COGER";
+			GameStatus.LocaleStr.TitleMGRL3 = "  OTRO ";
+			GameStatus.LocaleStr.TitlePlayer1 = "..JUGADOR1..";
+			GameStatus.LocaleStr.TitlePlayer2 = "..JUGADOR2..";
+			GameStatus.LocaleStr.TitleRules = "....REGLAS...";
+			GameStatus.LocaleStr.MsgTie = "\n  EGUALDAD !\n Empezamos una nueva manga para determinar quien es el ganador real.";
+			GameStatus.LocaleStr.MsgEnd = "FIN !";
+			GameStatus.LocaleStr.MsgPause = "\n\n\nENTRAR PARA CONTINUAR";
+			GameStatus.LocaleStr.MsgCatch = " HA CAPTURADOS SU PRESA!";
+			GameStatus.LocaleStr.MsgEscape = " Escapo a tiempó !";
+			GameStatus.LocaleStr.MsgHeadHunts = "caza";
+			GameStatus.LocaleStr.MsgHeadMoves = "movimientos";
+			GameStatus.LocaleStr.MsgIsHunting = "esta cazando";
+			GameStatus.LocaleStr.MsgRound = "MANGA";
+			GameStatus.LocaleStr.MsgOn = "DE";
+		}
+
+		// Title screen
 		cout << "\n";
 		cout << "  .oPYo.  o    o      .oo .oPYo. .oPYo.   .oPYo.      .oo o     o .oPYo. \n";
 		cout << "  7    8  8    8     .P 8 8      8.       8    8     .P 8 8b   d8 8.     \n";
