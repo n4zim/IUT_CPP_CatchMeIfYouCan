@@ -234,10 +234,6 @@ namespace ChaseGame {
 
 	} // ShowMatrix ()
 
-	unsigned RRand (unsigned Min, unsigned Max) {
-		return rand() % (Max - Min) + Min;
-	} // RRand ()
-
 	void GenBonusMalus(CMatrix & Mat) {
 
 		unsigned y = rand () % Mat.size ();
