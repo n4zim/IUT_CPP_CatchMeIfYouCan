@@ -44,7 +44,7 @@ namespace ChaseGame {
 	 * \brief Move a token in the game matrix
 	 * \param Mat Game matrix
 	 * \param Move Move code
-	 * \param Pos Token position
+	 * \param Player Player data
 	 * \param KeyCodes Player specific key codes for movement
 	 * \return Replaced char
 	 */
