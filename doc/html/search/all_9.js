@@ -7,5 +7,6 @@ var searchData=
   ['langs',['Langs',['../namespace_chase_game.html#a2501a45afa3eb11b10e04d79a8349796',1,'ChaseGame']]],
   ['left',['Left',['../struct_chase_game_1_1_s_player_keys.html#ab6c4f7e03fa43cd9443dcbd16a5e3250',1,'ChaseGame::SPlayerKeys']]],
   ['loadgameconfig',['LoadGameConfig',['../namespace_chase_game.html#addd460052ec5a5fe3010665ca84b07ec',1,'ChaseGame']]],
-  ['loadmapgenconfig',['LoadMapGenConfig',['../namespace_chase_game.html#a4779af792d3de8e274049bf2019e0343',1,'ChaseGame::LoadMapGenConfig(const string &amp;FileName)'],['../namespace_chase_game.html#a9c5b5d91cb4251cae461faa4ace8a0cf',1,'ChaseGame::LoadMapGenConfig(const std::string &amp;FileName)']]]
+  ['loadmapgenconfig',['LoadMapGenConfig',['../namespace_chase_game.html#a4779af792d3de8e274049bf2019e0343',1,'ChaseGame::LoadMapGenConfig(const string &amp;FileName)'],['../namespace_chase_game.html#a9c5b5d91cb4251cae461faa4ace8a0cf',1,'ChaseGame::LoadMapGenConfig(const std::string &amp;FileName)']]],
+  ['localestr',['LocaleStr',['../struct_chase_game_1_1_s_game_status.html#a697729a081cae30a6b85c5a16a5f9f70',1,'ChaseGame::SGameStatus']]]
 ];

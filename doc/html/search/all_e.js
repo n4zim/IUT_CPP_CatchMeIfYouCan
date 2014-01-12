@@ -7,6 +7,7 @@ var searchData=
   ['setgamestate',['SetGameState',['../namespace_chase_game.html#af423e47c7318b7eeb67ff1f1a6b1547d',1,'ChaseGame::SetGameState(map&lt; string, sf::Music &amp; &gt; &amp;Tracks, int GameState, bool DoFade)'],['../namespace_chase_game.html#ac628bcb1f9de7ece2d9705ea5c6e9e91',1,'ChaseGame::SetGameState(std::map&lt; std::string, sf::Music &amp; &gt; &amp;Tracks, int GameState, bool DoFade)']]],
   ['sgamestatus',['SGameStatus',['../struct_chase_game_1_1_s_game_status.html',1,'ChaseGame']]],
   ['showmatrix',['ShowMatrix',['../namespace_chase_game.html#a871395f1f12e55eaa3d341b8ef2cbb78',1,'ChaseGame']]],
+  ['slangstrings',['SLangStrings',['../struct_chase_game_1_1_s_lang_strings.html',1,'ChaseGame']]],
   ['sleep',['Sleep',['../namespace_chase_game.html#a8ca147721cdfaf96ee1f9c5007c27142',1,'ChaseGame']]],
   ['smapgenparams',['SMapGenParams',['../struct_chase_game_1_1_s_map_gen_params.html',1,'ChaseGame']]],
   ['splayerkeys',['SPlayerKeys',['../struct_chase_game_1_1_s_player_keys.html',1,'ChaseGame']]],
