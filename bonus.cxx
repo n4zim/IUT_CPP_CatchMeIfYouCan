@@ -24,13 +24,13 @@ using namespace std;
  
 namespace ChaseGame { 
     void Effect (SGameStatus& GameStatus, bool IsBonus, bool IsP1) {
-        if (IsBonus == true) {
-            BMSwap(GameStatus);
-        } else {
+        if (IsBonus == true) { // swaps the roles
+            BMSwap (GameStatus);
+        } else { // stuns the opponant
             if(IsP1)
-            	MStun(GameStatus.P1);
+            	MStun (GameStatus.P2);
             else
-            	MStun(GameStatus.P1);
+            	MStun (GameStatus.P1);
         }
     }
 
