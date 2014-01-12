@@ -105,7 +105,8 @@ namespace ChaseGame {
 		}
 
 		ClearScreen ();
-		SetGameState (Music, GMS_STARTING, true);
+		if (GameStatus.PlaySound)
+			SetGameState (Music, GMS_STARTING, true);
 
 		Color (CLR_RESET);
 		cout << "\n            [ROUND " << GameStatus.Round + 1 << " ON " << GameStatus.MaxRounds << "]";
@@ -120,7 +121,8 @@ namespace ChaseGame {
 		cout << "}" << endl;
 
 		Pause (true);
-		SetGameState (Music, GMS_INGAME, true);
+		if (GameStatus.PlaySound)
+			SetGameState (Music, GMS_INGAME, true);
 
 		GameStatus.MvLeft = (rand () % 25 + 10) * 10;
 
@@ -189,10 +191,12 @@ namespace ChaseGame {
 		}
 
 		ShowMatrix (Mat, GameStatus.ColorSet);
-		SetGameState (Music, GMS_STARTING, true);
+		if (GameStatus.PlaySound)
+			SetGameState (Music, GMS_STARTING, true);
 
 		Pause (true);
-		SetGameState (Music, GMS_TITLE, true);
+		if (GameStatus.PlaySound)
+			SetGameState (Music, GMS_TITLE, true);
 
 		++GameStatus.Round;
 
@@ -240,14 +244,18 @@ namespace ChaseGame {
 		GameStatus.P2.Score = 0;
 
 		GameStatus.Round = 0;
-		GameStatus.MaxRounds = 4;
+		//GameStatus.MaxRounds = 4;
 
 		// SOUND INITIALISATION
 
 		// MUSIC LOADING
 		map <string, sf::Music&> Tracks = {{ "A1", Track1A }, { "B1", Track1B }, { "C1", Track1C }, { "2", Track2 }};
 
-		SetGameState (Tracks, GMS_TITLE, false);
+		if (GameStatus.PlaySound) {
+			SetGameState (Tracks, GMS_TITLE, false);
+		} else {
+			SetGameState (Tracks, GMS_STOP, false);
+		}
 
 		// Title screen
 		ClearScreen ();
@@ -262,7 +270,8 @@ namespace ChaseGame {
 		cout << "  :.....::..:::....:::::..:.....::.....::::....8 ..:::::....::::..:.....:\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::8 ::::::::::::::::::::::::\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::..::::::::::::::::::::::::\n";
-		cout << "  ::::::::::::::- PRESS ENTER WHENEVER TO START PLAYING ! -::::::::::::::\n";
+		cout << "  :::::::::::::::::- TYPE 'PLAY' TO START PLAYING OR...    -:::::::::::::\n";
+		cout << "  :::::::::::::::::- TYPE 'OPTIONS' TO CONFIGURE STUFF UP! -:::::::::::::\n";
 		cout << "  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n";
 		cout << "  .......................................................................\n" << endl;
 		
